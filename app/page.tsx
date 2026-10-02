@@ -4,13 +4,13 @@ import { OutagesExplorer } from "@/components/outages-explorer";
 import { getOutagesData } from "@/lib/data";
 
 export default function Home() {
-  const { outages } = getOutagesData();
+  const { outages, isDemo } = getOutagesData();
 
   // The explorer reads filters from the URL, so it renders on the client; the
   // header and footer around it are still prerendered.
   return (
     <Suspense fallback={<ExplorerSkeleton />}>
-      <OutagesExplorer outages={outages} />
+      <OutagesExplorer outages={outages} isDemo={isDemo} />
     </Suspense>
   );
 }
@@ -24,10 +24,14 @@ function ExplorerSkeleton() {
     >
       <div className="space-y-4">
         {[44, 40, 40].map((height, index) => (
-          <div key={index} className="animate-pulse rounded-lg bg-muted" style={{ height }} />
+          <div
+            key={index}
+            className="rounded-lg bg-muted motion-safe:animate-pulse"
+            style={{ height }}
+          />
         ))}
       </div>
-      <div className="h-[60dvh] min-h-80 animate-pulse rounded-xl bg-muted lg:h-[calc(100dvh-2rem)]" />
+      <div className="h-[60dvh] min-h-80 rounded-xl bg-muted motion-safe:animate-pulse lg:h-[calc(100dvh-2rem)]" />
     </div>
   );
 }

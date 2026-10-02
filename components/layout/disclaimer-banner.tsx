@@ -9,7 +9,8 @@ interface DisclaimerBannerProps {
 
 export function DisclaimerBanner({ isDemo }: DisclaimerBannerProps) {
   return (
-    <aside
+    <div
+      role="note"
       aria-label="Важно"
       className="rounded-xl border border-notice-border bg-notice px-4 py-3 text-sm text-notice-foreground"
     >
@@ -25,10 +26,10 @@ export function DisclaimerBanner({ isDemo }: DisclaimerBannerProps) {
           <FlaskConicalIcon className="mt-0.5 size-4 shrink-0" aria-hidden />
           <span>
             <strong className="font-semibold">Сейчас показаны демо-данные.</strong> Улицы реальные,
-            но даты и время отключений выдуманы.
+            а даты и время отключений выдуманы и каждый день сдвигаются на ближайшую неделю.
           </span>
         </p>
       )}
-    </aside>
+    </div>
   );
 }

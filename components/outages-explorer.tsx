@@ -11,6 +11,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useAlmatyToday } from "@/hooks/use-almaty-today";
 import { DESKTOP_MEDIA_QUERY, useMediaQuery } from "@/hooks/use-media-query";
 import { useOutageFilters } from "@/hooks/use-outage-filters";
+import { rebaseDemoOutages } from "@/lib/demo";
 import { countByDistrict, describeDateFilter, filterOutages } from "@/lib/filter";
 import { type Outage } from "@/lib/schema";
 import { toQueryString } from "@/lib/search-params";
@@ -19,10 +20,16 @@ type MobileView = "list" | "map";
 
 interface OutagesExplorerProps {
   outages: Outage[];
+  /** Demo dates are shifted to start today so a static deploy never looks stale. */
+  isDemo: boolean;
 }
 
-export function OutagesExplorer({ outages }: OutagesExplorerProps) {
+export function OutagesExplorer({ outages: sourceOutages, isDemo }: OutagesExplorerProps) {
   const today = useAlmatyToday();
+  const outages = useMemo(
+    () => (isDemo ? rebaseDemoOutages(sourceOutages, today) : sourceOutages),
+    [sourceOutages, isDemo, today],
+  );
   const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
   const { filters, updateFilters, resetFilters } = useOutageFilters();
   const [mobileView, setMobileView] = useState<MobileView>("list");
@@ -78,9 +85,7 @@ export function OutagesExplorer({ outages }: OutagesExplorerProps) {
           {renderResults(false)}
         </div>
         {/* The map stays in view while the list scrolls. */}
-        <aside className="sticky top-4 h-[calc(100dvh-2rem)] self-start">
-          {renderMap("h-full")}
-        </aside>
+        <div className="sticky top-4 h-[calc(100dvh-2rem)] self-start">{renderMap("h-full")}</div>
       </div>
     );
   }

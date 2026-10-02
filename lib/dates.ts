@@ -28,6 +28,16 @@ export function addDaysToIsoDate(isoDate: string, days: number): string {
   return shifted.toISOString().slice(0, 10);
 }
 
+function toUtcDay(isoDate: string): number {
+  const [year = NaN, month = NaN, day = NaN] = isoDate.split("-").map(Number);
+  return Date.UTC(year, month - 1, day);
+}
+
+/** Whole days from `from` to `to` (both `YYYY-MM-DD`); negative if `to` is earlier. */
+export function diffInDays(from: string, to: string): number {
+  return Math.round((toUtcDay(to) - toUtcDay(from)) / 86_400_000);
+}
+
 export type RelativeDay = "today" | "tomorrow";
 
 /** "today" / "tomorrow" relative to `today` (both `YYYY-MM-DD`), otherwise null. */

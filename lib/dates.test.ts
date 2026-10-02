@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 
 import {
   addDaysToIsoDate,
+  diffInDays,
   formatDayHeading,
   formatDuration,
   formatShortDate,
@@ -67,5 +68,17 @@ describe("formatDuration", () => {
     ["10:00", "10:00", "0 мин"],
   ])("%s–%s → %s", (from, to, expected) => {
     expect(formatDuration(from, to)).toBe(expected);
+  });
+});
+
+describe("diffInDays", () => {
+  it.each([
+    ["2026-10-02", "2026-10-02", 0],
+    ["2026-10-02", "2026-10-09", 7],
+    ["2026-10-09", "2026-10-02", -7],
+    ["2026-12-30", "2027-01-02", 3],
+    ["2028-02-28", "2028-03-01", 2],
+  ])("%s → %s = %i", (from, to, expected) => {
+    expect(diffInDays(from, to)).toBe(expected);
   });
 });

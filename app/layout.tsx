@@ -19,9 +19,29 @@ const geistMono = Geist_Mono({
   subsets: ["latin", "cyrillic"],
 });
 
+// "Тоқ бар ма? — плановые отключения света в Алматы": lower-case only the tagline's first letter.
+const title = `${siteConfig.name} — ${siteConfig.tagline.charAt(0).toLowerCase()}${siteConfig.tagline.slice(1)}`;
+
 export const metadata: Metadata = {
-  title: `${siteConfig.name} — плановые отключения света в Алматы`,
+  metadataBase: new URL(siteConfig.url),
+  title,
   description: siteConfig.description,
+  applicationName: siteConfig.name,
+  keywords: ["Алматы", "отключение света", "АЖК", "график отключений", "электроэнергия"],
+  alternates: { canonical: "/" },
+  openGraph: {
+    type: "website",
+    locale: "ru_RU",
+    url: "/",
+    siteName: siteConfig.name,
+    title,
+    description: siteConfig.description,
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description: siteConfig.description,
+  },
 };
 
 export const viewport: Viewport = {
