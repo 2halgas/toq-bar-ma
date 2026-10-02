@@ -38,12 +38,13 @@ export function OutageCard({ outage, today }: OutageCardProps) {
   return (
     <article className="rounded-xl border bg-card p-4 text-card-foreground shadow-xs">
       <div className="flex items-start justify-between gap-3">
-        <h5 className="flex items-center gap-2">
-          <ClockIcon className="size-4 text-muted-foreground" aria-hidden />
-          <span className="font-semibold tabular-nums">
+        {/* Time and duration never break inside; in narrow cards the duration wraps as a whole. */}
+        <h5 className="flex flex-wrap items-center gap-x-2 gap-y-0.5">
+          <span className="inline-flex items-center gap-2 font-semibold whitespace-nowrap tabular-nums">
+            <ClockIcon className="size-4 text-muted-foreground" aria-hidden />
             {outage.timeFrom}–{outage.timeTo}
           </span>
-          <span className="text-sm text-muted-foreground">
+          <span className="text-sm whitespace-nowrap text-muted-foreground">
             {formatDuration(outage.timeFrom, outage.timeTo, {
               hours: (count) => tCommon("hours", { count }),
               minutes: (count) => tCommon("minutes", { count }),

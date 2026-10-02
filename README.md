@@ -2,10 +2,22 @@
 
 > _"Тоқ бар ма?"_ is Kazakh for _"Is there power?"_
 
-<!--
-  TODO: add a GIF or screenshot (mobile + desktop), e.g. docs/screenshot.png, and uncomment:
-  <p align="center"><img src="docs/screenshot.png" alt="Street search, outage list and map" width="900" /></p>
--->
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/desktop-dark.png" />
+    <img src="docs/desktop-light.png" alt="Desktop: street search, filters and outage list next to a clustered map of Almaty" width="900" />
+  </picture>
+</p>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/mobile-list-dark.png" />
+    <img src="docs/mobile-list-light.png" alt="Mobile: today's outages grouped by power network unit" width="280" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/mobile-map-dark.png" />
+    <img src="docs/mobile-map-light.png" alt="Mobile: map tab with clustered outage markers" width="280" />
+  </picture>
+</p>
 
 An unofficial, mobile-first map of planned power outages in Almaty. Type your street and see in a few seconds whether, when and why the power will be cut. The data is parsed every day from the weekly schedules published by Alatau Zharyk Company (AZhK).
 
@@ -121,6 +133,7 @@ lib/geo/        # geocache schema
 lib/            # filtering, dates, URL state, map points (+ tests)
 data/           # outages.json, geocache.json (generated; raw/ is git-ignored)
 scripts/        # fetch-outages, geocode, audit-privacy, validate-data
+docs/           # README screenshots (light and dark)
 ```
 
 ## Disclaimer
