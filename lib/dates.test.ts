@@ -4,6 +4,7 @@ import {
   addDaysToIsoDate,
   diffInDays,
   formatDayHeading,
+  formatDayMonth,
   formatDuration,
   formatShortDate,
   formatUpdatedAt,
@@ -46,28 +47,46 @@ describe("getRelativeDay", () => {
 });
 
 describe("formatting", () => {
-  it("formats day headings in Russian with a capital letter", () => {
-    expect(formatDayHeading("2026-10-02")).toBe("Пятница, 2 октября");
-    expect(formatDayHeading("2026-10-05")).toBe("Понедельник, 5 октября");
+  it.each([
+    ["ru", "Пятница, 2 октября", "2 октября"],
+    ["kk", "2 қазан, жұма", "2 қазан"],
+    ["en", "Friday, October 2", "October 2"],
+  ])("formats day headings and day-month in %s", (locale, heading, dayMonth) => {
+    expect(formatDayHeading("2026-10-02", locale)).toBe(heading);
+    expect(formatDayMonth("2026-10-02", locale)).toBe(dayMonth);
+  });
+
+  it("capitalises Russian weekdays", () => {
+    expect(formatDayHeading("2026-10-05", "ru")).toBe("Понедельник, 5 октября");
   });
 
   it("formats short dates", () => {
-    expect(formatShortDate("2026-10-02")).toBe("2 окт., пт");
+    expect(formatShortDate("2026-10-02", "ru")).toBe("пт, 2 окт.");
+    expect(formatShortDate("2026-10-02", "kk")).toBe("2 қаз, жм");
+    expect(formatShortDate("2026-10-02", "en")).toBe("Fri, Oct 2");
   });
 
-  it("shows the update time in Almaty", () => {
-    expect(formatUpdatedAt("2026-10-02T11:10:00.000Z")).toMatch(/2 октября 2026.*16:10/);
+  it("shows the update time in Almaty on a 24-hour clock", () => {
+    expect(formatUpdatedAt("2026-10-02T11:10:00.000Z", "ru")).toBe("2 октября 2026 г. в 16:10");
+    expect(formatUpdatedAt("2026-10-02T11:10:00.000Z", "kk")).toBe("2026 ж. 2 қазан, 16:10");
+    expect(formatUpdatedAt("2026-10-02T11:10:00.000Z", "en")).toBe("October 2, 2026 at 16:10");
+  });
+
+  it("falls back to Russian patterns for an unknown locale", () => {
+    expect(formatDayMonth("2026-10-02", "de")).toBe("2 октября");
   });
 });
 
 describe("formatDuration", () => {
+  const units = { hours: (n: number) => `${n} h`, minutes: (n: number) => `${n} min` };
+
   it.each([
-    ["09:00", "17:00", "8 ч"],
-    ["09:00", "13:30", "4 ч 30 мин"],
-    ["10:15", "11:00", "45 мин"],
-    ["10:00", "10:00", "0 мин"],
+    ["09:00", "17:00", "8 h"],
+    ["09:00", "13:30", "4 h 30 min"],
+    ["10:15", "11:00", "45 min"],
+    ["10:00", "10:00", "0 min"],
   ])("%s–%s → %s", (from, to, expected) => {
-    expect(formatDuration(from, to)).toBe(expected);
+    expect(formatDuration(from, to, units)).toBe(expected);
   });
 });
 

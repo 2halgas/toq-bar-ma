@@ -11,7 +11,6 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { formatRes } from "@/lib/azhk/schema";
 import { type ResCount } from "@/lib/filter";
 
 const ALL = "all";
@@ -25,6 +24,7 @@ interface ResFilterProps {
 
 export function ResFilter({ value, options, onChange }: ResFilterProps) {
   const t = useTranslations("ResFilter");
+  const tCommon = useTranslations("Common");
   const triggerId = useId();
   const hintId = useId();
 
@@ -37,13 +37,13 @@ export function ResFilter({ value, options, onChange }: ResFilterProps) {
       >
         <SelectTrigger id={triggerId} aria-describedby={hintId} className="h-10! w-full">
           {/* Explicit label: the trigger shouldn't repeat the per-option counts. */}
-          <SelectValue>{value === null ? t("all") : formatRes(value)}</SelectValue>
+          <SelectValue>{value === null ? t("all") : tCommon("res", { number: value })}</SelectValue>
         </SelectTrigger>
         <SelectContent position="popper">
           <SelectItem value={ALL}>{t("all")}</SelectItem>
           {options.map(({ res, count }) => (
             <SelectItem key={res} value={String(res)}>
-              <span>{formatRes(res)}</span>
+              <span>{tCommon("res", { number: res })}</span>
               <span className="ml-auto pl-3 text-muted-foreground tabular-nums">
                 <span className="sr-only">{t("countLabel")}</span>
                 {count}

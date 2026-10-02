@@ -26,6 +26,7 @@ interface OutageCardProps {
 
 export function OutageCard({ outage, today }: OutageCardProps) {
   const t = useTranslations("Card");
+  const tCommon = useTranslations("Common");
   const tRepair = useTranslations("RepairType");
   const placeId = useId();
   const [expanded, setExpanded] = useState(false);
@@ -43,7 +44,10 @@ export function OutageCard({ outage, today }: OutageCardProps) {
             {outage.timeFrom}–{outage.timeTo}
           </span>
           <span className="text-sm text-muted-foreground">
-            {formatDuration(outage.timeFrom, outage.timeTo)}
+            {formatDuration(outage.timeFrom, outage.timeTo, {
+              hours: (count) => tCommon("hours", { count }),
+              minutes: (count) => tCommon("minutes", { count }),
+            })}
           </span>
         </h5>
         {relativeDay && (
@@ -58,8 +62,10 @@ export function OutageCard({ outage, today }: OutageCardProps) {
             <span className="sr-only">{t("where")}</span>
           </dt>
           <dd className="min-w-0 flex-1">
+            {/* Addresses come from the AZhK schedule in Russian, whatever the UI language. */}
             <p
               id={placeId}
+              lang={isHidden ? undefined : "ru"}
               className={cn(
                 "leading-relaxed break-words",
                 isHidden && "text-muted-foreground italic",
@@ -87,7 +93,9 @@ export function OutageCard({ outage, today }: OutageCardProps) {
             <CableIcon className="mt-0.5 size-4" aria-hidden />
             <span className="sr-only">{t("equipment")}</span>
           </dt>
-          <dd className="min-w-0 break-words">{outage.dispatchName}</dd>
+          <dd className="min-w-0 break-words" lang="ru">
+            {outage.dispatchName}
+          </dd>
         </div>
         <div className="flex gap-2 text-muted-foreground">
           <dt>

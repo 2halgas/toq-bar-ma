@@ -10,7 +10,11 @@
     "opensInNewTab": "(откроется в новой вкладке)",
     "outages": "{count, plural, one {# отключение} few {# отключения} many {# отключений} other {# отключения}}",
     "period": "с {from} по {to}",
-    "loading": "Загрузка"
+    "loading": "Загрузка",
+    "res": "РЭС-{number}",
+    "addressesInRussian": "",
+    "hours": "{count} ч",
+    "minutes": "{count} мин"
   },
   "Layout": {
     "skipToContent": "Перейти к содержимому"

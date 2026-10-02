@@ -29,6 +29,9 @@ export function ResultsSection({
   hideHeading = false,
 }: ResultsSectionProps) {
   const t = useTranslations("Results");
+  const tCommon = useTranslations("Common");
+  // Empty in Russian; elsewhere explains why addresses are in Russian.
+  const addressesNote = tCommon("addressesInRussian");
 
   return (
     <section aria-labelledby="results-heading" className="space-y-3">
@@ -38,6 +41,9 @@ export function ResultsSection({
       <p role="status" className="text-sm text-muted-foreground">
         {t("found", { count: results.length })}
       </p>
+      {addressesNote && results.length > 0 && (
+        <p className="text-xs text-muted-foreground">{addressesNote}</p>
+      )}
       {results.length > 0 ? (
         <OutageList outages={results} today={today} />
       ) : (

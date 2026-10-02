@@ -1,5 +1,5 @@
 import { RotateCcwIcon, ZapIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { ExternalLink } from "@/components/layout/external-link";
 import { Button } from "@/components/ui/button";
@@ -24,9 +24,10 @@ export function EmptyState({
 }: EmptyStateProps) {
   const t = useTranslations("Empty");
   const tCommon = useTranslations("Common");
+  const locale = useLocale();
   const period = tCommon("period", {
-    from: formatDayMonth(schedule.weekStart),
-    to: formatDayMonth(schedule.weekEnd),
+    from: formatDayMonth(schedule.weekStart, locale),
+    to: formatDayMonth(schedule.weekEnd, locale),
   });
 
   const title =

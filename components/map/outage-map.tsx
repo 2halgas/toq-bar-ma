@@ -4,13 +4,12 @@ import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 
 import L, { type MarkerCluster } from "leaflet";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useMemo } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 
 import { Button } from "@/components/ui/button";
-import { formatRes } from "@/lib/azhk/schema";
 import { formatShortDate } from "@/lib/dates";
 import { ALMATY_VIEWBOX } from "@/lib/geo/geocache";
 import { type MapPoint } from "@/lib/map-points";
@@ -104,6 +103,8 @@ export interface OutageMapProps {
 
 export function OutageMap({ points, onShowInList }: OutageMapProps) {
   const t = useTranslations("Map");
+  const tCommon = useTranslations("Common");
+  const locale = useLocale();
   const markers = useMemo(
     () =>
       points.map((point) => ({
@@ -140,12 +141,14 @@ export function OutageMap({ points, onShowInList }: OutageMapProps) {
           >
             <Popup>
               <div className="min-w-52 space-y-2 text-sm">
-                <p className="font-semibold">{point.label}</p>
+                <p className="font-semibold" lang="ru">
+                  {point.label}
+                </p>
                 <ul className="space-y-1 text-muted-foreground">
                   {point.outages.slice(0, POPUP_LIST_LIMIT).map((outage) => (
                     <li key={outage.id} className="tabular-nums">
-                      {formatShortDate(outage.date)} · {outage.timeFrom}–{outage.timeTo} ·{" "}
-                      {formatRes(outage.res)}
+                      {formatShortDate(outage.date, locale)} · {outage.timeFrom}–{outage.timeTo} ·{" "}
+                      {tCommon("res", { number: outage.res })}
                       {outage.substations[0] && ` · ${outage.substations[0]}`}
                     </li>
                   ))}

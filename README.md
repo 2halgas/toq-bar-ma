@@ -18,6 +18,7 @@ An unofficial, mobile-first map of planned power outages in Almaty. Type your st
 - **List** grouped by day and РЭС: time and duration, affected addresses, equipment (substation), repair type, “today” / “tomorrow” badges.
 - **Map** of the streets and microdistricts mentioned in the schedule, with clustered markers; click a marker to see its outages or filter the list by that place.
 - **Honest empty states:** “no outages planned” is distinguished from “no schedule published for these dates yet”.
+- **Three languages:** Russian, Kazakh and English at `/ru`, `/kk`, `/en`; `/` picks the browser's language and keeps shared filters. Addresses stay in Russian, as AZhK publishes them.
 - **Responsive:** list + sticky map side by side on desktop, `List / Map` tabs on mobile. **Dark theme**, system by default.
 - **Accessible:** semantic landmarks and headings, labelled controls, visible focus, keyboard-operable map; everything on the map is also in the list.
 
@@ -57,7 +58,8 @@ Tests use synthetic HTML and fictional names only.
 - [Leaflet](https://leafletjs.com) + [react-leaflet](https://react-leaflet.js.org) + [react-leaflet-cluster](https://github.com/akursat/react-leaflet-cluster), client-side only
 - [cheerio](https://cheerio.js.org) for parsing, [zod](https://zod.dev) for validating every file that enters the app
 - [date-fns](https://date-fns.org) (ru locale); “today” is always computed in `Asia/Almaty`
-- [Vitest](https://vitest.dev), ESLint, Prettier, GitHub Actions. Deployed on [Vercel](https://vercel.com). No backend.
+- [next-intl](https://next-intl.dev) for ru / kk / en, statically rendered per locale (no middleware)
+- [Vitest](https://vitest.dev), ESLint, Prettier, GitHub Actions. Deploys to [Vercel](https://vercel.com) or any static host. No backend.
 
 ## Getting started
 
@@ -76,6 +78,7 @@ pnpm check      # typecheck + lint + format check + unit tests
 | `pnpm data:audit`    | Fail if any data file contains name-like patterns                                               |
 | `pnpm data:validate` | Validate `data/outages.json` (also happens during `pnpm build`)                                 |
 | `pnpm build`         | Production build                                                                                |
+| `pnpm build:static`  | Plain static site in `out/` for any static host (GitHub Pages, Cloudflare Pages, Netlify)       |
 
 ### Environment variables
 
@@ -123,4 +126,5 @@ Map data and geocoding © [OpenStreetMap](https://www.openstreetmap.org/copyrigh
 - [x] Parser for AZhK schedules, updated daily
 - [ ] Individual buildings on the map (geocoding house numbers)
 - [ ] Telegram bot with notifications for a saved address
-- [ ] Kazakh and English localization
+- [x] Kazakh and English localization
+- [ ] Search in Latin script (`aigerim` → «Айгерим»)

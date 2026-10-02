@@ -1,4 +1,4 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { ExternalLink } from "@/components/layout/external-link";
 import { formatUpdatedAt } from "@/lib/dates";
@@ -11,13 +11,14 @@ interface SiteFooterProps {
 
 export function SiteFooter({ updatedAt, sourceUrl }: SiteFooterProps) {
   const t = useTranslations("Footer");
+  const locale = useLocale();
 
   return (
     <footer className="mt-auto border-t">
       <div className="mx-auto flex w-full max-w-7xl flex-col gap-2 px-4 py-6 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6">
         <p>
           {t.rich("updatedAt", {
-            date: formatUpdatedAt(updatedAt),
+            date: formatUpdatedAt(updatedAt, locale),
             time: (chunks) => <time dateTime={updatedAt}>{chunks}</time>,
           })}
         </p>

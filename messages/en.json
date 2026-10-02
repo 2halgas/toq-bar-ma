@@ -1,115 +1,119 @@
 {
   "Metadata": {
-    "title": "Тоқ бар ма? — плановые отключения света в Алматы",
-    "description": "Неофициальная карта плановых отключений электроэнергии в Алматы по графикам АО «Алатау Жарык Компаниясы».",
-    "keywords": "Алматы, отключение света, АЖК, график отключений, электроэнергия",
-    "ogFeatures": "Поиск по улице · график АЖК · неофициальный сервис"
+    "title": "Тоқ бар ма? — planned power outages in Almaty",
+    "description": "An unofficial map of planned power outages in Almaty, based on the schedules published by Alatau Zharyk Company (AZhK).",
+    "keywords": "Almaty, power outage, electricity, AZhK, outage schedule",
+    "ogFeatures": "Street search · AZhK schedule · unofficial service"
   },
   "Common": {
-    "tagline": "Плановые отключения света в Алматы",
-    "opensInNewTab": "(откроется в новой вкладке)",
-    "outages": "{count, plural, one {# отключение} few {# отключения} many {# отключений} other {# отключения}}",
-    "period": "с {from} по {to}",
-    "loading": "Загрузка"
+    "tagline": "Planned power outages in Almaty",
+    "opensInNewTab": "(opens in a new tab)",
+    "outages": "{count, plural, one {# outage} other {# outages}}",
+    "period": "{from} – {to}",
+    "loading": "Loading",
+    "res": "RES-{number}",
+    "addressesInRussian": "Addresses are shown in Russian, exactly as AZhK publishes them.",
+    "hours": "{count} h",
+    "minutes": "{count} min"
   },
   "Layout": {
-    "skipToContent": "Перейти к содержимому"
+    "skipToContent": "Skip to content"
   },
   "Header": {
-    "noticeLabel": "Важно",
-    "disclaimer": "Неофициальный сервис: данные автоматически берутся из графиков АО «Алатау Жарык Компаниясы» и могут содержать ошибки разбора. Всегда сверяйтесь с <link>графиком на сайте АЖК</link>."
+    "noticeLabel": "Important",
+    "disclaimer": "Unofficial service: the data is parsed automatically from Alatau Zharyk Company's schedules and may contain parsing errors. Always check the <link>schedule on the AZhK website</link>."
   },
   "Footer": {
-    "updatedAt": "Данные обновлены: <time>{date}</time>. ФИО частных лиц из графиков не сохраняются и не показываются.",
-    "source": "Источник: АО «АЖК»"
+    "updatedAt": "Data updated: <time>{date}</time>. Names of private individuals from the schedules are never stored or shown.",
+    "source": "Source: Alatau Zharyk Company"
   },
   "Theme": {
-    "label": "Тема",
-    "trigger": "Тема оформления",
-    "light": "Светлая",
-    "dark": "Тёмная",
-    "system": "Как в системе"
+    "label": "Theme",
+    "trigger": "Color theme",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System"
   },
   "Language": {
-    "label": "Язык",
-    "trigger": "Язык интерфейса"
+    "label": "Language",
+    "trigger": "Interface language"
   },
   "Filters": {
-    "heading": "Поиск",
-    "reset": "Сбросить"
+    "heading": "Search",
+    "reset": "Reset"
   },
   "Search": {
-    "label": "Улица или микрорайон",
-    "placeholder": "Например, Айгерим-1 или Ратушного",
-    "clear": "Очистить поиск",
-    "hint": "Можно писать «мкр», «м-н» или без сокращений; регистр и ё/е не важны."
+    "label": "Street or microdistrict",
+    "placeholder": "e.g. Айгерим-1 or Ратушного",
+    "clear": "Clear search",
+    "hint": "Addresses are in Russian, as in the AZhK schedule. Abbreviations like «мкр» or «ул» are optional."
   },
   "DateFilter": {
-    "label": "Дата",
-    "today": "Сегодня",
-    "tomorrow": "Завтра",
-    "week": "Неделя",
-    "otherDate": "Другая дата"
+    "label": "Date",
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "week": "Week",
+    "otherDate": "Another date"
   },
   "ResFilter": {
-    "label": "РЭС",
-    "all": "Все РЭС",
-    "countLabel": ", отключений: ",
-    "hint": "Район электрических сетей АЖК. Не знаете свой — просто ищите по улице."
+    "label": "RES",
+    "all": "All RES",
+    "countLabel": ", outages: ",
+    "hint": "AZhK's district power network (РЭС). Don't know yours? Just search by street."
   },
   "Results": {
-    "heading": "Отключения",
-    "found": "{count, plural, one {Найдено # отключение} few {Найдено # отключения} many {Найдено # отключений} other {Найдено # отключения}}"
+    "heading": "Outages",
+    "found": "{count, plural, one {# outage found} other {# outages found}}"
   },
   "Card": {
-    "today": "Сегодня",
-    "tomorrow": "Завтра",
-    "where": "Где",
-    "equipment": "Объект",
-    "workType": "Вид работ",
-    "showMore": "Показать полностью",
-    "showLess": "Свернуть",
-    "source": "Источник",
-    "sourceDetails": ": график АЖК",
-    "placeHidden": "Адрес скрыт — см. график на сайте АЖК"
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "where": "Where",
+    "equipment": "Equipment",
+    "workType": "Type of work",
+    "showMore": "Show more",
+    "showLess": "Show less",
+    "source": "Source",
+    "sourceDetails": ": AZhK schedule",
+    "placeHidden": "Address hidden — see the schedule on the AZhK website"
   },
   "RepairType": {
-    "current_repair": "Текущий ремонт",
-    "capital_repair": "Капитальный ремонт",
-    "contractor_works": "Подрядные работы",
-    "defect_elimination": "Устранение дефектов",
-    "other": "Другое"
+    "current_repair": "Routine repair",
+    "capital_repair": "Major repair",
+    "contractor_works": "Contractor works",
+    "defect_elimination": "Fault repair",
+    "other": "Other"
   },
   "Empty": {
-    "afterScheduleTitle": "График на эти даты ещё не опубликован",
-    "beforeScheduleTitle": "Для этих дат графика нет",
-    "noMatchesTitle": "Ничего не найдено",
-    "nothingPlannedTitle": "На оставшиеся дни графика плановых отключений нет",
-    "outsideSchedule": "Сейчас доступен график АЖК {period}. Выберите дату из этого периода.",
-    "noQueryMatches": "По запросу «{query}» в выбранные даты плановых отключений нет. Проверьте написание или выберите другую дату.",
-    "noFilterMatches": "По выбранным фильтрам плановых отключений нет. Попробуйте другую дату или РЭС.",
-    "nothingPlanned": "В опубликованном графике на эти дни ничего нет.",
-    "resetFilters": "Сбросить фильтры",
-    "plannedOnly": "Здесь только плановые работы. Аварийные отключения не отображаются, а график может меняться — сверьтесь с <link>сайтом АЖК</link>."
+    "afterScheduleTitle": "No schedule published for these dates yet",
+    "beforeScheduleTitle": "No schedule for these dates",
+    "noMatchesTitle": "Nothing found",
+    "nothingPlannedTitle": "No planned outages for the rest of the schedule",
+    "outsideSchedule": "The current AZhK schedule covers {period}. Pick a date in that range.",
+    "noQueryMatches": "No planned outages match «{query}» on the selected dates. Check the spelling or try another date.",
+    "noFilterMatches": "No planned outages match the selected filters. Try another date or RES.",
+    "nothingPlanned": "Nothing is planned for these days in the published schedule.",
+    "resetFilters": "Reset filters",
+    "plannedOnly": "Only planned work is shown here. Emergency outages aren't listed, and schedules can change — check the <link>AZhK website</link>."
   },
   "Schedule": {
-    "outdatedTitle": "Новый график ещё не опубликован.",
-    "outdated": "Последний — {period}. Проверьте <link>список графиков АЖК</link>.",
-    "current": "<link>График АЖК {period}</link>. Отключения за другие дни появятся, когда АЖК опубликует следующий график."
+    "outdatedTitle": "A new schedule hasn't been published yet.",
+    "outdated": "The latest one covers {period}. Check the <link>list of AZhK schedules</link>.",
+    "current": "<link>AZhK schedule for {period}</link>. Outages for other days will appear once AZhK publishes the next schedule."
   },
   "Map": {
-    "heading": "Карта",
-    "description": "Улицы и микрорайоны из графика. Нажмите на точку, чтобы увидеть отключения.",
-    "loading": "Загружаем карту…",
-    "accuracy": "Точка — примерное положение улицы или микрорайона, а не конкретного дома.",
-    "unmapped": "Без точки на карте: {count, plural, one {# отключение} few {# отключения} many {# отключений} other {# отключения}} — смотрите в списке.",
-    "markerTitle": "{label}: {count, plural, one {# отключение} few {# отключения} many {# отключений} other {# отключения}}",
-    "more": "и ещё {count}",
-    "showInList": "Показать в списке"
+    "heading": "Map",
+    "description": "Streets and microdistricts from the schedule. Tap a point to see its outages.",
+    "loading": "Loading map…",
+    "accuracy": "A point marks the approximate position of a street or microdistrict, not a specific building.",
+    "unmapped": "Not on the map: {count, plural, one {# outage} other {# outages}} — see the list.",
+    "markerTitle": "{label}: {count, plural, one {# outage} other {# outages}}",
+    "more": "and {count} more",
+    "showInList": "Show in list"
   },
   "Explorer": {
-    "listTab": "Список",
-    "mapTab": "Карта",
-    "showAsList": "Показать списком: {count}"
+    "listTab": "List",
+    "mapTab": "Map",
+    "showAsList": "Show as list: {count}"
   }
 }

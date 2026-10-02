@@ -1,9 +1,9 @@
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { OutageCard } from "@/components/outages/outage-card";
 import { formatDayHeading } from "@/lib/dates";
 import { groupOutages } from "@/lib/filter";
-import { formatRes, type AzhkOutage } from "@/lib/azhk/schema";
+import { type AzhkOutage } from "@/lib/azhk/schema";
 
 interface OutageListProps {
   outages: AzhkOutage[];
@@ -12,6 +12,7 @@ interface OutageListProps {
 
 export function OutageList({ outages, today }: OutageListProps) {
   const t = useTranslations("Common");
+  const locale = useLocale();
   const days = groupOutages(outages);
 
   return (
@@ -26,7 +27,7 @@ export function OutageList({ outages, today }: OutageListProps) {
               id={headingId}
               className="sticky top-(--sticky-offset) z-10 flex items-baseline justify-between gap-2 border-b bg-background py-2"
             >
-              <span className="font-semibold">{formatDayHeading(day.date)}</span>
+              <span className="font-semibold">{formatDayHeading(day.date, locale)}</span>
               <span className="sr-only">, </span>
               <span className="text-sm font-normal text-muted-foreground">
                 {t("outages", { count })}
@@ -37,7 +38,7 @@ export function OutageList({ outages, today }: OutageListProps) {
               {day.groups.map((group) => (
                 <div key={group.res}>
                   <h4 className="mb-2 text-sm font-medium text-muted-foreground">
-                    {formatRes(group.res)}
+                    {t("res", { number: group.res })}
                   </h4>
                   <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
                     {group.outages.map((outage) => (

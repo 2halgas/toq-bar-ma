@@ -1,5 +1,5 @@
 import { CalendarClockIcon, CalendarRangeIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 
 import { ExternalLink } from "@/components/layout/external-link";
 import { formatDayMonth } from "@/lib/dates";
@@ -22,10 +22,11 @@ interface ScheduleNoticeProps {
 export function ScheduleNotice({ schedule, today }: ScheduleNoticeProps) {
   const t = useTranslations("Schedule");
   const tCommon = useTranslations("Common");
+  const locale = useLocale();
   const isOutdated = today > schedule.weekEnd;
   const period = tCommon("period", {
-    from: formatDayMonth(schedule.weekStart),
-    to: formatDayMonth(schedule.weekEnd),
+    from: formatDayMonth(schedule.weekStart, locale),
+    to: formatDayMonth(schedule.weekEnd, locale),
   });
   const Icon = isOutdated ? CalendarClockIcon : CalendarRangeIcon;
 
