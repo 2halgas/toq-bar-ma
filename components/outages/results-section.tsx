@@ -1,14 +1,17 @@
 import { EmptyState } from "@/components/outages/empty-state";
 import { OutageList } from "@/components/outages/outage-list";
+import { type ScheduleCoverage } from "@/lib/filter";
 import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
-import { type Outage } from "@/lib/schema";
+import { type AzhkOutage } from "@/lib/azhk/schema";
 import { cn } from "@/lib/utils";
 
 interface ResultsSectionProps {
-  results: Outage[];
+  results: AzhkOutage[];
   today: string;
   query: string;
   hasActiveFilters: boolean;
+  coverage: ScheduleCoverage;
+  schedule: { weekStart: string; weekEnd: string };
   onReset: () => void;
   /** Hide the visible heading when a tab label already names the section. */
   hideHeading?: boolean;
@@ -19,6 +22,8 @@ export function ResultsSection({
   today,
   query,
   hasActiveFilters,
+  coverage,
+  schedule,
   onReset,
   hideHeading = false,
 }: ResultsSectionProps) {
@@ -33,7 +38,13 @@ export function ResultsSection({
       {results.length > 0 ? (
         <OutageList outages={results} today={today} />
       ) : (
-        <EmptyState query={query} hasActiveFilters={hasActiveFilters} onReset={onReset} />
+        <EmptyState
+          query={query}
+          hasActiveFilters={hasActiveFilters}
+          coverage={coverage}
+          schedule={schedule}
+          onReset={onReset}
+        />
       )}
     </section>
   );

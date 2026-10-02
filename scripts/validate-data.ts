@@ -14,14 +14,13 @@ function main(): void {
 
   try {
     const data = parseOutagesFile(raw);
-    const dates = data.outages.map((outage) => outage.date).sort();
-    const today = getAlmatyToday();
+    console.log(`✓ ${DATA_FILE_PATH}: ${data.outages.length} outages — ${data.title}`);
 
-    console.log(
-      `✓ ${DATA_FILE_PATH}: ${data.outages.length} outages, ${dates[0] ?? "—"} … ${dates.at(-1) ?? "—"}${data.isDemo ? " (demo)" : ""}`,
-    );
-    if ((dates.at(-1) ?? "") < today) {
-      console.warn(`⚠ All outages are in the past (today is ${today}). Time to refresh the data.`);
+    const today = getAlmatyToday();
+    if (data.weekEnd < today) {
+      console.warn(
+        `⚠ The schedule ended on ${data.weekEnd} (today is ${today}). Run pnpm data:fetch.`,
+      );
     }
   } catch (error) {
     // parseOutagesFile has already printed the details.

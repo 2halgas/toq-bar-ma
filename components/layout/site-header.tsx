@@ -4,11 +4,7 @@ import { DisclaimerBanner } from "@/components/layout/disclaimer-banner";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { siteConfig } from "@/lib/site";
 
-interface SiteHeaderProps {
-  isDemo: boolean;
-}
-
-export function SiteHeader({ isDemo }: SiteHeaderProps) {
+export function SiteHeader() {
   return (
     <header className="mx-auto w-full max-w-7xl space-y-4 px-4 pt-4 pb-2 sm:px-6 sm:pt-6">
       <div className="flex items-start justify-between gap-4">
@@ -28,7 +24,7 @@ export function SiteHeader({ isDemo }: SiteHeaderProps) {
         </div>
         <ThemeToggle />
       </div>
-      <DisclaimerBanner isDemo={isDemo} />
+      <DisclaimerBanner />
     </header>
   );
 }

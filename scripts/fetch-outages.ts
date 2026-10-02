@@ -19,8 +19,7 @@ import { PLACE_HIDDEN, parseScheduleTable, sanitizeScheduleHtml } from "@/lib/az
 import { AzhkOutagesFileSchema, type AzhkOutagesFile } from "@/lib/azhk/schema";
 import { siteConfig } from "@/lib/site";
 
-// Becomes data/outages.json once the UI switches to AZhK data (next step).
-const OUTPUT_PATH = "data/azhk-outages.json";
+const OUTPUT_PATH = "data/outages.json";
 const RAW_DIR = "data/raw";
 const MIN_REQUEST_INTERVAL_MS = 1_100;
 const REQUEST_TIMEOUT_MS = 30_000;

@@ -74,7 +74,7 @@ export function StreetSearch({ value, onCommit }: StreetSearchProps) {
           autoComplete="off"
           spellCheck={false}
           maxLength={MAX_QUERY_LENGTH}
-          placeholder="Например, Толе би"
+          placeholder="Например, Айгерим-1 или Ратушного"
           aria-describedby={hintId}
           value={draft}
           onChange={(event) => setDraft(event.target.value)}
@@ -98,7 +98,7 @@ export function StreetSearch({ value, onCommit }: StreetSearchProps) {
         )}
       </div>
       <p id={hintId} className="text-xs text-muted-foreground">
-        Можно без «ул.» и «пр.», регистр и ё/е не важны.
+        Можно писать «мкр», «м-н» или без сокращений; регистр и ё/е не важны.
       </p>
     </form>
   );

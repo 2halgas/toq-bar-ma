@@ -52,7 +52,7 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
-  const { isDemo, updatedAt, sourceUrl } = getOutagesData();
+  const { updatedAt, sourceUrl } = getOutagesData();
 
   return (
     // next-themes sets the class on <html> before hydration, hence suppressHydrationWarning.
@@ -74,7 +74,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           >
             Перейти к содержимому
           </a>
-          <SiteHeader isDemo={isDemo} />
+          <SiteHeader />
           <main id="main" tabIndex={-1} className="flex flex-1 flex-col focus:outline-none">
             {children}
           </main>

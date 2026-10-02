@@ -1,6 +1,7 @@
 import { afterEach, describe, expect, it, vi } from "vitest";
 
 import { getOutagesData, OutagesDataError, parseOutagesFile } from "@/lib/data";
+import { makeOutage } from "@/lib/test/factories";
 
 describe("parseOutagesFile", () => {
   afterEach(() => {
@@ -11,22 +12,13 @@ describe("parseOutagesFile", () => {
     vi.spyOn(console, "error").mockImplementation(() => {});
 
     const raw = {
-      isDemo: "yes",
-      updatedAt: "2026-10-02T10:00:00+05:00",
+      source: "azhk",
+      title: "город Алматы с 28.09.2026 года по 02.10.2026 года",
       sourceUrl: "https://www.azhk.kz/ru/",
-      outages: [
-        {
-          id: "broken-1",
-          district: "almaly",
-          street: "ул. Толе би",
-          houses: "1",
-          date: "2026-10-05",
-          timeFrom: "18:00",
-          timeTo: "09:00",
-          reason: "current_repair",
-          sourceUrl: "https://www.azhk.kz/ru/",
-        },
-      ],
+      weekStart: "2026-09-28",
+      weekEnd: "yesterday",
+      updatedAt: "2026-10-02T10:00:00+05:00",
+      outages: [{ ...makeOutage({ id: "0000000000ab" }), timeFrom: "18:00", timeTo: "09:00" }],
     };
 
     let error: unknown;
@@ -39,8 +31,8 @@ describe("parseOutagesFile", () => {
     expect(error).toBeInstanceOf(OutagesDataError);
     const { issues, message } = error as OutagesDataError;
     expect(issues).toEqual([
-      expect.stringMatching(/^isDemo: /),
-      'outages[0].timeTo (id "broken-1"): Must be later than timeFrom',
+      expect.stringMatching(/^weekEnd: /),
+      'outages[0].timeTo (id "0000000000ab"): Must be later than timeFrom',
     ]);
     expect(message).toContain("data/outages.json failed validation (2 issues)");
     expect(console.error).toHaveBeenCalledOnce();

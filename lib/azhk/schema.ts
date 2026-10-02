@@ -65,6 +65,9 @@ export const AzhkOutageSchema = z
 
 export type AzhkOutage = z.infer<typeof AzhkOutageSchema>;
 
+/** Shown instead of a place whose text still looked like it contained a name after redaction. */
+export const PLACE_HIDDEN = "Адрес скрыт — см. график на сайте АЖК";
+
 export function formatRes(res: number): string {
   return `РЭС-${res}`;
 }

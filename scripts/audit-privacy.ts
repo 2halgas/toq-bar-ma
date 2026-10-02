@@ -11,7 +11,7 @@ import { join } from "node:path";
 import { auditPrivacy } from "@/lib/azhk/privacy-audit";
 
 const FILES = [
-  "data/azhk-outages.json",
+  "data/outages.json",
   ...(existsSync("data/raw") ? readdirSync("data/raw").map((name) => join("data/raw", name)) : []),
 ].filter((path) => existsSync(path));
 

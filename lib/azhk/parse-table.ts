@@ -5,7 +5,7 @@ import { outageId } from "@/lib/azhk/id";
 import { fixMisencodedChars } from "@/lib/azhk/normalize";
 import { preparePlace } from "@/lib/azhk/place";
 import { redactCellForStorage, redactPersonalNames } from "@/lib/azhk/redact";
-import { AzhkOutageSchema, type AzhkOutage } from "@/lib/azhk/schema";
+import { AzhkOutageSchema, PLACE_HIDDEN, type AzhkOutage } from "@/lib/azhk/schema";
 import {
   extractSubstations,
   mapRepairType,
@@ -14,8 +14,7 @@ import {
   parseTimeRange,
 } from "@/lib/azhk/values";
 
-/** Shown instead of a place whose text still looked like it contained a name after redaction. */
-export const PLACE_HIDDEN = "Адрес скрыт — см. график на сайте АЖК";
+export { PLACE_HIDDEN };
 
 type Column = "res" | "date" | "time" | "dispatch" | "repair" | "place";
 

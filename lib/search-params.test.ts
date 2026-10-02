@@ -16,16 +16,19 @@ describe("parseFilters", () => {
   });
 
   it("reads every filter", () => {
-    expect(parse("q=%D1%82%D0%BE%D0%BB%D0%B5&date=tomorrow&district=medeu")).toEqual({
+    expect(parse("q=%D1%82%D0%BE%D0%BB%D0%B5&date=tomorrow&res=3")).toEqual({
       query: "толе",
       date: { kind: "tomorrow" },
-      district: "medeu",
+      res: 3,
     });
     expect(parse("date=2026-10-05").date).toEqual({ kind: "date", date: "2026-10-05" });
   });
 
   it("falls back to defaults for invalid values", () => {
-    expect(parse("date=yesterday&district=Медеуский")).toEqual(DEFAULT_FILTERS);
+    expect(parse("date=yesterday&res=РЭС-3")).toEqual(DEFAULT_FILTERS);
+    for (const res of ["0", "-1", "1.5", "999", ""]) {
+      expect(parse(`res=${res}`).res).toBeNull();
+    }
     expect(parse("date=2026-02-30").date).toEqual(DEFAULT_FILTERS.date);
   });
 
@@ -45,17 +48,17 @@ describe("serializeFilters", () => {
     const params = serializeFilters({
       query: "Толе би",
       date: { kind: "date", date: "2026-10-05" },
-      district: "almaly",
+      res: 1,
     });
-    expect([...params.keys()]).toEqual(["q", "date", "district"]);
+    expect([...params.keys()]).toEqual(["q", "date", "res"]);
     expect(params.get("q")).toBe("Толе би");
     expect(params.get("date")).toBe("2026-10-05");
   });
 
   it.each([
-    { query: "абая", date: { kind: "today" }, district: null },
-    { query: "", date: { kind: "week" }, district: "turksib" },
-    { query: "шанырак 2", date: { kind: "date", date: "2026-12-31" }, district: "alatau" },
+    { query: "абая", date: { kind: "today" }, res: null },
+    { query: "", date: { kind: "week" }, res: 7 },
+    { query: "мкр айгерим 1", date: { kind: "date", date: "2026-12-31" }, res: 12 },
   ] as const)("round-trips %j", (filters) => {
     expect(parseFilters(serializeFilters(filters))).toEqual(filters);
   });

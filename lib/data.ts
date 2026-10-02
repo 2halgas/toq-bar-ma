@@ -1,7 +1,7 @@
 import { type z } from "zod";
 
 import rawOutages from "@/data/outages.json";
-import { OutagesFileSchema, type OutagesFile } from "@/lib/schema";
+import { AzhkOutagesFileSchema, type AzhkOutagesFile } from "@/lib/azhk/schema";
 
 export const DATA_FILE_PATH = "data/outages.json";
 
@@ -41,8 +41,8 @@ function isRecord(value: unknown): value is Record<string, unknown> {
 }
 
 /** Validates raw JSON; throws {@link OutagesDataError} listing every problem found. */
-export function parseOutagesFile(raw: unknown, source = DATA_FILE_PATH): OutagesFile {
-  const result = OutagesFileSchema.safeParse(raw);
+export function parseOutagesFile(raw: unknown, source = DATA_FILE_PATH): AzhkOutagesFile {
+  const result = AzhkOutagesFileSchema.safeParse(raw);
   if (result.success) return result.data;
 
   const issues = result.error.issues.map((issue) => describeIssue(issue, raw));
@@ -55,10 +55,10 @@ export function parseOutagesFile(raw: unknown, source = DATA_FILE_PATH): Outages
   throw new OutagesDataError(message, issues);
 }
 
-let cached: OutagesFile | undefined;
+let cached: AzhkOutagesFile | undefined;
 
 /** The bundled outage schedule, validated once per process (i.e. at build time for static pages). */
-export function getOutagesData(): OutagesFile {
+export function getOutagesData(): AzhkOutagesFile {
   cached ??= parseOutagesFile(rawOutages);
   return cached;
 }

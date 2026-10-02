@@ -1,63 +1,98 @@
-import { ClockIcon, HouseIcon, WrenchIcon } from "lucide-react";
+"use client";
+
+import { CableIcon, ClockIcon, MapPinIcon, WrenchIcon } from "lucide-react";
+import { useId, useState } from "react";
 
 import { ExternalLink } from "@/components/layout/external-link";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { PLACE_HIDDEN, REPAIR_TYPE_LABELS, type AzhkOutage } from "@/lib/azhk/schema";
 import { formatDuration, getRelativeDay, type RelativeDay } from "@/lib/dates";
-import { REASON_LABELS, type Outage } from "@/lib/schema";
+import { cn } from "@/lib/utils";
 
 const RELATIVE_DAY_BADGES: Record<RelativeDay, { label: string; className: string }> = {
   today: { label: "Сегодня", className: "bg-brand text-neutral-950" },
   tomorrow: { label: "Завтра", className: "bg-secondary text-secondary-foreground" },
 };
 
+/** Places longer than this are clamped with a "show more" toggle. */
+const LONG_PLACE_CHARS = 180;
+
 interface OutageCardProps {
-  outage: Outage;
+  outage: AzhkOutage;
   today: string;
 }
 
 export function OutageCard({ outage, today }: OutageCardProps) {
+  const placeId = useId();
+  const [expanded, setExpanded] = useState(false);
   const relativeDay = getRelativeDay(outage.date, today);
   const badge = relativeDay && RELATIVE_DAY_BADGES[relativeDay];
+  const isHidden = outage.place === PLACE_HIDDEN;
+  const isLong = outage.place.length > LONG_PLACE_CHARS;
 
   return (
     <article className="rounded-xl border bg-card p-4 text-card-foreground shadow-xs">
       <div className="flex items-start justify-between gap-3">
-        <h5 className="leading-snug font-semibold">{outage.street}</h5>
+        <h5 className="flex items-center gap-2">
+          <ClockIcon className="size-4 text-muted-foreground" aria-hidden />
+          <span className="font-semibold tabular-nums">
+            {outage.timeFrom}–{outage.timeTo}
+          </span>
+          <span className="text-sm text-muted-foreground">
+            {formatDuration(outage.timeFrom, outage.timeTo)}
+          </span>
+        </h5>
         {badge && <Badge className={badge.className}>{badge.label}</Badge>}
       </div>
 
-      <dl className="mt-2.5 grid gap-1.5 text-sm">
+      <dl className="mt-3 grid gap-2 text-sm">
         <div className="flex gap-2">
           <dt>
-            <HouseIcon className="mt-0.5 size-4 text-muted-foreground" aria-hidden />
-            <span className="sr-only">Дома</span>
+            <MapPinIcon className="mt-0.5 size-4 text-muted-foreground" aria-hidden />
+            <span className="sr-only">Где</span>
           </dt>
-          <dd>{outage.houses}</dd>
-        </div>
-        <div className="flex gap-2">
-          <dt>
-            <ClockIcon className="mt-0.5 size-4 text-muted-foreground" aria-hidden />
-            <span className="sr-only">Время</span>
-          </dt>
-          <dd>
-            <span className="font-medium tabular-nums">
-              {outage.timeFrom}–{outage.timeTo}
-            </span>
-            <span className="text-muted-foreground">
-              {" "}
-              · {formatDuration(outage.timeFrom, outage.timeTo)}
-            </span>
+          <dd className="min-w-0 flex-1">
+            <p
+              id={placeId}
+              className={cn(
+                "leading-relaxed break-words",
+                isHidden && "text-muted-foreground italic",
+                isLong && !expanded && "line-clamp-4",
+              )}
+            >
+              {outage.place}
+            </p>
+            {isLong && (
+              <Button
+                variant="link"
+                size="sm"
+                className="h-auto px-0 py-1"
+                aria-expanded={expanded}
+                aria-controls={placeId}
+                onClick={() => setExpanded((value) => !value)}
+              >
+                {expanded ? "Свернуть" : "Показать полностью"}
+              </Button>
+            )}
           </dd>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 text-muted-foreground">
           <dt>
-            <WrenchIcon className="mt-0.5 size-4 text-muted-foreground" aria-hidden />
-            <span className="sr-only">Причина</span>
+            <CableIcon className="mt-0.5 size-4" aria-hidden />
+            <span className="sr-only">Объект</span>
           </dt>
-          <dd className="flex flex-1 flex-wrap justify-between gap-x-3 text-muted-foreground">
-            <span>{REASON_LABELS[outage.reason]}</span>
+          <dd className="min-w-0 break-words">{outage.dispatchName}</dd>
+        </div>
+        <div className="flex gap-2 text-muted-foreground">
+          <dt>
+            <WrenchIcon className="mt-0.5 size-4" aria-hidden />
+            <span className="sr-only">Вид работ</span>
+          </dt>
+          <dd className="flex flex-1 flex-wrap justify-between gap-x-3">
+            <span>{REPAIR_TYPE_LABELS[outage.repairType]}</span>
             <ExternalLink href={outage.sourceUrl} className="text-xs leading-5 font-normal">
-              Источник<span className="sr-only">: график АЖК для {outage.street}</span>
+              Источник<span className="sr-only">: график АЖК</span>
             </ExternalLink>
           </dd>
         </div>

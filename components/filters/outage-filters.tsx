@@ -3,15 +3,14 @@
 import { RotateCcwIcon } from "lucide-react";
 
 import { DateFilter } from "@/components/filters/date-filter";
-import { DistrictFilter } from "@/components/filters/district-filter";
+import { ResFilter } from "@/components/filters/res-filter";
 import { StreetSearch } from "@/components/filters/street-search";
 import { Button } from "@/components/ui/button";
-import { type OutageFilters as Filters } from "@/lib/filter";
-import { type District } from "@/lib/schema";
+import { type OutageFilters as Filters, type ResCount } from "@/lib/filter";
 
 interface OutageFiltersProps {
   filters: Filters;
-  districtCounts: Record<District, number>;
+  resOptions: ResCount[];
   isDefault: boolean;
   onChange: (patch: Partial<Filters>) => void;
   onQueryCommit: (query: string) => void;
@@ -20,7 +19,7 @@ interface OutageFiltersProps {
 
 export function OutageFilters({
   filters,
-  districtCounts,
+  resOptions,
   isDefault,
   onChange,
   onQueryCommit,
@@ -41,11 +40,7 @@ export function OutageFilters({
       </div>
       <StreetSearch value={filters.query} onCommit={onQueryCommit} />
       <DateFilter value={filters.date} onChange={(date) => onChange({ date })} />
-      <DistrictFilter
-        value={filters.district}
-        counts={districtCounts}
-        onChange={(district) => onChange({ district })}
-      />
+      <ResFilter value={filters.res} options={resOptions} onChange={(res) => onChange({ res })} />
     </section>
   );
 }

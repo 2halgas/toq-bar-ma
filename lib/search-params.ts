@@ -1,11 +1,11 @@
 import { DEFAULT_FILTERS, type DateFilter, type OutageFilters } from "@/lib/filter";
-import { DistrictSchema, IsoDateSchema } from "@/lib/schema";
+import { IsoDateSchema } from "@/lib/schema";
 
-/** Query-string keys, kept short for shareable links: `?q=толе&date=tomorrow&district=almaly`. */
+/** Query-string keys, kept short for shareable links: `?q=айгерим&date=tomorrow&res=1`. */
 export const SEARCH_PARAM_KEYS = {
   query: "q",
   date: "date",
-  district: "district",
+  res: "res",
 } as const;
 
 export const MAX_QUERY_LENGTH = 100;
@@ -29,18 +29,23 @@ function parseDateFilter(value: string | null): DateFilter {
   return date.success ? { kind: "date", date: date.data } : DEFAULT_FILTERS.date;
 }
 
+/** «3» → 3; anything that isn't a small positive integer → null. */
+function parseResParam(value: string | null): number | null {
+  if (value === null || !/^\d{1,2}$/.test(value)) return null;
+  const res = Number(value);
+  return res > 0 ? res : null;
+}
+
 function serializeDateFilter(filter: DateFilter): string {
   return filter.kind === "date" ? filter.date : filter.kind;
 }
 
 /** Reads filters from the URL; unknown or malformed values fall back to defaults instead of failing. */
 export function parseFilters(params: SearchParamsReader): OutageFilters {
-  const district = DistrictSchema.safeParse(params.get(SEARCH_PARAM_KEYS.district));
-
   return {
     query: (params.get(SEARCH_PARAM_KEYS.query) ?? "").trim().slice(0, MAX_QUERY_LENGTH),
     date: parseDateFilter(params.get(SEARCH_PARAM_KEYS.date)),
-    district: district.success ? district.data : DEFAULT_FILTERS.district,
+    res: parseResParam(params.get(SEARCH_PARAM_KEYS.res)),
   };
 }
 
@@ -54,7 +59,7 @@ export function serializeFilters(filters: OutageFilters): URLSearchParams {
   const date = serializeDateFilter(filters.date);
   if (date !== serializeDateFilter(DEFAULT_FILTERS.date)) params.set(SEARCH_PARAM_KEYS.date, date);
 
-  if (filters.district) params.set(SEARCH_PARAM_KEYS.district, filters.district);
+  if (filters.res !== null) params.set(SEARCH_PARAM_KEYS.res, String(filters.res));
 
   return params;
 }

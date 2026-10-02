@@ -1,6 +1,6 @@
 import { addDaysToIsoDate, formatDayMonth } from "@/lib/dates";
-import { matchesStreet } from "@/lib/normalize";
-import { DISTRICT_IDS, type District, type Outage } from "@/lib/schema";
+import { matchesPlace } from "@/lib/azhk/normalize";
+import { type AzhkOutage } from "@/lib/azhk/schema";
 
 export const WEEK_LENGTH_DAYS = 7;
 
@@ -8,16 +8,17 @@ export type DateFilter =
   { kind: "today" } | { kind: "tomorrow" } | { kind: "week" } | { kind: "date"; date: string };
 
 export interface OutageFilters {
-  /** Free-text street query; normalized when matching. */
+  /** Free-text place query; normalized the same way as `placeNormalized`. */
   query: string;
   date: DateFilter;
-  district: District | null;
+  /** РЭС number, e.g. 3 for «РЭС-3». */
+  res: number | null;
 }
 
 export const DEFAULT_FILTERS: OutageFilters = {
   query: "",
   date: { kind: "week" },
-  district: null,
+  res: null,
 };
 
 export interface DateRange {
@@ -58,69 +59,92 @@ export function describeDateFilter(filter: DateFilter): string {
 }
 
 export function filterOutages(
-  outages: readonly Outage[],
+  outages: readonly AzhkOutage[],
   filters: OutageFilters,
   today: string,
-): Outage[] {
+): AzhkOutage[] {
   const { from, to } = resolveDateRange(filters.date, today);
 
   return outages.filter(
     (outage) =>
       outage.date >= from &&
       outage.date <= to &&
-      (filters.district === null || outage.district === filters.district) &&
-      matchesStreet(outage.street, filters.query),
+      (filters.res === null || outage.res === filters.res) &&
+      matchesPlace(outage.placeNormalized, filters.query),
   );
 }
 
-/** Outage count for every district, including zeros — drives the choropleth. */
-export function countByDistrict(outages: readonly Outage[]): Record<District, number> {
-  const counts = Object.fromEntries(DISTRICT_IDS.map((district) => [district, 0])) as Record<
-    District,
-    number
-  >;
-  for (const outage of outages) counts[outage.district] += 1;
-  return counts;
+export interface ResCount {
+  res: number;
+  count: number;
 }
 
-export interface DistrictGroup {
-  district: District;
-  outages: Outage[];
+/**
+ * Every РЭС present in the schedule (so options don't disappear while filtering),
+ * with how many of `matching` belong to it. Sorted by number.
+ */
+export function countByRes(
+  all: readonly AzhkOutage[],
+  matching: readonly AzhkOutage[],
+): ResCount[] {
+  const counts = new Map<number, number>(
+    [...new Set(all.map((o) => o.res))].map((res) => [res, 0]),
+  );
+  for (const outage of matching) counts.set(outage.res, (counts.get(outage.res) ?? 0) + 1);
+  return [...counts].map(([res, count]) => ({ res, count })).sort((a, b) => a.res - b.res);
+}
+
+export interface ResGroup {
+  res: number;
+  outages: AzhkOutage[];
 }
 
 export interface DayGroup {
   date: string;
-  districts: DistrictGroup[];
+  groups: ResGroup[];
 }
 
-const streetCollator = new Intl.Collator("ru", { sensitivity: "base", numeric: true });
+const placeCollator = new Intl.Collator("ru", { sensitivity: "base", numeric: true });
 
-function compareOutages(a: Outage, b: Outage): number {
-  return a.timeFrom.localeCompare(b.timeFrom) || streetCollator.compare(a.street, b.street);
+function compareOutages(a: AzhkOutage, b: AzhkOutage): number {
+  return a.timeFrom.localeCompare(b.timeFrom) || placeCollator.compare(a.place, b.place);
 }
 
 /**
- * Groups by date (ascending), then by district (in {@link DISTRICT_IDS} order,
- * which is alphabetical in Russian); outages inside a district are sorted by
- * start time, then street.
+ * Groups by date (ascending), then by РЭС number; outages inside a group are
+ * sorted by start time, then place.
  */
-export function groupOutages(outages: readonly Outage[]): DayGroup[] {
-  const byDate = new Map<string, Map<District, Outage[]>>();
+export function groupOutages(outages: readonly AzhkOutage[]): DayGroup[] {
+  const byDate = new Map<string, Map<number, AzhkOutage[]>>();
 
   for (const outage of outages) {
-    const byDistrict = byDate.get(outage.date) ?? new Map<District, Outage[]>();
-    byDistrict.set(outage.district, [...(byDistrict.get(outage.district) ?? []), outage]);
-    byDate.set(outage.date, byDistrict);
+    const byRes = byDate.get(outage.date) ?? new Map<number, AzhkOutage[]>();
+    byRes.set(outage.res, [...(byRes.get(outage.res) ?? []), outage]);
+    byDate.set(outage.date, byRes);
   }
 
   return [...byDate.keys()].sort().map((date) => {
-    const byDistrict = byDate.get(date) ?? new Map<District, Outage[]>();
+    const byRes = byDate.get(date) ?? new Map<number, AzhkOutage[]>();
     return {
       date,
-      districts: DISTRICT_IDS.filter((district) => byDistrict.has(district)).map((district) => ({
-        district,
-        outages: [...(byDistrict.get(district) ?? [])].sort(compareOutages),
-      })),
+      groups: [...byRes.keys()]
+        .sort((a, b) => a - b)
+        .map((res) => ({ res, outages: [...(byRes.get(res) ?? [])].sort(compareOutages) })),
     };
   });
+}
+
+export type ScheduleCoverage = "covered" | "after-schedule" | "before-schedule";
+
+/**
+ * Does the schedule cover the selected range at all? Distinguishes "no outages
+ * planned" from "no schedule published for these dates yet".
+ */
+export function getScheduleCoverage(
+  range: DateRange,
+  schedule: { weekStart: string; weekEnd: string },
+): ScheduleCoverage {
+  if (range.from > schedule.weekEnd) return "after-schedule";
+  if (range.to < schedule.weekStart) return "before-schedule";
+  return "covered";
 }

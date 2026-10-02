@@ -2,10 +2,10 @@ import { OutageCard } from "@/components/outages/outage-card";
 import { formatDayHeading } from "@/lib/dates";
 import { groupOutages } from "@/lib/filter";
 import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
-import { DISTRICT_LABELS, type Outage } from "@/lib/schema";
+import { formatRes, type AzhkOutage } from "@/lib/azhk/schema";
 
 interface OutageListProps {
-  outages: Outage[];
+  outages: AzhkOutage[];
   today: string;
 }
 
@@ -16,7 +16,7 @@ export function OutageList({ outages, today }: OutageListProps) {
     <div className="space-y-6">
       {days.map((day) => {
         const headingId = `day-${day.date}`;
-        const count = day.districts.reduce((sum, group) => sum + group.outages.length, 0);
+        const count = day.groups.reduce((sum, group) => sum + group.outages.length, 0);
 
         return (
           <section key={day.date} aria-labelledby={headingId}>
@@ -32,12 +32,12 @@ export function OutageList({ outages, today }: OutageListProps) {
             </h3>
 
             <div className="mt-3 space-y-4">
-              {day.districts.map((group) => (
-                <div key={group.district}>
+              {day.groups.map((group) => (
+                <div key={group.res}>
                   <h4 className="mb-2 text-sm font-medium text-muted-foreground">
-                    {DISTRICT_LABELS[group.district]} район
+                    {formatRes(group.res)}
                   </h4>
-                  <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
+                  <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
                     {group.outages.map((outage) => (
                       <li key={outage.id}>
                         <OutageCard outage={outage} today={today} />

@@ -7,7 +7,7 @@ export const alt = `${siteConfig.name} — ${siteConfig.tagline}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Same sequence as the dark-theme choropleth palette in globals.css.
+// Decorative tiles in the brand's yellow → amber palette.
 const SWATCHES = ["#3f3f46", "#78350f", "#b45309", "#f59e0b", "#fde047"];
 const TILE_LEVELS = [3, 1, 4, 2, 0, 2, 1, 3];
 
@@ -51,7 +51,7 @@ export default async function OpenGraphImage() {
           {siteConfig.tagline.replace(/ в /g, " в\u00a0")}
         </div>
         <div style={{ fontSize: 24, marginTop: 40, color: "#a1a1aa" }}>
-          Поиск по улице · карта районов · неофициальный сервис
+          Поиск по улице · график АЖК · неофициальный сервис
         </div>
       </div>
 
