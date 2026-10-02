@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import { siteConfig } from "@/lib/site";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,9 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Тоқ бар ма? — плановые отключения света в Алматы",
-  description:
-    "Неофициальная карта плановых отключений электроэнергии в Алматы по графикам АО «Алатау Жарык Компаниясы».",
+  title: `${siteConfig.name} — плановые отключения света в Алматы`,
+  description: siteConfig.description,
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
