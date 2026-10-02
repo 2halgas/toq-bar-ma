@@ -90,6 +90,14 @@
   --notice: oklch(0.98 0.04 95);
   --notice-foreground: oklch(0.38 0.08 70);
   --notice-border: oklch(0.88 0.1 90);
+  /* Choropleth: sequential yellow → red, darker = more outages. */
+  --choropleth-0: #d4d4d8;
+  --choropleth-1: #fde68a;
+  --choropleth-2: #fbbf24;
+  --choropleth-3: #f97316;
+  --choropleth-4: #c2410c;
+  --district-stroke: #ffffff;
+  --district-stroke-selected: #171717;
 }
 
 .dark {
@@ -129,6 +137,14 @@
   --notice: oklch(0.27 0.05 80);
   --notice-foreground: oklch(0.93 0.07 95);
   --notice-border: oklch(0.42 0.08 80);
+  /* Dark maps read "brighter = more", so lightness runs the other way. */
+  --choropleth-0: #3f3f46;
+  --choropleth-1: #78350f;
+  --choropleth-2: #b45309;
+  --choropleth-3: #f59e0b;
+  --choropleth-4: #fde047;
+  --district-stroke: #18181b;
+  --district-stroke-selected: #fafafa;
 }
 
 @layer base {
@@ -140,5 +156,84 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+/* Leaflet: match the app's fonts, tokens and dark theme. */
+@layer components {
+  .leaflet-container {
+    font-family: inherit;
+    background: var(--muted);
+  }
+
+  .leaflet-tile-pane {
+    filter: grayscale(1) contrast(0.9) brightness(1.05);
+  }
+
+  .dark .leaflet-tile-pane {
+    filter: grayscale(1) invert(1) brightness(0.75) contrast(1.1);
+  }
+
+  .leaflet-bar a,
+  .leaflet-bar a:hover {
+    background-color: var(--card);
+    color: var(--foreground);
+    border-color: var(--border);
+  }
+
+  .leaflet-control-attribution.leaflet-control {
+    background: color-mix(in oklch, var(--background) 80%, transparent);
+    color: var(--muted-foreground);
+  }
+
+  .leaflet-control-attribution a {
+    color: var(--foreground);
+  }
+
+  .leaflet-tooltip {
+    background: var(--popover);
+    color: var(--popover-foreground);
+    border-color: var(--border);
+    font-size: 0.8125rem;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 0.15);
+  }
+
+  .leaflet-tooltip-top::before {
+    border-top-color: var(--popover);
+  }
+
+  /* CSS properties override the SVG presentation attributes Leaflet sets. */
+  .district-path {
+    stroke: var(--district-stroke);
+  }
+
+  .district-path.is-selected {
+    stroke: var(--district-stroke-selected);
+  }
+
+  .choropleth-level-0 {
+    fill: var(--choropleth-0);
+  }
+
+  .choropleth-level-1 {
+    fill: var(--choropleth-1);
+  }
+
+  .choropleth-level-2 {
+    fill: var(--choropleth-2);
+  }
+
+  .choropleth-level-3 {
+    fill: var(--choropleth-3);
+  }
+
+  .choropleth-level-4 {
+    fill: var(--choropleth-4);
+  }
+
+  .leaflet-interactive:focus-visible {
+    outline: none;
+    stroke: var(--ring);
+    stroke-width: 4px;
   }
 }

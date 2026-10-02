@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import {
   countByDistrict,
   DEFAULT_FILTERS,
+  describeDateFilter,
   filterOutages,
   groupOutages,
   resolveDateRange,
@@ -159,5 +160,14 @@ describe("groupOutages", () => {
       outage({ id: "2", street: "мкр. Аксай-2" }),
     ]);
     expect(ids(day?.districts[0]?.outages ?? [])).toEqual(["2", "10"]);
+  });
+});
+
+describe("describeDateFilter", () => {
+  it("labels every kind of date filter", () => {
+    expect(describeDateFilter({ kind: "today" })).toBe("на сегодня");
+    expect(describeDateFilter({ kind: "tomorrow" })).toBe("на завтра");
+    expect(describeDateFilter({ kind: "week" })).toBe("на неделю");
+    expect(describeDateFilter({ kind: "date", date: "2026-10-05" })).toBe("на 5 октября");
   });
 });

@@ -1,4 +1,4 @@
-import { addDaysToIsoDate } from "@/lib/dates";
+import { addDaysToIsoDate, formatDayMonth } from "@/lib/dates";
 import { matchesStreet } from "@/lib/normalize";
 import { DISTRICT_IDS, type District, type Outage } from "@/lib/schema";
 
@@ -40,6 +40,20 @@ export function resolveDateRange(filter: DateFilter, today: string): DateRange {
       return { from: today, to: addDaysToIsoDate(today, WEEK_LENGTH_DAYS - 1) };
     case "date":
       return { from: filter.date, to: filter.date };
+  }
+}
+
+/** Human label for the selected period, e.g. "на сегодня", "на 5 октября". */
+export function describeDateFilter(filter: DateFilter): string {
+  switch (filter.kind) {
+    case "today":
+      return "на сегодня";
+    case "tomorrow":
+      return "на завтра";
+    case "week":
+      return "на неделю";
+    case "date":
+      return `на ${formatDayMonth(filter.date)}`;
   }
 }
 

@@ -43,6 +43,11 @@ export function formatDayHeading(isoDate: string): string {
   return heading.charAt(0).toUpperCase() + heading.slice(1);
 }
 
+/** Day and month in genitive, e.g. "5 октября". */
+export function formatDayMonth(isoDate: string): string {
+  return format(parseISO(isoDate), "d MMMM", { locale: ru });
+}
+
 /** Compact date for chips and pickers, e.g. "2 окт., пт". */
 export function formatShortDate(isoDate: string): string {
   return format(parseISO(isoDate), "d MMM, EEEEEE", { locale: ru });

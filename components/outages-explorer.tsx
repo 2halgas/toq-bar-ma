@@ -3,11 +3,12 @@
 import { useMemo } from "react";
 
 import { OutageFilters } from "@/components/filters/outage-filters";
+import { MapPanel } from "@/components/map/map-panel";
 import { EmptyState } from "@/components/outages/empty-state";
 import { OutageList } from "@/components/outages/outage-list";
 import { useAlmatyToday } from "@/hooks/use-almaty-today";
 import { useOutageFilters } from "@/hooks/use-outage-filters";
-import { countByDistrict, filterOutages } from "@/lib/filter";
+import { countByDistrict, describeDateFilter, filterOutages } from "@/lib/filter";
 import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
 import { type Outage } from "@/lib/schema";
 import { toQueryString } from "@/lib/search-params";
@@ -39,6 +40,15 @@ export function OutagesExplorer({ outages }: OutagesExplorerProps) {
         onChange={updateFilters}
         onQueryCommit={(query) => updateFilters({ query })}
         onReset={resetFilters}
+      />
+
+      {/* Temporary placement — the final list/map layout and mobile tabs come in the next step. */}
+      <MapPanel
+        counts={districtCounts}
+        selected={filters.district}
+        periodLabel={describeDateFilter(filters.date)}
+        onSelect={(district) => updateFilters({ district })}
+        className="lg:col-start-2 lg:row-span-2 lg:row-start-1"
       />
 
       <section aria-labelledby="results-heading" className="space-y-3">
