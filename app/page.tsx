@@ -1,26 +1,33 @@
+import { Suspense } from "react";
+
+import { OutagesExplorer } from "@/components/outages-explorer";
 import { getOutagesData } from "@/lib/data";
-import { DISTRICT_IDS, DISTRICT_LABELS } from "@/lib/schema";
 
 export default function Home() {
   const { outages } = getOutagesData();
 
-  // Temporary placeholder until filters, list and map arrive in the next steps.
+  // The explorer reads filters from the URL, so it renders on the client; the
+  // header and footer around it are still prerendered.
   return (
-    <section
-      aria-labelledby="outages-heading"
-      className="mx-auto w-full max-w-7xl space-y-3 px-4 py-6 sm:px-6"
+    <Suspense fallback={<ExplorerSkeleton />}>
+      <OutagesExplorer outages={outages} />
+    </Suspense>
+  );
+}
+
+function ExplorerSkeleton() {
+  return (
+    <div
+      className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-4 sm:px-6 lg:grid-cols-[minmax(0,26rem)_1fr]"
+      aria-busy="true"
+      aria-label="Загрузка"
     >
-      <h2 id="outages-heading" className="text-lg font-semibold">
-        Отключения на неделю: {outages.length}
-      </h2>
-      <ul className="grid grid-cols-2 gap-1 text-sm sm:grid-cols-4">
-        {DISTRICT_IDS.map((district) => (
-          <li key={district}>
-            {DISTRICT_LABELS[district]}:{" "}
-            {outages.filter((outage) => outage.district === district).length}
-          </li>
+      <div className="space-y-4">
+        {[44, 40, 40].map((height, index) => (
+          <div key={index} className="animate-pulse rounded-lg bg-muted" style={{ height }} />
         ))}
-      </ul>
-    </section>
+      </div>
+      <div className="h-64 animate-pulse rounded-xl bg-muted" />
+    </div>
   );
 }
