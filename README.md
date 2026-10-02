@@ -4,36 +4,64 @@
 
 <!--
   TODO: add a GIF or screenshot (mobile + desktop), e.g. docs/screenshot.png, and uncomment:
-  <p align="center"><img src="docs/screenshot.png" alt="Street search, outage list and district map" width="900" /></p>
+  <p align="center"><img src="docs/screenshot.png" alt="Street search, outage list and map" width="900" /></p>
 -->
 
-An unofficial, mobile-first map of planned power outages in Almaty. Type your street and see in a few seconds whether, when and why the power will be cut — based on the weekly schedules published by Alatau Zharyk Company (AZhK).
+An unofficial, mobile-first map of planned power outages in Almaty. Type your street and see in a few seconds whether, when and why the power will be cut. The data is parsed every day from the weekly schedules published by Alatau Zharyk Company (AZhK).
 
 **Live demo:** _coming soon_ <!-- TODO: https://<project>.vercel.app -->
 
 ## Features
 
-- **Street search** that forgives the way people type: case, `ул.` / `пр.` / `мкр.` prefixes, `ё`/`е`, Kazakh letters (`Төле би` → `Толе би`), extra spaces.
-- **Filters** by date (today / tomorrow / week / any day) and district, **stored in the URL** so any view can be shared as a link.
-- **List** grouped by day and district, with “today” / “tomorrow” badges and outage duration.
-- **Choropleth map** of the 8 districts coloured by outage count, with legend and tooltips; click (or press <kbd>Enter</kbd>) on a district to filter by it.
-- **Responsive layout:** list + sticky map side by side on desktop, `List / Map` tabs on mobile.
-- **Dark theme** (system by default) with map colours tuned for both themes.
-- **Accessible:** semantic landmarks and headings, labelled controls, visible focus, keyboard-operable map, and everything on the map is also available in the list.
+- **Street search** that forgives how people type: `м-н` / `м-он` / `мкр.` / `мкр`, `ул.`, `пр-т`, case, `ё`/`е`, Kazakh letters (`Ақжар` → `Акжар`), hyphens and extra spaces.
+- **Filters** by date (today / tomorrow / week / any day) and power network unit (РЭС), **stored in the URL** so any view can be shared as a link.
+- **List** grouped by day and РЭС: time and duration, affected addresses, equipment (substation), repair type, “today” / “tomorrow” badges.
+- **Map** of the streets and microdistricts mentioned in the schedule, with clustered markers; click a marker to see its outages or filter the list by that place.
+- **Honest empty states:** “no outages planned” is distinguished from “no schedule published for these dates yet”.
+- **Responsive:** list + sticky map side by side on desktop, `List / Map` tabs on mobile. **Dark theme**, system by default.
+- **Accessible:** semantic landmarks and headings, labelled controls, visible focus, keyboard-operable map; everything on the map is also in the list.
+
+## How the data works
+
+```
+azhk.kz schedule list ─► newest «город Алматы» schedule ─► HTML table
+   │  pnpm data:fetch (daily, 1 req/s)
+   ▼
+expand rowspan/colspan ─► normalize dates, times, repair types ─► redact personal names
+   ─► dedupe ─► zod validation ─► data/outages.json
+   │  pnpm data:geocode (only new places, 1 req/s)
+   ▼
+extract streets / microdistricts ─► OpenStreetMap Nominatim ─► data/geocache.json
+   │  pnpm data:audit ─► no name-like patterns allowed
+   ▼
+commit ─► Vercel rebuilds the static site
+```
+
+A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this every day at 06:00 Almaty time and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass.
+
+## Privacy
+
+AZhK schedules sometimes list affected consumers by name (sole proprietors, private individuals). **This project never stores or shows them**:
+
+1. Names are redacted at parse time (`ИП Фамилия И.О.` → `[ИП]`, `Фамилия И.О.` → `[частное лицо]`) — see [`lib/azhk/redact.ts`](lib/azhk/redact.ts). Company names are kept.
+2. If a cell still looks like it contains a name, the whole address is replaced with “Адрес скрыт — см. график на сайте АЖК”.
+3. The page cache in `data/raw/` holds only the redacted table and is not committed; ids are hashed from the redacted text.
+4. `pnpm data:audit` scans every data file for name-like patterns and fails the pipeline if it finds any. Logs report row numbers and reasons only, never the text.
+
+Tests use synthetic HTML and fictional names only.
 
 ## Tech stack
 
 - [Next.js 16](https://nextjs.org) (App Router, statically prerendered) + TypeScript (strict)
 - [Tailwind CSS 4](https://tailwindcss.com) + [shadcn/ui](https://ui.shadcn.com) (Radix)
-- [Leaflet](https://leafletjs.com) + [react-leaflet](https://react-leaflet.js.org), loaded client-side only
-- [zod](https://zod.dev) for validating the outage data and district boundaries
-- [date-fns](https://date-fns.org) (ru locale); all “today” logic uses the `Asia/Almaty` time zone
-- [Vitest](https://vitest.dev), ESLint, Prettier
-- No backend: data lives in a static JSON file in the repo. Deployed on [Vercel](https://vercel.com).
+- [Leaflet](https://leafletjs.com) + [react-leaflet](https://react-leaflet.js.org) + [react-leaflet-cluster](https://github.com/akursat/react-leaflet-cluster), client-side only
+- [cheerio](https://cheerio.js.org) for parsing, [zod](https://zod.dev) for validating every file that enters the app
+- [date-fns](https://date-fns.org) (ru locale); “today” is always computed in `Asia/Almaty`
+- [Vitest](https://vitest.dev), ESLint, Prettier, GitHub Actions. Deployed on [Vercel](https://vercel.com). No backend.
 
 ## Getting started
 
-Requires Node.js ≥ 20.9 and pnpm (the exact version is pinned in `package.json`; Corepack or pnpm itself will switch to it).
+Requires Node.js ≥ 20.9 and pnpm (the version is pinned in `package.json`; pnpm switches to it automatically).
 
 ```bash
 pnpm install
@@ -41,98 +69,58 @@ pnpm dev        # http://localhost:3000
 pnpm check      # typecheck + lint + format check + unit tests
 ```
 
-| Script               | What it does                                               |
-| -------------------- | ---------------------------------------------------------- |
-| `pnpm build`         | Production build (fails if `data/outages.json` is invalid) |
-| `pnpm test`          | Unit tests (filtering, normalization, dates, URL state, …) |
-| `pnpm data:validate` | Validate `data/outages.json` without building              |
-| `pnpm data:demo`     | Regenerate demo data for the week starting today           |
-| `pnpm geo:fetch`     | Re-download district boundaries from OpenStreetMap         |
+| Script               | What it does                                                                                    |
+| -------------------- | ----------------------------------------------------------------------------------------------- |
+| `pnpm data:fetch`    | Download and parse the newest AZhK schedule into `data/outages.json` (`--force` to re-download) |
+| `pnpm data:geocode`  | Geocode places not yet in `data/geocache.json` (`--limit N`, `--retry-not-found`)               |
+| `pnpm data:audit`    | Fail if any data file contains name-like patterns                                               |
+| `pnpm data:validate` | Validate `data/outages.json` (also happens during `pnpm build`)                                 |
+| `pnpm build`         | Production build                                                                                |
 
-## Updating the data
+### Environment variables
 
-All outages live in [`data/outages.json`](data/outages.json):
+Both are optional locally and should be set as **repository secrets** for the daily workflow:
 
-```jsonc
-{
-  "isDemo": false, // true = show the "demo data" banner
-  "updatedAt": "2026-10-05T09:00:00+05:00", // shown in the footer
-  "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/graphics/101-grafik-otklyuchenij",
-  "outages": [
-    {
-      "id": "2026-10-06-almaly-001", // any unique string
-      "district": "almaly", // see below
-      "street": "ул. Толе би", // as written in the schedule
-      "houses": "1–15, 21", // as written in the schedule
-      "date": "2026-10-06", // YYYY-MM-DD
-      "timeFrom": "09:00", // HH:mm, Almaty time
-      "timeTo": "17:00", // must be later than timeFrom
-      "reason": "current_repair", // see below
-      "sourceUrl": "https://www.azhk.kz/…", // link to that week's schedule
-    },
-  ],
-}
-```
+| Variable           | Used by        | Why                                                                                                                            |
+| ------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `GEOCODER_CONTACT` | `data:geocode` | Email or URL in the User-Agent, as the [Nominatim usage policy](https://operations.osmfoundation.org/policies/nominatim/) asks |
+| `AZHK_CONTACT`     | `data:fetch`   | Contact in the User-Agent sent to azhk.kz                                                                                      |
 
-- **`district`**: `alatau` · `almaly` · `auezov` · `bostandyk` · `zhetysu` · `medeu` · `nauryzbay` · `turksib`
-- **`reason`**: `current_repair` (текущий ремонт) · `capital_repair` (капитальный ремонт) · `contractor_works` (подрядные работы) · `defect_elimination` (устранение дефектов) · `other`
+## Deploying
 
-Steps:
+1. Push the repository to GitHub and import it on Vercel — no configuration or env vars needed.
+2. In **Settings → Secrets and variables → Actions**, add `GEOCODER_CONTACT` (and optionally `AZHK_CONTACT`).
+3. In **Settings → Actions → General**, allow workflows **read and write** permissions so the daily job can push.
+4. Run **Actions → Update data → Run workflow** once to check that everything works.
 
-1. Copy the entries from the [AZhK schedule](https://www.azhk.kz/ru/spetsialnye-razdely/graphics/101-grafik-otklyuchenij) into the format above.
-2. Set `"isDemo": false` and update `updatedAt`.
-3. Run `pnpm data:validate`. Every problem is reported with its path and record id, e.g. `outages[12].timeTo (id "…"): Must be later than timeFrom`. The same check runs during `pnpm build`, so invalid data never gets deployed.
+> GitHub pauses scheduled workflows in repositories with no activity for 60 days. If that happens, re-enable it from the Actions tab.
 
-> While `isDemo` is `true`, the app shifts all demo dates so that the earliest one is today. That keeps the deployed demo looking fresh without rebuilds; real data is never shifted.
+## Map accuracy
 
-## District boundaries
-
-[`public/geo/almaty-districts.geojson`](public/geo/almaty-districts.geojson) contains the 8 district polygons, simplified to ~30 m (≈24 KB). It is validated with zod when the map loads.
-
-**Regenerate automatically:**
-
-```bash
-pnpm geo:fetch
-```
-
-**Or by hand with [overpass-turbo](https://overpass-turbo.eu):**
-
-1. Run this query:
-
-   ```
-   [out:json][timeout:90];
-   area["name:en"="Almaty"]["boundary"="administrative"]->.city;
-   rel(area.city)["boundary"="administrative"]["admin_level"="6"];
-   out geom;
-   ```
-
-2. _Export → GeoJSON → download_.
-3. Simplify it (e.g. on [mapshaper.org](https://mapshaper.org), ~90 % simplification) and keep only Polygon/MultiPolygon features.
-4. Give each feature exactly one property, `"district"`, with a slug from the list above (match on the `name:ru` tag, e.g. `Медеуский район` → `medeu`).
-5. Save it as `public/geo/almaty-districts.geojson`.
+A marker is the approximate centre of a street or microdistrict as found by Nominatim, not a specific building — long streets get a single point. About 85–90 % of places in a typical schedule are found; the rest (often typos in the source, e.g. «Веницианова») are still in the list, and the map says how many outages it couldn't place. Lookups are restricted to Almaty's district bounds so same-named streets in Talgar or Kaskelen don't show up.
 
 ## Project structure
 
 ```
-app/          # layout, page, metadata, OG image, manifest
-components/   # filters/, outages/, map/, layout/, ui/ (shadcn)
-hooks/        # URL-backed filters, Almaty "today", media query
-lib/          # pure logic: schemas, filtering, normalization, dates, choropleth scale (+ tests)
-data/         # outages.json
-public/geo/   # district boundaries
-scripts/      # demo data generator, data validator, OSM boundary fetcher
-assets/fonts/ # Geist (OFL) for the Open Graph image
+app/            # layout, page, metadata, OG image, manifest
+components/     # filters/, outages/, map/, layout/, ui/ (shadcn)
+hooks/          # URL-backed filters, Almaty "today", media query
+lib/azhk/       # schedule parsing: list, table, values, normalization, redaction, toponyms, audit (+ tests, fixtures)
+lib/geo/        # geocache schema
+lib/            # filtering, dates, URL state, map points (+ tests)
+data/           # outages.json, geocache.json (generated; raw/ is git-ignored)
+scripts/        # fetch-outages, geocode, audit-privacy, validate-data
 ```
 
 ## Disclaimer
 
-This is an **unofficial** project and is not affiliated with Alatau Zharyk Company. Schedules can change at short notice and emergency outages are not shown. **Always check the [official AZhK schedule](https://www.azhk.kz/ru/spetsialnye-razdely/graphics/101-grafik-otklyuchenij).**
+This is an **unofficial** project and is not affiliated with Alatau Zharyk Company. Data is parsed automatically and may contain parsing errors; schedules can change at short notice and emergency outages are not shown. **Always check the [official AZhK schedules](https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics).**
 
-Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL). Base map tiles come from the OpenStreetMap tile servers, which are fine for a low-traffic hobby project under their [usage policy](https://operations.osmfoundation.org/policies/tiles/); switch to a commercial tile provider if traffic grows.
+Map data and geocoding © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors (ODbL), via [Nominatim](https://nominatim.org). Base map tiles come from the OpenStreetMap tile servers, which are fine for a low-traffic hobby project under their [usage policy](https://operations.osmfoundation.org/policies/tiles/); switch to a commercial tile provider if traffic grows.
 
 ## Roadmap
 
-- [ ] Parser for AZhK schedules, so data updates don't need manual copying
+- [x] Parser for AZhK schedules, updated daily
 - [ ] Individual buildings on the map (geocoding house numbers)
 - [ ] Telegram bot with notifications for a saved address
 - [ ] Kazakh and English localization

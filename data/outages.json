@@ -13,7 +13,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1315 выход \"Запад\"",
-      "substations": ["ТП-1315"],
+      "substations": [
+        "ТП-1315"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "жилые дома (частный сектор) м-н Айгерим-1, ул. МТФ ;ул.Азаттык; м-н Шанырак-2 ул.Веселова; Жанкожа батыра; Култегин",
@@ -29,7 +31,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4 кВ ТП-1539",
-      "substations": ["ТП-1539"],
+      "substations": [
+        "ТП-1539"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "жилые дома (частный сектор) ул. Авиационная, Иркутская, Краснодарская, Радищева, пр. Сейфуллина, Фотина, Черноморская.",
@@ -45,7 +49,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4 кВ с-1,2 ТП-1510",
-      "substations": ["ТП-1510"],
+      "substations": [
+        "ТП-1510"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Ратушного 94,94/1",
@@ -61,7 +67,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1203 выход \"Юго-Запад\"",
-      "substations": ["ТП-1203"],
+      "substations": [
+        "ТП-1203"
+      ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
       "place": "ул. Бродского, ул. Веницианова, ул. Верди, ул. Ниязбекова.",
@@ -77,7 +85,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4 кВ ТП-1447 с-1",
-      "substations": ["ТП-1447"],
+      "substations": [
+        "ТП-1447"
+      ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
       "place": "многоэтажные ж/дома: ул. Северное кольцо №№ 86/7, 86/8, 86/9, 86/11, 86/13; 86/14 и 86/15",
@@ -93,7 +103,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1315 выход \"Запад\"",
-      "substations": ["ТП-1315"],
+      "substations": [
+        "ТП-1315"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "жилые дома (частный сектор) м-н Айгерим-1, ул. МТФ ;ул.Азаттык; м-н Шанырак-2 ул. Веселова; Жанкожа батыра; Култегин",
@@ -109,7 +121,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1414 выход \"Юг\"",
-      "substations": ["ТП-1414"],
+      "substations": [
+        "ТП-1414"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "жилые дома (частный сектор): м-н Самгау ул. Аксункар; Арычная; Кокшокы; Лесная",
@@ -125,7 +139,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4 кВ ТП-1521",
-      "substations": ["ТП-1521"],
+      "substations": [
+        "ТП-1521"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "ТОО \"Кадырлы\" - ул.Коммунальная, д.2 (Автосалон); [частное лицо] -ул.Коммунальная, д.52-52а (Складские помещения); ТОО \"АИС - Сервис\" - ул.Коммунальная, д.12 (Адм.здание; Развл.комплекс); ТОО \"Алматинский колледж управления и рынка\" - ул.Коммунальная, д.4; ТОО \"СР ТЕХНОСЕРВИС\" - ул.Коммунальная, д.1 (Административное здание); ТОО \"Масло-Дел\" - пр-т Сейфуллина, 390 (склады); жилые дома (частный сектор) ул. Коммунальная; пр. Сейфуллина.",
@@ -141,7 +157,11 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-1307 выход на РЛНД 111/ТП-928(междуТП-1307-ТП-1329)",
-      "substations": ["ТП-1307", "ТП-928", "ТП-1329"],
+      "substations": [
+        "ТП-1307",
+        "ТП-928",
+        "ТП-1329"
+      ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
       "place": "[ИП] - г.Алматы, м-он Айгерим-2, ул.Кожаханова,18; [ИП], [ИП] - м-он Кок-Кайнар, ул.Заречная, д.2, 2Б; ж/д: ТОО \"Капреммаш\" - м-он Айгерим-1, ул. Бенберина, д.2А; м-н Кок-Кайнар, ул Мамбетова 80-134, ул. Татулык 51-74, ул. Заречная 12-55",
@@ -157,7 +177,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1310 выход \"Юг\"",
-      "substations": ["ТП-1310"],
+      "substations": [
+        "ТП-1310"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "мкр. Айгерим-1 ул. Алматинская; ул. Набережная; ул. Наби; С.Ашимова.",
@@ -189,7 +211,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4 кВ ТП-1598",
-      "substations": ["ТП-1598"],
+      "substations": [
+        "ТП-1598"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "У-е \"А Г ПТУЦ\" РОО \"Отан\" - ул.Меркурова, д.20; ж/дома - пр. Рыскулова; Багратиона, Достоевского; Жансугурова; Кулибина; Меркулова; Успенского; Филатова.",
@@ -205,7 +229,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1203 выход \"Северо-Восток\"",
-      "substations": ["ТП-1203"],
+      "substations": [
+        "ТП-1203"
+      ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
       "place": "ул. Верди, пр. Рыскулова, ул. Венецианова, Ниязбекова, Бродского.",
@@ -221,7 +247,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1310 выход \"Север\"",
-      "substations": ["ТП-1310"],
+      "substations": [
+        "ТП-1310"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "мкр. Айгерим-1 ул. Алматинская; ул. Набережная; ул. Наби; С.Ашимова.",
@@ -237,7 +265,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-6/0,4 кВ ТП-1159",
-      "substations": ["ТП-1159"],
+      "substations": [
+        "ТП-1159"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул. Кожамкулова 58-62; ул.Муратбаева 12-73",
@@ -253,7 +283,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1022 выход \"Юг\"",
-      "substations": ["ТП-1022"],
+      "substations": [
+        "ТП-1022"
+      ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
       "place": "ул. Андреевская, Баишева, Болтерек Шешена, Жангельдина, Есенова, Иссыкская, Колпаковского, Нусупбекова, Пестковского, Потанина, Расковой, Хамиди, РГУ \"У-е по делам обороны г. Алматы\" Медеуского района",
@@ -269,7 +301,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4 кВ ТП-1033",
-      "substations": ["ТП-1033"],
+      "substations": [
+        "ТП-1033"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "жилые дома (частный сектор) ул. Айша-биби,ул. Береке, ул. Саялы, ул. Ыргайты",
@@ -285,7 +319,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4 кВ ТП-1034",
-      "substations": ["ТП-1034"],
+      "substations": [
+        "ТП-1034"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "жилые дома (частный сектор): ул. Айша-биби, ул. Актас, ул. Береке.",
@@ -301,7 +337,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1210 выход \"Северо-Запад\"",
-      "substations": ["ТП-1210"],
+      "substations": [
+        "ТП-1210"
+      ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
       "place": "жилые дома (частный сектор) ул. Абдирова; ул. Борзова; ул. Брюсова; ул. Казакова; ул. Крылова; ул. Чаплыгина; ул. Скрябина.",
@@ -317,7 +355,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2294",
-      "substations": ["ТП-2294"],
+      "substations": [
+        "ТП-2294"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "Айтеке би, Мирзояна, Гоголя, Исаева",
@@ -333,7 +373,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2378",
-      "substations": ["ТП-2378"],
+      "substations": [
+        "ТП-2378"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул. Абая, Бутлерова, Есенжанова, Туркебаева",
@@ -349,7 +391,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2385",
-      "substations": ["ТП-2385"],
+      "substations": [
+        "ТП-2385"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Шакарима, Тургут Озала, Кулымбетова, Туркебаева",
@@ -365,7 +409,10 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "КЛ-6кВ ТП-8207-ТП-2190",
-      "substations": ["ТП-8207", "ТП-2190"],
+      "substations": [
+        "ТП-8207",
+        "ТП-2190"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Толе би, Прокофьева, Тлендиева, Васнецова- Васнецова, Туркебаева, Толе би, Брусиловского",
@@ -381,7 +428,10 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "КЛ-6кВ ТП-2711 – ТП-2199.",
-      "substations": ["ТП-2711", "ТП-2199"],
+      "substations": [
+        "ТП-2711",
+        "ТП-2199"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Мынбаева, Рыспаева, Абая, Клочкова - Джандосова, Биокомбинатская, Абая, Манаса",
@@ -397,7 +447,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2390",
-      "substations": ["ТП-2390"],
+      "substations": [
+        "ТП-2390"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Казыбек би, Байзакова, Айтеке би, Мирзояна",
@@ -413,7 +465,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2391",
-      "substations": ["ТП-2391"],
+      "substations": [
+        "ТП-2391"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Кавказская, Прокофьева, Райымбека, Тлендиева",
@@ -429,7 +483,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2286 РУ-0,4 кВ",
-      "substations": ["ТП-2286"],
+      "substations": [
+        "ТП-2286"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "Джандосова, Айманова, Солодовникова, Умбетбаева",
@@ -445,7 +501,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "КЛ-6кВ РП-13 -ТП-2190",
-      "substations": ["ТП-2190"],
+      "substations": [
+        "ТП-2190"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Васнецова, Туркебаева, Толе би, Брусиловского- Васнецова, Тургут Озала, Толе би, Туркебаева",
@@ -461,7 +519,10 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "КЛ-6кВ ТП-ТП-2325 – ТП-2199.",
-      "substations": ["ТП-2325", "ТП-2199"],
+      "substations": [
+        "ТП-2325",
+        "ТП-2199"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "территория ГЭРС, Джандосова, Биокомбинатская, Абая, Манаса",
@@ -477,7 +538,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2071 РУ-0,4кВ",
-      "substations": ["ТП-2071"],
+      "substations": [
+        "ТП-2071"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Абая, Шагабутдинова, Курмангазы, Муратбаева",
@@ -493,7 +556,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2146 РУ-6 кВ",
-      "substations": ["ТП-2146"],
+      "substations": [
+        "ТП-2146"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Абылай хана,74 а Айтеке би, Панфилова, Гоголя, Абылай хана",
@@ -509,7 +574,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2761",
-      "substations": ["ТП-2761"],
+      "substations": [
+        "ТП-2761"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Курмангазы, Байсеитовой, Шевченко, Абылай хана",
@@ -525,7 +592,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2762",
-      "substations": ["ТП-2762"],
+      "substations": [
+        "ТП-2762"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Джамбула, Клочкова, Кабанбай батыра, Жарокова",
@@ -541,7 +610,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2284 РУ-0,4 кВ",
-      "substations": ["ТП-2284"],
+      "substations": [
+        "ТП-2284"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "Джандосова, Жарокова, Солодовникова, Айманова",
@@ -557,7 +628,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2251",
-      "substations": ["ТП-2251"],
+      "substations": [
+        "ТП-2251"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "Сатпаева, Айманова, Мынбаева, Гагарина",
@@ -573,7 +646,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2383",
-      "substations": ["ТП-2383"],
+      "substations": [
+        "ТП-2383"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Кавказская, Прокофьева, Райымбека, Тлендиева",
@@ -589,7 +664,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2406",
-      "substations": ["ТП-2406"],
+      "substations": [
+        "ТП-2406"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Шакарима, Жемчужная, Кулымбетова, Тлендиева",
@@ -605,7 +682,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "РП-235-ТП-2806",
-      "substations": ["ТП-2806"],
+      "substations": [
+        "ТП-2806"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Толе би, Тлендиева, Жемчужная, Васнецова",
@@ -621,7 +700,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2783",
-      "substations": ["ТП-2783"],
+      "substations": [
+        "ТП-2783"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Богенбай батыра, Аносова, Толе би, Гайдара",
@@ -637,7 +718,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2723",
-      "substations": ["ТП-2723"],
+      "substations": [
+        "ТП-2723"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Кабанбай батыра, Исаева, Карасай батыра, Нурмакова",
@@ -653,7 +736,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2123",
-      "substations": ["ТП-2123"],
+      "substations": [
+        "ТП-2123"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "Казыбек би, Сейфуллина, Айтеке би, Амангельды",
@@ -669,7 +754,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2378",
-      "substations": ["ТП-2378"],
+      "substations": [
+        "ТП-2378"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул. Абая, Бутлерова, Есенжанова, Туркебаева",
@@ -685,7 +772,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2299",
-      "substations": ["ТП-2299"],
+      "substations": [
+        "ТП-2299"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ст. Абая, Прокофьева, Есенжанова, Жемчужная",
@@ -701,7 +790,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2272 РУ-0,4кВ",
-      "substations": ["ТП-2272"],
+      "substations": [
+        "ТП-2272"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Джандосова, Биокомбинатская, Абая, Манаса",
@@ -717,7 +808,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2720 РУ-10 кВ с1",
-      "substations": ["ТП-2720"],
+      "substations": [
+        "ТП-2720"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "Солодовникова, Розыбакиева, Сатпаева, Хусаинова",
@@ -733,7 +826,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2134",
-      "substations": ["ТП-2134"],
+      "substations": [
+        "ТП-2134"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "Шевченко, Муканова, Джамбула, Байзакова",
@@ -749,7 +844,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2505",
-      "substations": ["ТП-2505"],
+      "substations": [
+        "ТП-2505"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Джандосова, Тургут Озала, Сатпаева, Туркебаева",
@@ -765,7 +862,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2383",
-      "substations": ["ТП-2383"],
+      "substations": [
+        "ТП-2383"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Кавказская, Прокофьева, Райымбека, Тлендиева",
@@ -781,7 +880,10 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "КЛ-6кВ ТП-2325 – ТП-2272",
-      "substations": ["ТП-2325", "ТП-2272"],
+      "substations": [
+        "ТП-2325",
+        "ТП-2272"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "территория ГЭРС, Джандосова, Биокомбинатская, Абая, Манаса",
@@ -797,7 +899,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2071 РУ-10кВ",
-      "substations": ["ТП-2071"],
+      "substations": [
+        "ТП-2071"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Абая, Шагабутдинова, Курмангазы, Муратбаева",
@@ -813,7 +917,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2160",
-      "substations": ["ТП-2160"],
+      "substations": [
+        "ТП-2160"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Абая, Байсеитовой, Курмангазы, Абылай хана",
@@ -829,7 +935,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2161",
-      "substations": ["ТП-2161"],
+      "substations": [
+        "ТП-2161"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Курмангазы, Байсеитовой, Шевченко, Абылай хана",
@@ -845,7 +953,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2015",
-      "substations": ["ТП-2015"],
+      "substations": [
+        "ТП-2015"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "южнее ул.Жамбыла, между улицей Шарипова и Досмухамедова",
@@ -861,7 +971,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2720 РУ-10 кВ с2",
-      "substations": ["ТП-2720"],
+      "substations": [
+        "ТП-2720"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "Солодовникова, Розыбакиева, Сатпаева, Хусаинова",
@@ -877,7 +989,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2146 РУ-0,4 кВ",
-      "substations": ["ТП-2146"],
+      "substations": [
+        "ТП-2146"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Абылай хана,74 а Айтеке би, Панфилова, Гоголя, Абылай хана",
@@ -893,7 +1007,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2294",
-      "substations": ["ТП-2294"],
+      "substations": [
+        "ТП-2294"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "Айтеке би, Мирзояна, Гоголя, Исаева",
@@ -909,7 +1025,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2378",
-      "substations": ["ТП-2378"],
+      "substations": [
+        "ТП-2378"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул. Абая, Бутлерова, Есенжанова, Туркебаева",
@@ -925,7 +1043,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-2387",
-      "substations": ["ТП-2387"],
+      "substations": [
+        "ТП-2387"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Шакарима, Маршака, Кулымбетова, Брусиловского",
@@ -941,7 +1061,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2272 РУ-0,4кВ",
-      "substations": ["ТП-2272"],
+      "substations": [
+        "ТП-2272"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Джандосова, Биокомбинатская, Абая, Манаса",
@@ -957,7 +1079,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2271",
-      "substations": ["ТП-2271"],
+      "substations": [
+        "ТП-2271"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Курмангазы, Панфилова, Шевченко, Байсеитовой",
@@ -973,7 +1097,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2165",
-      "substations": ["ТП-2165"],
+      "substations": [
+        "ТП-2165"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Абая, Панфилова, Курмангазы, Байсеитовой",
@@ -989,7 +1115,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-2224 РУ-6 кВ",
-      "substations": ["ТП-2224"],
+      "substations": [
+        "ТП-2224"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "Айтеке би, Досмухамедова, Гоголя, Шарипова",
@@ -1005,7 +1133,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3301",
-      "substations": ["ТП-3301"],
+      "substations": [
+        "ТП-3301"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "м-он Карагайлы, ул.Кали Надырова, Бегайыл, Розыбакиева, Айша биби",
@@ -1021,7 +1151,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3602",
-      "substations": ["ТП-3602"],
+      "substations": [
+        "ТП-3602"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "м-он Шугыла, ул.Таргап.",
@@ -1037,7 +1169,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3716",
-      "substations": ["ТП-3716"],
+      "substations": [
+        "ТП-3716"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Теректы, ул.Айналмалы,Кайсар, Кенжекей, Бесбатыр",
@@ -1053,7 +1187,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3425",
-      "substations": ["ТП-3425"],
+      "substations": [
+        "ТП-3425"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул. Өрікті, Аккия, Нарым",
@@ -1069,7 +1205,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3419",
-      "substations": ["ТП-3419"],
+      "substations": [
+        "ТП-3419"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул.Бекешева, Даулеткерея, Кадыр Мырзалиев, Айманова",
@@ -1085,7 +1223,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3679",
-      "substations": ["ТП-3679"],
+      "substations": [
+        "ТП-3679"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, ул.Найманбаева, Валиханова, Аспандиярова, Нурпеисова",
@@ -1101,7 +1241,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3678",
-      "substations": ["ТП-3678"],
+      "substations": [
+        "ТП-3678"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, ул.Лапина, Косынова, Тайторы батыр",
@@ -1117,7 +1259,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3601",
-      "substations": ["ТП-3601"],
+      "substations": [
+        "ТП-3601"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, ул.Кененбаев, Талжанова, Байтели.",
@@ -1133,7 +1277,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3716",
-      "substations": ["ТП-3716"],
+      "substations": [
+        "ТП-3716"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Теректы, ул.Айналмалы,Кайсар, Кенжекей, Бесбатыр",
@@ -1149,7 +1295,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3408",
-      "substations": ["ТП-3408"],
+      "substations": [
+        "ТП-3408"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул.Келимбетова.",
@@ -1165,7 +1313,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3419",
-      "substations": ["ТП-3419"],
+      "substations": [
+        "ТП-3419"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул.Бекешева, Даулеткерея, Кадыр Мырзалиев, Айманова",
@@ -1197,7 +1347,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3681",
-      "substations": ["ТП-3681"],
+      "substations": [
+        "ТП-3681"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, Найманбаева, Аспандиярова",
@@ -1213,7 +1365,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3680",
-      "substations": ["ТП-3680"],
+      "substations": [
+        "ТП-3680"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, ул.Айтей батыра, Алтынсарина",
@@ -1261,7 +1415,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3425",
-      "substations": ["ТП-3425"],
+      "substations": [
+        "ТП-3425"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул. Өрікті, Аккия, Нарым",
@@ -1277,7 +1433,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3405",
-      "substations": ["ТП-3405"],
+      "substations": [
+        "ТП-3405"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул.Амина Омирзакова, Сұлтан Байсұлтанов, Ш.Айманова",
@@ -1293,7 +1451,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3716",
-      "substations": ["ТП-3716"],
+      "substations": [
+        "ТП-3716"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Теректы, ул.Айналмалы,Кайсар, Кенжекей, Бесбатыр",
@@ -1309,7 +1469,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3632",
-      "substations": ["ТП-3632"],
+      "substations": [
+        "ТП-3632"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "мкр.Калкаман-2, ул..Алты-Алаш, уг.ул.Сагатова.",
@@ -1325,7 +1487,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3631",
-      "substations": ["ТП-3631"],
+      "substations": [
+        "ТП-3631"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, ул.Тажибаева, Шарденова, Айымбетова",
@@ -1341,7 +1505,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3314",
-      "substations": ["ТП-3314"],
+      "substations": [
+        "ТП-3314"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Карагайлы, ул. Енлик-Кебек, Алтын Зан, Айша биби.",
@@ -1357,7 +1523,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3425",
-      "substations": ["ТП-3425"],
+      "substations": [
+        "ТП-3425"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул. Өрікті, Аккия, Нарым",
@@ -1373,7 +1541,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3405",
-      "substations": ["ТП-3405"],
+      "substations": [
+        "ТП-3405"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул.Амина Омирзакова, Сұлтан Байсұлтанов, Ш.Айманова",
@@ -1405,7 +1575,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3716",
-      "substations": ["ТП-3716"],
+      "substations": [
+        "ТП-3716"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Теректы, ул.Айналмалы,Кайсар, Кенжекей, Бесбатыр",
@@ -1421,7 +1593,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3630",
-      "substations": ["ТП-3630"],
+      "substations": [
+        "ТП-3630"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, ул.Абишева, Алты Алаш-3, Хакимжанова",
@@ -1437,7 +1611,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3633",
-      "substations": ["ТП-3633"],
+      "substations": [
+        "ТП-3633"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, ул.Толе-Би, Косынова, Наурыз батыра",
@@ -1453,7 +1629,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3201",
-      "substations": ["ТП-3201"],
+      "substations": [
+        "ТП-3201"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "м-он Курамыс, ул.Алатау, Дрозда, СТ Радуга",
@@ -1469,7 +1647,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3403",
-      "substations": ["ТП-3403"],
+      "substations": [
+        "ТП-3403"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "м-он Акжар, ул.Қадыр Мырзалиев, Т.Молдагалиева, Сұлтан Байсұлтанов",
@@ -1485,7 +1665,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3716",
-      "substations": ["ТП-3716"],
+      "substations": [
+        "ТП-3716"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Теректы, ул.Айналмалы,Кайсар, Кенжекей, Бесбатыр",
@@ -1501,7 +1683,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3425",
-      "substations": ["ТП-3425"],
+      "substations": [
+        "ТП-3425"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул. Өрікті, Аккия, Нарым",
@@ -1517,7 +1701,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3414",
-      "substations": ["ТП-3414"],
+      "substations": [
+        "ТП-3414"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он Акжар, ул.Т.Молдагалиева, Мейирхан Абдилдин, Қадыр Мырзалиев, Тарасова",
@@ -1533,7 +1719,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3635",
-      "substations": ["ТП-3635"],
+      "substations": [
+        "ТП-3635"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Шугыла, ул.Сатай батыр, Бекежанова, Саке Батыр",
@@ -1549,7 +1737,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3601",
-      "substations": ["ТП-3601"],
+      "substations": [
+        "ТП-3601"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "м-он Калкаман-2, ул.Кененбаев, Талжанова, Байтели.",
@@ -1565,7 +1755,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-4705 н/в вых. \"Юг\"",
-      "substations": ["ТП-4705"],
+      "substations": [
+        "ТП-4705"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "мкр.Томирис ул.Озерная д.1 по 39; ул.Маркса д.1 по 73; ул.Центральная д.12,2г,2/5,2,1/8,1/3,2/15,74/1,2/6,2/13,110/1",
@@ -1581,7 +1773,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4485",
-      "substations": ["ТП-4485"],
+      "substations": [
+        "ТП-4485"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Захарова д.36 по 148; ул.Наманганская д.39; мкр.Алтай-2 д.36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,54а,54,55а,55",
@@ -1597,7 +1791,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4664",
-      "substations": ["ТП-4664"],
+      "substations": [
+        "ТП-4664"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "мкр.Айнабулак-2 д.32А,д.32б,д.32/2",
@@ -1613,7 +1809,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4475",
-      "substations": ["ТП-4475"],
+      "substations": [
+        "ТП-4475"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Остроумова д. 1 по 95; ул.Красноводская д.17 по35; ул.дегдар д.1 по37; ул.Умова д.34; ул.Булавина д.2; ул.Берсиева д.1 по 26",
@@ -1629,7 +1827,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-4339 н/в вых. \"Запад-2\"",
-      "substations": ["ТП-4339"],
+      "substations": [
+        "ТП-4339"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "мкр. Боролдай: ул. Азат, ул. Кокшетау, ул. Асанова,ул.Коктем, ул.Меруерт,ул.Аршын;м-он \"Томирис\", ул.Семей,ул.Кокчетавская",
@@ -1645,7 +1845,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4552",
-      "substations": ["ТП-4552"],
+      "substations": [
+        "ТП-4552"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Зорге, д.8-26,ул.Токтогула д.39",
@@ -1661,7 +1863,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4503",
-      "substations": ["ТП-4503"],
+      "substations": [
+        "ТП-4503"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Толстого, 6, ул.Шолохова, 13,13А, 13/1, 15, ул.Р.Зорге 5, 7, 11, 13, 15, 17",
@@ -1677,7 +1881,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4571",
-      "substations": ["ТП-4571"],
+      "substations": [
+        "ТП-4571"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул. Папанина,220",
@@ -1693,7 +1899,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-4339 н/в вых. \"Запад\"",
-      "substations": ["ТП-4339"],
+      "substations": [
+        "ТП-4339"
+      ],
       "repairType": "other",
       "repairTypeRaw": "замена ввода",
       "place": "мкр. Боролдай: ул. Азат, ул. Кокшетау, ул. Асанова,ул.Коктем, ул.Меруерт,ул.Аршын;м-он \"Томирис\", ул.Семей,ул.Кокчетавская",
@@ -1709,7 +1917,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4589",
-      "substations": ["ТП-4589"],
+      "substations": [
+        "ТП-4589"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Папанина д.55-83нечетн.,д.58-90Б четн.; ул.Якубова д.2-31;ул.Нарынкольская д.1,1,1,2Б,3; ул.Аральская д.7, 9 кв.1-15, 9А, 9Б",
@@ -1725,7 +1935,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4483",
-      "substations": ["ТП-4483"],
+      "substations": [
+        "ТП-4483"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Собинова д.23-д.45; ул.Садовского д.54,д.55,д.56,д.57; ул.Домбровского д.66; ул.Гризодубовой д.10,д.12; ул.Наманганская д.6,д.10; мкр.Алтай-2 д.1-д.13, д.51,д.52,д.58",
@@ -1741,7 +1953,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4557",
-      "substations": ["ТП-4557"],
+      "substations": [
+        "ТП-4557"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Гете Иоганна д.40б-д.424, ул.Магнитная д.1-д.21, ул.Щелкова д.3-д.96,ул.Бекмаханова д.42А, ул.Димитрова д.94,94А,94Б,96",
@@ -1757,7 +1971,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-4725 н/в вых. \"Север\"",
-      "substations": ["ТП-4725"],
+      "substations": [
+        "ТП-4725"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "м-он Ожет: ул.Алдабергенова д.4-54, ул.Жиенбаева 7-46, ул.Новостройка д.УЧ16-121,15-109/7,ул.Кабан Жирау д.УЧ9,8-38",
@@ -1773,7 +1989,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4800",
-      "substations": ["ТП-4800"],
+      "substations": [
+        "ТП-4800"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Шолохова д.47 кв.1-8,д.45 кв.1-13, ул.Белградская д.11 кв.1-8",
@@ -1789,7 +2007,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4396",
-      "substations": ["ТП-4396"],
+      "substations": [
+        "ТП-4396"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "мкр.Жулдыз-2 д.44,46; ул.Дунентаева д.18б,54/1,54,60",
@@ -1805,7 +2025,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4754 н/в вых. \"Вл\"",
-      "substations": ["ТП-4754"],
+      "substations": [
+        "ТП-4754"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "пер.Кошек батыра,д.мкр Трудовик, мкр.Томирис ул.Колсай д.10, д.16, д.22, д.23/1, д.25, д.26, д.39",
@@ -1821,7 +2043,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-4430",
-      "substations": ["ТП-4430"],
+      "substations": [
+        "ТП-4430"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Саурынбаева д.2,2а,8; ул.Л.Толстого д.5а.5в; ул.Шолохова д.15,28/3; ул.Р.Зорге д.5,7",
@@ -1837,7 +2061,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-5312",
-      "substations": ["ТП-5312"],
+      "substations": [
+        "ТП-5312"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "мкр.Бағанашыл-2",
@@ -1853,7 +2079,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4кВ ТП-5272",
-      "substations": ["ТП-5272"],
+      "substations": [
+        "ТП-5272"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "мкр.Горный-Гигант",
@@ -1869,7 +2097,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5694",
-      "substations": ["ТП-5694"],
+      "substations": [
+        "ТП-5694"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "мкр. Мирас 128",
@@ -1885,7 +2115,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4кВ ТП-5632",
-      "substations": ["ТП-5632"],
+      "substations": [
+        "ТП-5632"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текуший",
       "place": "мкр.Орбита-2",
@@ -1901,7 +2133,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-5312",
-      "substations": ["ТП-5312"],
+      "substations": [
+        "ТП-5312"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "мкр.Бағанашыл-2",
@@ -1917,7 +2151,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4кВ ТП-5214",
-      "substations": ["ТП-5214"],
+      "substations": [
+        "ТП-5214"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "пр.Аль-Фараби\\ул.Жамакаева\\ул.Алдар-Косе\\пр.Сейфуллина",
@@ -1933,7 +2169,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5691",
-      "substations": ["ТП-5691"],
+      "substations": [
+        "ТП-5691"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "Кенесары хан д.54",
@@ -1949,7 +2187,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-5312",
-      "substations": ["ТП-5312"],
+      "substations": [
+        "ТП-5312"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "мкр.Бағанашыл-2",
@@ -1965,7 +2205,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5212",
-      "substations": ["ТП-5212"],
+      "substations": [
+        "ТП-5212"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текуший",
       "place": "ул.1-я Кирпично-Заводская д.7/Фурманова/Аль-Фараби",
@@ -1981,7 +2223,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5685",
-      "substations": ["ТП-5685"],
+      "substations": [
+        "ТП-5685"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Тимирязева, ул.Жарокова, ул.Ботанический Сад",
@@ -1997,7 +2241,10 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-6кВ ТП-5086-ТП-5036",
-      "substations": ["ТП-5086", "ТП-5036"],
+      "substations": [
+        "ТП-5086",
+        "ТП-5036"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "мкр. Нурлытау\\ул.Центральная\\ул.Вишневая\\ул.Подгорная\\ул.Мерген/п. Энергетик",
@@ -2013,7 +2260,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5676",
-      "substations": ["ТП-5676"],
+      "substations": [
+        "ТП-5676"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текуший",
       "place": "мкр.Горный Гигант, ул.Жамакаева, ул.2-я улица, ул.3-я улица, ул.5-я улица",
@@ -2029,7 +2278,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5676",
-      "substations": ["ТП-5676"],
+      "substations": [
+        "ТП-5676"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "мкр.Горный Гигант, ул.Жамакаева, ул.2-я улица, ул.3-я улица, ул.5-я улица",
@@ -2045,7 +2296,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5225",
-      "substations": ["ТП-5225"],
+      "substations": [
+        "ТП-5225"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текуший",
       "place": "мкр Горный Гигант",
@@ -2061,7 +2314,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-5076",
-      "substations": ["ТП-5076"],
+      "substations": [
+        "ТП-5076"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текуший",
       "place": "мкр.Горный Гигант, ул.Жамакаева, ул.2-я улица, ул.3-я улица, ул.5-я улица, ул.7-я",
@@ -2077,7 +2332,9 @@
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5675",
-      "substations": ["ТП-5675"],
+      "substations": [
+        "ТП-5675"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "мкр.Хан-Тенгри",
@@ -2093,7 +2350,10 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-10кВ ТП-6434 - ТП-6483",
-      "substations": ["ТП-6434", "ТП-6483"],
+      "substations": [
+        "ТП-6434",
+        "ТП-6483"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "ул.Кожабергенова, д.1-40, Сад.общ. \"Весна\", д.9-10, Сад. общ.\"Садовод\", д.3, ул.Көңіл толқыны, д.2Б, м.Каменское плато, пер.Кербулакский, д.5-19, с/т\"Жантобе\", д.13А,50-201, ул.Оспанова, д.190, садов . общ.\"Жан Тобе\", д.УЧ57А.г.Алматы, м-он Каменское плато, ул.Байконурская, д.выше уг.Олимпийской РДТ \"Алматытелеком\"- ф. АО\"Казахтелеком\", ул.Олимпийская, д.1 ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", ул.Кожабергенова, д.5-9, ул.Олимпийская, д.1 КГУ \"Общ-я школа № 47\"; ул.Оспанова, д.83-89; ул.Жамакаева, д.221; ул.ПК\"Горный Гигант\", д.2476; ул.с/т\"Турксиб\", д.3; Филиал УМГ АО \"Интергаз Центральная Азия\" (м-он Каменское плато, ул.Оспанова), ТОО\"EMI\" (ул. Оспанова, д. 85/52), ПК \"Alatau Hills\" (ул. Оспанова, д. 85/52), ПК \"Alatau Hills\" (ул. Оспанова, д.85/52)",
@@ -2109,7 +2369,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6478 РУ-10/0,4кВ",
-      "substations": ["ТП-6478"],
+      "substations": [
+        "ТП-6478"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "пр.Достык, д.240 ТОО \"Компания Достар\"",
@@ -2125,7 +2387,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6503 РУ-10/0,4кВ",
-      "substations": ["ТП-6503"],
+      "substations": [
+        "ТП-6503"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "пр.Достык, д.124 ГККП \"Дворец школьников\" Управление образования города Алматы",
@@ -2141,7 +2405,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6058 РУ-0,4кВ",
-      "substations": ["ТП-6058"],
+      "substations": [
+        "ТП-6058"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Халиуллина, д.56-79; ул.Сарбайская, д.81-95; ул.Щучинская, д.31-56; ул.Темиртауская, д.28-43; ул.Желмая, д.30; ул.Менделеева, д.60-75; ул.Клубная, д.33-50; ул.Чаплина, д.44-122; ул.Биембетова, д.66-70; ул.Речка Казачка, д.50; [ИП] (ул.Блока, д.51/106), [ИП] (ул.Халиуллина, д.71), [ИП] (ул.Халиуллина, д.66/1), ТОО\"Бизнес парк\"Станица\" (ул.Чаплина, д.71/66), [ИП] (ул.Сарбайская, д.82/58)",
@@ -2157,7 +2423,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6062 РУ-0,4кВ",
-      "substations": ["ТП-6062"],
+      "substations": [
+        "ТП-6062"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Бестужева, д.17-54; ул.Ахундова, д.31-47; ул.Каратальская, д.54-56; ул.Сарбайская, д.1-13; ул.Гурилева, д.1-18; ул.Кабилова, д.1-14; ул.Кутузова, д.1-39; ул.Тюленина, д.15-43; ул.Погодина, д.1-30; ул.Мариупольская, д.26-31; ул.Киевская, д.1-52; ул.Илийская, д.6-26; ул.Рубцовская, д.2-26; ул.Гомельская, д.1-17; Филиал УМГ АО \"Интергаз Центральная Азия\" (ул.Уфимская, д.ул.Хоружей), ТОО \"КаР-Тел\" (ул.Гурилева, д.2)",
@@ -2173,7 +2441,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6069 РУ-0,4кВ",
-      "substations": ["ТП-6069"],
+      "substations": [
+        "ТП-6069"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Ульяновская, д.2-6; ул.Шокая Мустафы, д.23-76; ул.Айдын, д.22-43; ул.Владивостокская, д.1-14; ул.Ахметсафина, д.29-38; ул.Оренбургская, д.43; АО\"РТС Деко\" (пер.Кошек батыра, д.ВОАД №2, зап), АО\"РТС Деко\" (пер.Кошек батыра, д.ВОАД №3, зап), Филиал УМГ АО \"Интергаз Центральная Азия\" (ул. М. Шокая / Айдын ПГБ), Филиал УМГ АО \"Интергаз Центральная Азия\" (ул. М. Шокая / Брянская)",
@@ -2189,7 +2459,10 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-6кВ ТП-6304 - ТП-8607",
-      "substations": ["ТП-6304", "ТП-8607"],
+      "substations": [
+        "ТП-6304",
+        "ТП-8607"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "п.Кок-Тюбе, ул.Джабаева, д.51-130, м-он Кок-Тобе, ул.Ақтаңгер, д.19/1, м-он Кок-Тобе, ул.Розы Баглановой , д.37-116, п.Кок-Тюбе, ул.Космонавтов, д.1-15, п.Кок-Тюбе, пер.Джабаева, д.69 Г, 67, 83А, г. Алматы, мкр. Кок-тобе, ул. Розы Баглановой, д. 69А, [ИП], КГП на ПХВ \"Алматинская региональная многопрофильная клиника\" ГУ \"УЗ Алматинской обл.\" Акимат Алматинской обл.[ИП]; м-он Кок-Тобе, ул.1-ая Космодемьянская, д.71; п.Жана Кок-Тобе, ул.2-я Космодемьянская, д.83-84; п.Кок-Тюбе, ул.Космодемьян., д.1; п.Жана Кок-Тобе, ул.Космодемьянская, д.1; п.Жана Кок-Тобе, ул.???, д.85",
@@ -2205,7 +2478,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6506 РУ-10/0,4кВ",
-      "substations": ["ТП-6506"],
+      "substations": [
+        "ТП-6506"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он \"Самал-1\", д.19 ТОО \"Инж.ком. сети САМАЛ\", м-он \"Самал-2\", д.104, оф.3этаж [ИП], м-он \"Самал-2\", д.104, оф.5 этаж [ИП], м-он \"Самал-2\", д.105, пом.116 [ИП], м-он \"Самал-2\", д.105 2 этаж 3 секция [частное лицо], [частное лицо], [частное лицо], м-он \"Самал-2\", д.105 [частное лицо], м-он \"Самал-2\", д.104, оф.3 этаж ТОО\"Global Alatau Group\", м-он \"Самал-2\", д.104 [ИП], м-он \"Самал-2\", д.104 офис 501-503 [ИП], ул.Кульджинский тракт, д.1 км. ТОО \"Сейсмологическая опытно - методическая экспедиция\", м-он \"Самал-2\", д.105 пом.109 [ИП], м-он \"Самал-2\", д.104, оф.н.п.1 [ИП], м-он \"Самал-2\", д.104 ТОО \"СЭЗ \", м-он \"Самал-2\", д.105 ТОО \"СЭЗ \", м-он \"Самал-2\", д.104, оф.13 ТОО \"ТАРМИ\", м-он \"Самал-2\", д.105, оф.117 АО \"АТФБанк\", мкр. Самал-2, д.105, н.п.114 ТОО \"ANB HOLDING\", м-он \"Самал-2\", д.105, помещение 112 [частное лицо], мкр. Самал-2, д. 105, н.п. 110 [частное лицо], м-он \"Самал-2\", д.105 2 секция ТОО \"Жамиля - социальная сеть\", м-он \"Самал-2\", д.105 [ИП], м-он \"Самал-2\", д.104, оф.4 этаж [ИП], м-он \"Самал-2\", д.104, оф.5 этаж [ИП], м-он \"Самал-2\", д.104, н.п.8 ТОО \"ОУСА Юг\", м-он\"Самал-2\", д.105",
@@ -2221,7 +2496,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6508 РУ-10/0,4кВ",
-      "substations": ["ТП-6508"],
+      "substations": [
+        "ТП-6508"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он \"Самал-1\", д.34 [ИП], м-он \"Самал-1\", д.19 ТОО \"Инж.ком. сети САМАЛ\", м-он \"Самал-1\", д.24, оф.1-2 [ИП], м-он \"Самал-1\", д.32 ОО\"Алмат. гор-е общ. инвалидов\", м-он Самал 1, д.32, оф.4 [ИП], м-он \"Самал-1\", д.24 пом.85 [частное лицо], м-он \"Самал-1\", д.32 ПК \"Ильбрус\", м-он \"Самал-1\", д.23, оф.72 ТОО \"Компания Достар\", м-он \"Самал-1\", д.32, оф.н.п.1 [ИП], мкр.\"Самал-1\", д.23 А ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", Самал-1, пятно 13 ТОО \"Алматы Моторс Сити лтд\" (Almaty Motors City ltd), ул.Джолдасбекова, уг. ул. Мендекулова ТОО \" Kazakhstan Waste Recycling\", м-он \"Самал-1\", д.20 учереждение Школа\"Бакалавриат\", м-он \"Самал-1\", д.24, кв.4 [частное лицо], ул. Жолдасбекова, уг.ул. Нурсултана Назарбаева АО \"СПК \"Алматы\", м-он \"Самал-1\", д.34 АО \"СПК \"Алматы\", ул.Жолдасбекова, д.уг.Мендыкулова ТОО \"ПКС акимата г.Алматы\", м-он \"Самал-1\", д.17 ПКСК \"Самал\", м-он \"Самал-1\", д.21 ПКСК \"Самал\", м-он \"Самал-1\", д.22 ПКСК \"Самал\", м-он \"Самал-1\", д.23 ПКСК \"Самал\", м-он \"Самал-1\", д.24 ПКСК \"Самал\", м-он \"Самал-1\", д.25/2 ПКСК \"Самал\", м-он \"Самал-1\", д.31 ПКСК \"Самал\", м-он \"Самал-1\", д.17, 12, оф.1 [частное лицо], м-он\"Самал-1\", д.17-32",
@@ -2237,7 +2514,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6070 РУ-0,4кВ",
-      "substations": ["ТП-6070"],
+      "substations": [
+        "ТП-6070"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий ремонт",
       "place": "НИ и П филиал РГП на ПХВ \"Казреставрация\" МК и С РК (ул.Богенбай Батыра, д.19 А, оф.2), ГУ ХОЗУ при Генпрокуратуру РК (пр.Достык, д.7), ТОО \"Креатив-ТЭМ\" (пр.Достык, д.7 А)",
@@ -2253,7 +2532,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6073 РУ-0,4кВ",
-      "substations": ["ТП-6073"],
+      "substations": [
+        "ТП-6073"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ТОО\" АР ШОНА \" (ул.Жибек жолы, д.64), ТОО \"БРНО\" (ул.Жибек жолы, д.64), ТОО \"Табыс - Rеnt\" (ул.Жибек жолы, д.64/47)",
@@ -2269,7 +2550,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6076 РУ-0,4кВ",
-      "substations": ["ТП-6076"],
+      "substations": [
+        "ТП-6076"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Кунаева, д.58-62; И П [частное лицо] (ул.Кунаева, д.62), ТОО \"Дом тканей \"Кызыл Тан\" (ул.Валиханова, д.45), АО\"Нар. банк Казахстана\" (ул.Кунаева, д.58), РОО \"Всем. ассоц. казахов\" (ул.Валиханова, д.43, оф.а), ПКСК\"Неміс үйі- Deutsches Haus\" (ул.Кунаева, д.58), ПКСК\"Неміс үйі- Deutsches Haus\" (ул.Кунаева, д.62), [частное лицо] (ул.Кунаева, д.58 Б), [ИП] (ул.Кунаева, д.58, н.п.5), [ИП] (ул.Жибек жолы, д.60 пом.49), ТОО \"Karpat Company\" (Карпат Компани) (ул.Алимжанова, д.54), АОФ АО \"Народный банк Казахстана\" (ул.Жибек жолы, д.68), [ИП] (ул.Валиханова, д.43), АО \"СПК \"Алматы\" (пр. Жибек жолы, уг.ул. Валиханова), ТОО \"АРК Баланс\" (ул.Валиханова, д.43), [ИП] (ул.Кунаева, д.58/58)",
@@ -2285,7 +2568,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-6441",
-      "substations": ["ТП-6441"],
+      "substations": [
+        "ТП-6441"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Митина, д.6, ГУ \"Спец. школа каз. языка и литературы\", ул.Таттимбета, д.9 Б [ИП], ул. Омаровой, д.9/3 [ИП], ул.Таттимбета, д.15 ТОО\"БИДЖИПИ Геофизические услуги (Казахстан)\", ул.Таттимбета, д.38 бТОО\"Таттимбет Курылыс\", ул.Рубинштейна, д.31 ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", ул.Таттимбета, д.194, 53, Филиал УМГ АО \"Интергаз Центральная Азия\", ул.Митина, д.17 ТОО \"Sua Domo\", ул.Таттимбета, д.86 ОСИ \"ЖК Терренкур террас\", ул.Таттимбета, д.33 [частное лицо]",
@@ -2301,7 +2586,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6402 РУ-10/0,4кВ",
-      "substations": ["ТП-6402"],
+      "substations": [
+        "ТП-6402"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Тайманова, д.222; м-он Г-Гигант, ул.Тайманова, д.222; АО \"Научный центр акушерства, гинекологии и перинатологии\" (пр.Достык, д.125), ТОО \"КоммунЭнергоСервис\" (пр. Достык, уч. 125/1)",
@@ -2317,7 +2604,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6412 РУ-10/0,4кВ",
-      "substations": ["ТП-6412"],
+      "substations": [
+        "ТП-6412"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "м-он \"Музтау\", ул.Горная, д.б/н ТОО \"Алматы Центр Строй\", ул.Керей-Жәнібек хандар, д.197 А ТОО \"Резалт-Групп\", ул.Керей-Жәнібек хандар, д.197 ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", ул. Горная, ресторан \"Биладжио\" АО \"СПК \"Алматы\". ул.Керей-Жәнібек хандар, д.396 , ул.Керей-Жәнібек хандар, д.378-414, ул.ПК\"Горный Гигант\", д.Б/Н",
@@ -2333,7 +2622,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6096 РУ-0,4кВ",
-      "substations": ["ТП-6096"],
+      "substations": [
+        "ТП-6096"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Станиславского, д.2-34; пер.Станиславского, д.13; ул.Джетысуйская, д.48-73; ул.Черкасской Обороны, д.54-78; ул.Расковой, д.60; ул.Куратова, д.69; пр.Райымбека, д.37; ул.Колпаковского, д.64-78; ул.Пестковского, д.51-56; ул.Андреевская, д.54-59; [частное лицо] (ул.Черкасской Обороны, д.55/35), КГУ \"Общеобр. школа №2\" (ул.Черкасской Обороны, д.71), ТОО\"KAZSTAR Construction Company\" (ул.Черкасской Обороны, д.69 Д), ГКП на ПХВ \"Алматы тазалық\" (ул.Черкасской Обороны, д.69 б), ГКП на ПХВ \"Алматы тазалық\" (.ул.Горная д.583), [ИП] (ул.Станиславского д.18), ТОО\"Barsal\" (ул.Черкасской Обороны, д.69а), [ИП] (ул.Черкасской Обороны, д.76), АО \"СПК \"Алматы\" (ул. Татыбекова, уг.ул. Станиславского)",
@@ -2349,7 +2640,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6113 РУ-0,4кВ",
-      "substations": ["ТП-6113"],
+      "substations": [
+        "ТП-6113"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Баишева, д.3а, 23, 3 ТОО \"Фирма \"АмаратА\", пр.Райымбека, д.Татибекова ГУ \"ДП г.Алматы МВД РК\", ул.Джангильдина, д.27 КГУ \"Алм. гор. реаб. центр для детей с огр. возм.\", ул.Янушкевича, д.18/25 [ИП] ,[частное лицо], ул.Баишева, д.23 ТОО \"Казгипролесхоз-KZ\", ул.Баишева, д.23, пом.1а РГКП \"Республиканский лесной селекционно-семеноводческий центр\" КЛХ МЭГиПР РК, [ИП]",
@@ -2365,7 +2658,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6114 РУ-0,4кВ",
-      "substations": ["ТП-6114"],
+      "substations": [
+        "ТП-6114"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Баишева, д.23, РГКП \"Казахское лесоустроительное предприятие\" Комитета лесного хозяйства и животного мира Министерства экологии, геологии и природных ресурсов РК, ул.Джангильдина, д.27 КГУ \"Алм. гор. реаб. центр для детей с огр. возм.\", ул.Хамиди, д.29 ОО \" Союз казаков Семиречья\", ул.Джетысуйская, д.31 РРО \" Аст. и Алм.Еп. Р П Ц К\", ул.Макатаева, д.29 [ИП], ул.Хамиди, д.28 ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", ул.Гоголя, д.13 Филиал УМГ АО \"Интергаз Центральная Азия\", ул.Хамиди, д.28 АФилиал УМГ АО \"Интергаз Центральная Азия\".ул.Хамиди, д.15-24, ул.Джетысуйская, д.16-24, ул.Жургенева, д.38, ул.Янушкевича, д.36-42",
@@ -2381,7 +2676,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6011 РУ-0,4кВ",
-      "substations": ["ТП-6011"],
+      "substations": [
+        "ТП-6011"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Орманова, д.49, 49а, д.58, д.25, оф.1, 119, 48, 51.ТОО \"Аласа\", АО \"Тартып\", ТОО \"Ка-Росс\", ТОО\"Baby Town\", ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", [частное лицо].м-он Кок-Тобе, ул.Розы Баглановой , д.136, ул.Джабаева, д.136, ул.Есенберлина, д.189А-219, ул.Орманова, д.54/223, ул.Орманова 17-115, ул.Апорт, д.55-61, м-он Кок-Тобе, ул.Сагадат Нурмагамбетов, д.119, кв.2",
@@ -2397,7 +2694,10 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-10кВ ТП-6434 - ТП-6483",
-      "substations": ["ТП-6434", "ТП-6483"],
+      "substations": [
+        "ТП-6434",
+        "ТП-6483"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "ул.Кожабергенова, д.1-40, Сад.общ. \"Весна\", д.9-10, Сад. общ.\"Садовод\", д.3, ул.Көңіл толқыны, д.2Б, м.Каменское плато, пер.Кербулакский, д.5-19, с/т\"Жантобе\", д.13А,50-201, ул.Оспанова, д.190, садов . общ.\"Жан Тобе\", д.УЧ57А.г.Алматы, м-он Каменское плато, ул.Байконурская, д.выше уг.Олимпийской РДТ \"Алматытелеком\"- ф. АО\"Казахтелеком\", ул.Олимпийская, д.1 ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", ул.Кожабергенова, д.5-9, ул.Олимпийская, д.1 КГУ \"Общ-я школа № 47\"; ул.Оспанова, д.83-89; ул.Жамакаева, д.221; ул.ПК\"Горный Гигант\", д.2476; ул.с/т\"Турксиб\", д.3; Филиал УМГ АО \"Интергаз Центральная Азия\" (м-он Каменское плато, ул.Оспанова), ТОО\"EMI\" (ул. Оспанова, д. 85/52), ПК \"Alatau Hills\" (ул. Оспанова, д. 85/52), ПК \"Alatau Hills\" (ул. Оспанова, д.85/52)",
@@ -2413,7 +2713,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6317 РУ-6/0,4кВ",
-      "substations": ["ТП-6317"],
+      "substations": [
+        "ТП-6317"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "пр.Достык, д.87 Б ГУ \"Архив Президента РК\"",
@@ -2429,7 +2731,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6433 РУ-10/0,4кВ",
-      "substations": ["ТП-6433"],
+      "substations": [
+        "ТП-6433"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Оспанова, д.152 ТОО\"ПЕНТХАУС\", ул.Оспанова, д.10 РДТ \"Алматытелеком\"- ф. АО\"Казахтелеком\", ул.Оспанова, д.69/2 ТОО \"НҰРТӨБЕ Сервис\", ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", ул. Оспанова, д.57 А ТОО \"ANS Asia construction\", ул.Оспанова, д.150 ТОО \"Fortune & GSS\", ул.Оспанова, д.59 [ИП], м-он Каменское плато ТОО \"Зи-Дан\". ул.Ладушкина, д.10-135, с/т \"Улар\", д.1-83,ул.Оспанова, д.5-170, Сад.общ.\"Весновка\", ул.Береговая, д.5, ул.3-я Ладушкина, д.3",
@@ -2445,7 +2749,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6131 РУ-0,4кВ",
-      "substations": ["ТП-6131"],
+      "substations": [
+        "ТП-6131"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Пушкина, д.3; ул.Токмакская, д.4-6; [частное лицо] (ул.Пушкина, д.3/1, оф.54), ГУ \"ДП г.Алматы МВД РК\" (пр.Райымбека, д.Пушкина), ТОО РЦМ \"Макпал\" (ул.Валиханова, д.12), ПКСК \" Аян\" (ул.Пушкина, д.3), ПКСК\"Мой дом\" (ул.Токмакская, д.4), ПКСК\"Мой дом\" (ул.Токмакская, д.6), ТОО\"begemot almaty\"(бегемот алматы) (западнее Пушкина,севернее ул.Токмакская уч.115), [частное лицо](ул.Пушкина, д.3/2, оф.16), [частное лицо] (ул.Пушкина, д.уг.Токмакская 3/2, оф.33), [ИП] (ул.Пушкина, д.1 в), [частное лицо] (ул.Пушкина, д.3/2, кв.31), ТОО \"LUBELL LTD\" (ул.Валиханова, д.4), АО \"СПК \"Алматы\" (ул. Валиханова, уг.ул. Токмакская)",
@@ -2461,7 +2767,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6152 РУ-0,4кВ",
-      "substations": ["ТП-6152"],
+      "substations": [
+        "ТП-6152"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Тулебаева, д.114; ул.Толе би, д.50; КСК \"Тулебаева-139\" (ул.Тулебаева, д.114 а), ТОО \"Grand Hotel \"Tien Shan\" (ул.Богенбай Батыра, д.115), [ИП] (ул.Толе би, д.50/54), [частное лицо](ул.Тулебаева, д.114 а, оф.ч/А), [ИП] (ул.Тулебаева, д.114), ТОО\"Спортивно-развлекательный комплекс\"Темир Дос\" (ул.Толе би, д.50/54), [ИП] (ул.Толе би, д.50/54), [ИП] (ул.Толе би, д.50/54), [ИП] (ул.Тулебаева, д.114 а), [ИП] (ул.Тулебаева, д.114А), ТОО «ARTEX Construction» (ул.Кунаева, д.99А), АО \"СПК \"Алматы\" (ул. Тулебаева, уг.ул. Богенбай батыра)",
@@ -2477,7 +2785,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6150 РУ-0,4кВ",
-      "substations": ["ТП-6150"],
+      "substations": [
+        "ТП-6150"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Толе би, д.45-49; ГУ \"ДП г.Алматы МВД РК\" (пр.Нурсултана Назарбаева, д.Казыбек би), ТОО \"СМЭУ\" (пр.Нурсултана Назарбаева, д.Казыбек би), [ИП] (ул.Толе би, д.45/91, оф.1), ПКСК \"Центр\" (ул.Толе би, д.49/104), [частное лицо] (ул.Толе би, д.уг.Тулебаева45/91), [ИП] (ул.Толе би, д.49, оф.2), [частное лицо] (ул.Толе би, д.49/104), [частное лицо] (ул.Толе би, д.45), [частное лицо] (ул.Толе би, д.вост.ул.Фурманова), ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\" (пр.Нурсултана Назарбаева, д.102), КГУ \"Школа-лицей № 28 им. М.Маметовой\" УО г. Алматы (пр.Нурсултана Назарбаева, д.102), [частное лицо] (ул.Толе би, д.45/91, н.п.12)",
@@ -2493,7 +2803,10 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-6кВ ТП-6304 - ТП-8607",
-      "substations": ["ТП-6304", "ТП-8607"],
+      "substations": [
+        "ТП-6304",
+        "ТП-8607"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "п.Кок-Тюбе, ул.Джабаева, д.51-130, м-он Кок-Тобе, ул.Ақтаңгер, д.19/1, м-он Кок-Тобе, ул.Розы Баглановой , д.37-116, п.Кок-Тюбе, ул.Космонавтов, д.1-15, п.Кок-Тюбе, пер.Джабаева, д.69 Г, 67, 83А, г. Алматы, мкр. Кок-тобе, ул. Розы Баглановой, д. 69А, [ИП], КГП на ПХВ \"Алматинская региональная многопрофильная клиника\" ГУ \"УЗ Алматинской обл.\" Акимат Алматинской обл.[ИП]; м-он Кок-Тобе, ул.1-ая Космодемьянская, д.71; п.Жана Кок-Тобе, ул.2-я Космодемьянская, д.83-84; п.Кок-Тюбе, ул.Космодемьян., д.1; п.Жана Кок-Тобе, ул.Космодемьянская, д.1; п.Жана Кок-Тобе, ул.???, д.85",
@@ -2509,7 +2822,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6141 РУ-6/0,4кВ",
-      "substations": ["ТП-6141"],
+      "substations": [
+        "ТП-6141"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "ул.Айтеке би 53, пр.Назарбаева д.80, ул.Гоголя, д.42, ул.Тулебаева, д.53, ул.Гоголя, д.42/66, пом.89, г.Алматы, пр.Нурсултана Назарбаева, д.уг.Гоголя с.в., ул.Гоголя, д.50/53, ул.Айтеке Би, д.55, пр.Нурсултана Назарбаева, д.80, пр.Нурсултана Назарбаева, д.50/80, пом.139, г.Алматы, пр.Нурсултана Назарбаева, д.88,ул. Айтеке би, уг.пр. Нурсултана Назарбаева. ТОО\"Наис-А\", АО \"Казахювелир\", ТОО\"Алтынжан\", КСК \"ЭДIЛ\", КСК \"Москва\", ТОО ИУ \"Фирма \"ХУА ЧЭН\", [ИП], [ИП], АО\"РТС Деко\", ТОО Kaspi Office, ТОО \"ALA\", ТОО \"Standart com\", ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", [частное лицо], АО\"БТА Банк\", АОФ АО \"Народный банк Казахстана\", [ИП], [частное лицо]",
@@ -2525,7 +2840,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6277 РУ-6/0,4кВ",
-      "substations": ["ТП-6277"],
+      "substations": [
+        "ТП-6277"
+      ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный",
       "place": "пр.Достык, д.36 ТОО \"Ринкон Азия\", ул.Зенкова, д.41 ПКСГ \" КОЛОС \", ул.Зенкова, д.33/19 [частное лицо], пр.Достык, д.38 АО\"KEN DALA CENTER\", РДТ \"Алматытелеком\"- ф. АО\"Казахтелеком\", пр.Достык, д.36, кв.1 [частное лицо], ул.Зенкова, д.54 ПКСК \"Союз\".ул.Зенкова, д.54, ул.Калдаякова, д.59",
@@ -2541,7 +2858,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6125 РУ-0,4кВ",
-      "substations": ["ТП-6125"],
+      "substations": [
+        "ТП-6125"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "[частное лицо] (ул.Кунаева, д.78, кв.1), НАО \"КазНПУ им.Абая\" (ул.Валиханова, д.61/32), НАО \"КазНПУ им.Абая\" (ул.Казыбек би, д.34), НАО \"КазНПУ им.Абая\" (ул.Кунаева, д.82), НАО \"КазНПУ им.Абая\" (ул.Толе би, д.35), ТОО \" Семейно- псих-й центр \" \"Кидо\" (ул.Валиханова, д.63А), АО \"КСЕЛЛ\" (ул. Казыбек би, д. 34), АО \"КСЕЛЛ\" (ул.Толе би, д.35), [частное лицо] (ул.Толе би, д.35), ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\" (ул. Валиханова, д.61), [частное лицо] (ул.Казыбек би, д.43 Б, пом.1), ТОО \"ADAM Decolight CA\" (ул. Толе би, вос. ул. Кунаева)",
@@ -2557,7 +2876,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6136 РУ-0,4кВ",
-      "substations": ["ТП-6136"],
+      "substations": [
+        "ТП-6136"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ТОО \"Умит\" (ул. Макатаева д.59, уг. ул. Кунаева д.27), ТОО\"EMI инжиниринг\" (ул.Тулебаева, д.38/61)",
@@ -2573,7 +2894,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-6142 РУ-0,4кВ",
-      "substations": ["ТП-6142"],
+      "substations": [
+        "ТП-6142"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "ул.Казыбек би, д.50 ТОО \"Корп. Жиhаз\", ул.Толе би, д.55 TOO \"OFFICE 55\", ул.Панфилова, д.100 ТОО фирма \"Кулинар\", г.Алматы, пр.Нурсултана Назарбаева, д.113/55 пом.10 ТОО\"Компания \"АККО\", пр.Нурсултана Назарбаева, д.113/55 ч/Б [частное лицо], ул.Валиханова, д.28 Филиал УМГ АО \"Интергаз Центральная Азия\", г.Алматы,ул.Панфилова между Толе би и Казыбек би. ТОО\"Красный дракон\", пр.Нурсултана Назарбаева, д.111/48 А ТОО \"Терренкур-15\", пр.Нурсултана Назарбаева, д.113/55, н.п.45 [частное лицо], пр.Нурсултана Назарбаева, д.113/55 пом.18 [частное лицо], ул.Толе би, д.55 [ИП], пр.Нурсултана Назарбаева, д.113/55, н.п.2 [частное лицо] пр.Нурсултана Назарбаева, д.111/48,ул.Толе би, д.55",
@@ -2589,7 +2912,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-7588",
-      "substations": ["ТП-7588"],
+      "substations": [
+        "ТП-7588"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "Акимат Ауэзовский, ЖК Алтын Сарай",
@@ -2605,7 +2930,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-7410 ф-восток",
-      "substations": ["ТП-7410"],
+      "substations": [
+        "ТП-7410"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "ул. Манат, д.1-15, ул. Садвакасова, д.1-52",
@@ -2621,7 +2948,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-10кВ РП-149-ТП-7325",
-      "substations": ["ТП-7325"],
+      "substations": [
+        "ТП-7325"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "мкр. Жайдарман",
@@ -2637,7 +2966,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-7536",
-      "substations": ["ТП-7536"],
+      "substations": [
+        "ТП-7536"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "мкр.8, д.29-34",
@@ -2653,7 +2984,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-7410 ф-восток",
-      "substations": ["ТП-7410"],
+      "substations": [
+        "ТП-7410"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "ул. Манат, д.1-15, ул. Садвакасова, д.1-52",
@@ -2669,7 +3002,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-7328",
-      "substations": ["ТП-7328"],
+      "substations": [
+        "ТП-7328"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "мкр. Аксай-5, д.5-9",
@@ -2685,7 +3020,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-7410 ф-восток",
-      "substations": ["ТП-7410"],
+      "substations": [
+        "ТП-7410"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "ул. Манат, д.1-15, ул. Садвакасова, д.1-52",
@@ -2701,7 +3038,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-7319",
-      "substations": ["ТП-7319"],
+      "substations": [
+        "ТП-7319"
+      ],
       "repairType": "current_repair",
       "repairTypeRaw": "текущий",
       "place": "мкр. Аксай-4, д.43-60",
@@ -2717,7 +3056,9 @@
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-7410 ф-восток",
-      "substations": ["ТП-7410"],
+      "substations": [
+        "ТП-7410"
+      ],
       "repairType": "capital_repair",
       "repairTypeRaw": "капитальный",
       "place": "ул. Манат, д.1-15, ул. Садвакасова, д.1-52",

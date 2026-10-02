@@ -1,0 +1,73 @@
+name: Update data
+
+# Daily: fetch the latest AZhK schedule, geocode new places, and commit data/ if
+# anything changed. The push triggers a Vercel redeploy.
+on:
+  schedule:
+    - cron: "0 1 * * *" # 06:00 in Almaty (UTC+5)
+  workflow_dispatch:
+    inputs:
+      force:
+        description: "Re-download the schedule page even if cached"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+# Never let two runs race to push.
+concurrency:
+  group: update-data
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4 # version comes from "packageManager" in package.json
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: pnpm
+      - run: pnpm install --frozen-lockfile
+
+      # Redacted copies of schedule pages aren't committed; keep them between runs
+      # so each week's page is downloaded only once.
+      - uses: actions/cache@v4
+        with:
+          path: data/raw
+          key: azhk-raw-${{ github.run_id }}
+          restore-keys: azhk-raw-
+
+      - name: Fetch the latest AZhK schedule
+        run: pnpm data:fetch ${{ inputs.force && '--force' || '' }}
+        env:
+          AZHK_CONTACT: ${{ secrets.AZHK_CONTACT }}
+
+      - name: Geocode new places (Nominatim, 1 req/s, cached)
+        run: pnpm data:geocode
+        env:
+          GEOCODER_CONTACT: ${{ secrets.GEOCODER_CONTACT }}
+
+      # Gatekeepers: nothing is committed unless all of these pass.
+      - name: Check for personal data
+        run: pnpm data:audit
+      - run: pnpm data:validate
+      - run: pnpm test
+      - run: pnpm build
+
+      - name: Commit changes
+        run: |
+          git add data/outages.json data/geocache.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          title=$(node -p 'require("./data/outages.json").title')
+          git commit -m "chore(data): update AZhK schedule — ${title}"
+          git push
