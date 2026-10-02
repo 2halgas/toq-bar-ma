@@ -18,7 +18,7 @@ export default function Home() {
 function ExplorerSkeleton() {
   return (
     <div
-      className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-4 sm:px-6 lg:grid-cols-[minmax(0,26rem)_1fr]"
+      className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-4 sm:px-6 lg:grid-cols-[minmax(22rem,28rem)_minmax(0,1fr)] lg:gap-8"
       aria-busy="true"
       aria-label="Загрузка"
     >
@@ -27,7 +27,7 @@ function ExplorerSkeleton() {
           <div key={index} className="animate-pulse rounded-lg bg-muted" style={{ height }} />
         ))}
       </div>
-      <div className="h-64 animate-pulse rounded-xl bg-muted" />
+      <div className="h-[60dvh] min-h-80 animate-pulse rounded-xl bg-muted lg:h-[calc(100dvh-2rem)]" />
     </div>
   );
 }

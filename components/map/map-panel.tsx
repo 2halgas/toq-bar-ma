@@ -39,7 +39,7 @@ export function MapPanel({ counts, selected, periodLabel, onSelect, className }:
         </p>
       </div>
 
-      <div className="relative isolate h-[420px] overflow-hidden rounded-xl border bg-muted lg:h-[560px]">
+      <div className="relative isolate h-[60dvh] min-h-80 overflow-hidden rounded-xl border bg-muted lg:h-auto lg:min-h-0 lg:flex-1">
         {geojson.status === "ready" ? (
           <DistrictMap
             geojson={geojson.data}

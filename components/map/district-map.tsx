@@ -107,7 +107,7 @@ export function DistrictMap({ geojson, counts, buckets, selected, onSelect }: Di
       bounds={bounds}
       boundsOptions={{ padding: [12, 12] }}
       maxBounds={bounds.pad(0.5)}
-      minZoom={10}
+      minZoom={9}
       zoomSnap={0.25}
       className="size-full"
       attributionControl

@@ -22,7 +22,7 @@ export function OutageList({ outages, today }: OutageListProps) {
           <section key={day.date} aria-labelledby={headingId}>
             <h3
               id={headingId}
-              className="sticky top-0 z-10 flex items-baseline justify-between gap-2 border-b bg-background/95 py-2 backdrop-blur supports-backdrop-filter:bg-background/80"
+              className="sticky top-(--sticky-offset) z-10 flex items-baseline justify-between gap-2 border-b bg-background py-2"
             >
               <span className="font-semibold">{formatDayHeading(day.date)}</span>
               <span className="sr-only">, </span>
@@ -37,7 +37,7 @@ export function OutageList({ outages, today }: OutageListProps) {
                   <h4 className="mb-2 text-sm font-medium text-muted-foreground">
                     {DISTRICT_LABELS[group.district]} район
                   </h4>
-                  <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1 xl:grid-cols-2">
+                  <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
                     {group.outages.map((outage) => (
                       <li key={outage.id}>
                         <OutageCard outage={outage} today={today} />
