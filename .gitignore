@@ -40,3 +40,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 .claude
+# raw AZhK schedule pages (already redacted, still kept out of git)
+/data/raw/

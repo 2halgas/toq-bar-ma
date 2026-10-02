@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import { preparePlace } from "@/lib/azhk/place";
 import {
   findPersonalDataHints,
+  redactCellForStorage,
   REDACTED_PERSON,
   REDACTED_SOLE_PROPRIETOR,
   redactPersonalNames,
@@ -29,6 +30,12 @@ describe("redactPersonalNames", () => {
     ["Нурланов Нурлан Сапарулы, ул. Манат", `${P}, ул. Манат`],
     ["гр. Петрова, ул. Манат", `${P}, ул. Манат`],
     ["Ќасымова Ә.Ж. - ул. Манат", `${P} - ул. Манат`],
+    ["ИП ЖУМАБЕКОВ А.А., ул. Манат", `${IP}, ул. Манат`],
+    ["ИП СЕРГЕЕВ-ЛИ - ул. Манат", `${IP} - ул. Манат`],
+    ["ИВАНОВ ИВАН ИВАНОВИЧ, ул. Манат, д.3", `${P}, ул. Манат, д.3`],
+    ["НУРЛАНОВ НУРЛАН САПАРҰЛЫ - ул. Манат", `${P} - ул. Манат`],
+    ["ул. Манат, д.3 ПЕТРОВА А.Б.", `ул. Манат, д.3 ${P}`],
+    ["ИП ИВАНОВА ИРИНА ИВАНОВНА", IP],
   ])("%j", (input, expected) => {
     expect(redactPersonalNames(input)).toBe(expected);
   });
@@ -39,6 +46,7 @@ describe("redactPersonalNames", () => {
       'ул.Казыбек би, д.50 ТОО "Корп. Жиhаз"',
       "Акимат Ауэзовский, ЖК Алтын Сарай",
       'м-он "Самал-1", д.19 ТОО "Инж.ком. сети САМАЛ"',
+      'ТОО "ТЕХНОСЕРВИС", ГККП "КОЛОС", РГКП, АО "КСЕЛЛ"',
       "жилые дома (частный сектор) м-н Айгерим-1, ул. МТФ ;ул.Азаттык",
     ]) {
       expect(redactPersonalNames(text)).toBe(text);
@@ -62,6 +70,14 @@ describe("findPersonalDataHints", () => {
     expect(findPersonalDataHints("ул. Северное кольцо 86/7")).toEqual([]);
   });
 
+  it("flags a capitalised patronymic left behind", () => {
+    expect(findPersonalDataHints("ул. Манат ИВАНОВИЧ")).toEqual(["patronymic-like word"]);
+  });
+
+  it("does not flag Kazakh-style street names that end like patronymics", () => {
+    expect(findPersonalDataHints("пр. Бауыржан Момышулы, д. 2")).toEqual([]);
+  });
+
   it("flags shapes the rules don't cover, without echoing them", () => {
     const hints = findPersonalDataHints("ИП  Береке-Сервис");
     expect(hints).toEqual(["ИП followed by an unrecognised name"]);
@@ -80,5 +96,15 @@ describe("preparePlace", () => {
 
   it("fixes misencoded letters in the displayed text too", () => {
     expect(preparePlace("ул. Аќжар").place).toBe("ул. Ақжар");
+  });
+});
+
+describe("redactCellForStorage", () => {
+  it("redacts what it can and hides the whole cell when unsure", () => {
+    expect(redactCellForStorage("Иванов И.И. - ул. Манат", "HIDDEN")).toBe(`${P} - ул. Манат`);
+    expect(redactCellForStorage("ИП «Береке - ул. Манат", "HIDDEN")).toBe("HIDDEN");
+    expect(redactCellForStorage("пр. Бауыржан Момышулы, д. 2", "HIDDEN")).toBe(
+      "пр. Бауыржан Момышулы, д. 2",
+    );
   });
 });

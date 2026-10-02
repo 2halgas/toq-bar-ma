@@ -15,7 +15,9 @@
     "check": "pnpm typecheck && pnpm lint && pnpm format:check && pnpm test",
     "data:demo": "tsx scripts/generate-demo-data.ts",
     "data:validate": "tsx scripts/validate-data.ts",
-    "geo:fetch": "tsx scripts/fetch-districts.ts"
+    "geo:fetch": "tsx scripts/fetch-districts.ts",
+    "data:fetch": "tsx scripts/fetch-outages.ts",
+    "data:audit": "tsx scripts/audit-privacy.ts"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -42,6 +44,8 @@
     "@types/node": "^24.19.1",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "cheerio": "^1.2.0",
+    "domhandler": "^5.0.3",
     "eslint": "^9",
     "eslint-config-next": "16.3.8",
     "eslint-config-prettier": "^10.1.8",

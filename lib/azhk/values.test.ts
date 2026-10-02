@@ -69,6 +69,11 @@ describe("mapRepairType", () => {
     ["Текущий ремонт", "current_repair"],
     ["устранение дефектов", "defect_elimination"],
     ["замена ввода", "other"],
+    ["подряд", "contractor_works"],
+    ["подрядным", "contractor_works"],
+    ["аварийный", "other"],
+    ["подрезка деревьев,перетяжка лин.и вводных проводов,вывоз веток", "other"],
+    ["Капитальный ремонт.", "capital_repair"],
   ] as const)("%j → %s", (raw, type) => {
     expect(mapRepairType(raw)).toEqual({ type, known: true });
   });

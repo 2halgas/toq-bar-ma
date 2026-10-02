@@ -36,30 +36,22 @@ export function extractSubstations(dispatchName: string): string[] {
 }
 
 /**
- * Repair type dictionary keyed by the normalized source text. Covers the typos
- * seen in real schedules («текуший»); anything unknown maps to "other" and is
- * reported by the fetch script so the dictionary can be extended.
+ * Repair types by the start of the normalized source text, so typos and word
+ * forms seen in real schedules («текуший», «подряд», «подрядным») still map.
+ * Known non-standard work («аварийный», «замена ввода», tree trimming) maps to
+ * "other" quietly; anything else maps to "other" and is reported by the fetch
+ * script so the rules can be extended.
  */
-const REPAIR_TYPES: Record<string, RepairType> = {
-  текущий: "current_repair",
-  текуший: "current_repair",
-  "текущий ремонт": "current_repair",
-  капитальный: "capital_repair",
-  "капитальный ремонт": "capital_repair",
-  подрядный: "contractor_works",
-  "подрядные работы": "contractor_works",
-  "устранение дефектов": "defect_elimination",
-  "устранение дефекта": "defect_elimination",
-  "замена ввода": "other",
-};
+const REPAIR_TYPE_RULES: [RegExp, RepairType][] = [
+  [/^текущ|^текуш/u, "current_repair"],
+  [/^капитальн/u, "capital_repair"],
+  [/^подряд/u, "contractor_works"],
+  [/^устранени\p{L}*\s+дефект/u, "defect_elimination"],
+  [/^(?:аварийн|замена ввода|подрезка деревьев)/u, "other"],
+];
 
 export function mapRepairType(raw: string): { type: RepairType; known: boolean } {
-  const key = raw
-    .toLowerCase()
-    .replace(/ё/g, "е")
-    .replace(/\s+/g, " ")
-    .replace(/[.\s]+$/, "")
-    .trim();
-  const type = REPAIR_TYPES[key];
-  return type ? { type, known: true } : { type: "other", known: false };
+  const text = raw.toLowerCase().replace(/ё/g, "е").replace(/\s+/g, " ").trim();
+  const rule = REPAIR_TYPE_RULES.find(([pattern]) => pattern.test(text));
+  return rule ? { type: rule[1], known: true } : { type: "other", known: false };
 }

@@ -68,3 +68,27 @@ export type AzhkOutage = z.infer<typeof AzhkOutageSchema>;
 export function formatRes(res: number): string {
   return `РЭС-${res}`;
 }
+
+export const AzhkOutagesFileSchema = z
+  .object({
+    source: z.literal("azhk"),
+    /** Schedule title as published, e.g. «город Алматы с 28.09.2026 года по 02.10.2026 года». */
+    title: NonEmpty,
+    sourceUrl: z.url({ protocol: /^https?$/ }),
+    weekStart: IsoDateSchema,
+    weekEnd: IsoDateSchema,
+    /** When the outage list last changed (not when the script last ran). */
+    updatedAt: z.iso.datetime({ offset: true }),
+    outages: z.array(AzhkOutageSchema),
+  })
+  .superRefine((file, ctx) => {
+    const seen = new Set<string>();
+    file.outages.forEach((outage, index) => {
+      if (seen.has(outage.id)) {
+        ctx.addIssue({ code: "custom", path: ["outages", index, "id"], message: "Duplicate id" });
+      }
+      seen.add(outage.id);
+    });
+  });
+
+export type AzhkOutagesFile = z.infer<typeof AzhkOutagesFileSchema>;
