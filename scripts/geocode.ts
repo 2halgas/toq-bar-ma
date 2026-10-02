@@ -145,8 +145,6 @@ async function main(): Promise<void> {
     },
   });
   const limit = values.limit ? Number(values.limit) : Number.POSITIVE_INFINITY;
-  if (!contact)
-    console.warn("⚠ GEOCODER_CONTACT is not set; Nominatim asks for a contact in the User-Agent.");
 
   const outages = AzhkOutagesFileSchema.parse(
     JSON.parse(readFileSync(resolve(process.cwd(), OUTAGES_PATH), "utf8")),

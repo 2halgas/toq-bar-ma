@@ -1,7 +1,7 @@
 name: Update data
 
 # Daily: fetch the latest AZhK schedule, geocode new places, and commit data/ if
-# anything changed. The push triggers a Vercel redeploy.
+# anything changed. The push triggers a Cloudflare Pages redeploy.
 on:
   schedule:
     - cron: "0 1 * * *" # 06:00 in Almaty (UTC+5)
@@ -30,7 +30,7 @@ jobs:
       - uses: pnpm/action-setup@v4 # version comes from "packageManager" in package.json
       - uses: actions/setup-node@v4
         with:
-          node-version: 22
+          node-version-file: .node-version
           cache: pnpm
       - run: pnpm install --frozen-lockfile
 
@@ -57,7 +57,7 @@ jobs:
         run: pnpm data:audit
       - run: pnpm data:validate
       - run: pnpm test
-      - run: pnpm build
+      - run: pnpm build:static # what Cloudflare Pages deploys
 
       - name: Commit changes
         run: |
