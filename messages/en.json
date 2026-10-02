@@ -44,9 +44,9 @@
   },
   "Search": {
     "label": "Street or microdistrict",
-    "placeholder": "e.g. Айгерим-1 or Ратушного",
+    "placeholder": "e.g. aigerim 1 or Ratushnogo",
     "clear": "Clear search",
-    "hint": "Addresses are in Russian, as in the AZhK schedule. Abbreviations like «мкр» or «ул» are optional."
+    "hint": "Addresses are in Russian, as in the AZhK schedule, but you can search in Latin script: aigerim 1, ratushnogo, Abay Ave."
   },
   "DateFilter": {
     "label": "Date",

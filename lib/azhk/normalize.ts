@@ -1,3 +1,5 @@
+import { cyrillicSkeleton, fromWrongLayout, hasLatin, latinSkeleton } from "@/lib/azhk/latin";
+
 /**
  * The source occasionally types Macedonian/Belarusian look-alikes instead of
  * Kazakh letters (Ќ for Қ, Ў for Ұ). Applied to every text field we keep.
@@ -62,22 +64,45 @@ export function normalizePlace(text: string): string {
 }
 
 /**
- * Does a normalized place match the user's query? The whole normalized query
- * must appear as a phrase, so "самал 2" doesn't match "самал 1, д 2". A leading
- * street type is optional ("ул толе би" also finds "толе би ул") unless the rest
- * is only a number ("мкр 8" must not match every "8").
+ * Phrase match with an optional leading street type: the whole query must appear
+ * as a phrase, so "самал 2" doesn't match "самал 1, д 2". A leading type word is
+ * optional ("ул толе би" also finds "толе би ул") unless the rest is only a
+ * number ("мкр 8" must not match every "8").
  */
-export function matchesPlace(placeNormalized: string, query: string): boolean {
-  const normalizedQuery = normalizePlace(query);
-  if (normalizedQuery === "" || STREET_TYPES.has(normalizedQuery)) return true;
-  if (placeNormalized.includes(normalizedQuery)) return true;
+function phraseMatches(haystack: string, needle: string, typeWords: ReadonlySet<string>): boolean {
+  if (needle === "" || typeWords.has(needle)) return true;
+  if (haystack.includes(needle)) return true;
 
-  const [first, ...rest] = normalizedQuery.split(" ");
+  const [first, ...rest] = needle.split(" ");
   const withoutType = rest.join(" ");
   return (
     first !== undefined &&
-    STREET_TYPES.has(first) &&
+    typeWords.has(first) &&
     /\p{L}/u.test(withoutType) &&
-    placeNormalized.includes(withoutType)
+    haystack.includes(withoutType)
+  );
+}
+
+const LATIN_STREET_TYPES = new Set(["mkr", "ul", "pr"]);
+const skeletonCache = new Map<string, string>();
+
+/**
+ * Does a normalized place match the user's query? Cyrillic queries are
+ * normalized like the place itself. Latin queries also work: "aigerim 1",
+ * "zhetysu", "Şañyraq", or Russian typed on an English keyboard layout.
+ */
+export function matchesPlace(placeNormalized: string, query: string): boolean {
+  if (phraseMatches(placeNormalized, normalizePlace(query), STREET_TYPES)) return true;
+  if (!hasLatin(query)) return false;
+
+  let placeSkeleton = skeletonCache.get(placeNormalized);
+  if (placeSkeleton === undefined) {
+    placeSkeleton = cyrillicSkeleton(placeNormalized);
+    skeletonCache.set(placeNormalized, placeSkeleton);
+  }
+
+  return (
+    phraseMatches(placeSkeleton, latinSkeleton(query), LATIN_STREET_TYPES) ||
+    phraseMatches(placeNormalized, normalizePlace(fromWrongLayout(query)), STREET_TYPES)
   );
 }

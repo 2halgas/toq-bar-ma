@@ -13,7 +13,7 @@ An unofficial, mobile-first map of planned power outages in Almaty. Type your st
 
 ## Features
 
-- **Street search** that forgives how people type: `м-н` / `м-он` / `мкр.` / `мкр`, `ул.`, `пр-т`, case, `ё`/`е`, Kazakh letters (`Ақжар` → `Акжар`), hyphens and extra spaces.
+- **Street search** that forgives how people type: `м-н` / `м-он` / `мкр.` / `мкр`, `ул.`, `пр-т`, case, `ё`/`е`, Kazakh letters (`Ақжар` → `Акжар`), hyphens and extra spaces — and Latin script in any common romanization (`aigerim 1`, `Zhetysu`/`Jetisu`, `Şañyraq`, `Abay Ave`) or Russian typed on an English layout (`fqutHbv`).
 - **Filters** by date (today / tomorrow / week / any day) and power network unit (РЭС), **stored in the URL** so any view can be shared as a link.
 - **List** grouped by day and РЭС: time and duration, affected addresses, equipment (substation), repair type, “today” / “tomorrow” badges.
 - **Map** of the streets and microdistricts mentioned in the schedule, with clustered markers; click a marker to see its outages or filter the list by that place.
@@ -127,4 +127,4 @@ Map data and geocoding © [OpenStreetMap](https://www.openstreetmap.org/copyrigh
 - [ ] Individual buildings on the map (geocoding house numbers)
 - [ ] Telegram bot with notifications for a saved address
 - [x] Kazakh and English localization
-- [ ] Search in Latin script (`aigerim` → «Айгерим»)
+- [x] Search in Latin script (`aigerim 1`, `Şañyraq`, `Abay Ave`) and with the wrong keyboard layout
