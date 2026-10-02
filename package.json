@@ -16,7 +16,8 @@
     "data:validate": "tsx scripts/validate-data.ts",
     "data:fetch": "tsx scripts/fetch-outages.ts",
     "data:audit": "tsx scripts/audit-privacy.ts",
-    "data:geocode": "tsx scripts/geocode.ts"
+    "data:geocode": "tsx scripts/geocode.ts",
+    "build:static": "STATIC_EXPORT=1 next build"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -26,6 +27,7 @@
     "leaflet.markercluster": "^1.5.3",
     "lucide-react": "^1.49.0",
     "next": "16.3.8",
+    "next-intl": "^4.14.9",
     "next-themes": "^0.4.6",
     "radix-ui": "^1.6.7",
     "react": "19.2.8",

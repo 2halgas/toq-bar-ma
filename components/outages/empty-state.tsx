@@ -1,4 +1,5 @@
 import { RotateCcwIcon, ZapIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { ExternalLink } from "@/components/layout/external-link";
 import { Button } from "@/components/ui/button";
@@ -21,44 +22,48 @@ export function EmptyState({
   schedule,
   onReset,
 }: EmptyStateProps) {
-  const period = `с ${formatDayMonth(schedule.weekStart)} по ${formatDayMonth(schedule.weekEnd)}`;
+  const t = useTranslations("Empty");
+  const tCommon = useTranslations("Common");
+  const period = tCommon("period", {
+    from: formatDayMonth(schedule.weekStart),
+    to: formatDayMonth(schedule.weekEnd),
+  });
+
+  const title =
+    coverage === "after-schedule"
+      ? t("afterScheduleTitle")
+      : coverage === "before-schedule"
+        ? t("beforeScheduleTitle")
+        : hasActiveFilters
+          ? t("noMatchesTitle")
+          : t("nothingPlannedTitle");
+
+  const description =
+    coverage !== "covered"
+      ? t("outsideSchedule", { period })
+      : query
+        ? t("noQueryMatches", { query })
+        : hasActiveFilters
+          ? t("noFilterMatches")
+          : t("nothingPlanned");
+
   return (
     <div className="flex flex-col items-center rounded-xl border border-dashed px-6 py-10 text-center">
       <span className="grid size-12 place-items-center rounded-full bg-muted" aria-hidden>
         <ZapIcon className="size-6 text-muted-foreground" />
       </span>
-      <h3 className="mt-4 font-semibold">
-        {coverage === "after-schedule"
-          ? "График на эти даты ещё не опубликован"
-          : coverage === "before-schedule"
-            ? "Для этих дат графика нет"
-            : hasActiveFilters
-              ? "Ничего не найдено"
-              : "На оставшиеся дни графика плановых отключений нет"}
-      </h3>
-      <p className="mt-1 max-w-sm text-sm text-muted-foreground">
-        {coverage !== "covered" ? (
-          <>Сейчас доступен график АЖК {period}. Выберите дату из этого периода.</>
-        ) : query ? (
-          <>
-            По запросу «{query}» в выбранные даты плановых отключений нет. Проверьте написание или
-            выберите другую дату.
-          </>
-        ) : hasActiveFilters ? (
-          "По выбранным фильтрам плановых отключений нет. Попробуйте другую дату или РЭС."
-        ) : (
-          "В опубликованном графике на эти дни ничего нет."
-        )}
-      </p>
+      <h3 className="mt-4 font-semibold">{title}</h3>
+      <p className="mt-1 max-w-sm text-sm text-muted-foreground">{description}</p>
       {hasActiveFilters && (
         <Button variant="outline" className="mt-4" onClick={onReset}>
           <RotateCcwIcon aria-hidden />
-          Сбросить фильтры
+          {t("resetFilters")}
         </Button>
       )}
       <p className="mt-6 max-w-sm text-xs text-muted-foreground">
-        Здесь только плановые работы. Аварийные отключения не отображаются, а график может меняться
-        — сверьтесь с <ExternalLink href={siteConfig.azhkScheduleUrl}>сайтом АЖК</ExternalLink>.
+        {t.rich("plannedOnly", {
+          link: (chunks) => <ExternalLink href={siteConfig.azhkScheduleUrl}>{chunks}</ExternalLink>,
+        })}
       </p>
     </div>
   );

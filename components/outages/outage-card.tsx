@@ -1,18 +1,19 @@
 "use client";
 
 import { CableIcon, ClockIcon, MapPinIcon, WrenchIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 import { ExternalLink } from "@/components/layout/external-link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { PLACE_HIDDEN, REPAIR_TYPE_LABELS, type AzhkOutage } from "@/lib/azhk/schema";
+import { PLACE_HIDDEN, type AzhkOutage } from "@/lib/azhk/schema";
 import { formatDuration, getRelativeDay, type RelativeDay } from "@/lib/dates";
 import { cn } from "@/lib/utils";
 
-const RELATIVE_DAY_BADGES: Record<RelativeDay, { label: string; className: string }> = {
-  today: { label: "Сегодня", className: "bg-brand text-neutral-950" },
-  tomorrow: { label: "Завтра", className: "bg-secondary text-secondary-foreground" },
+const RELATIVE_DAY_BADGE_CLASSES: Record<RelativeDay, string> = {
+  today: "bg-brand text-neutral-950",
+  tomorrow: "bg-secondary text-secondary-foreground",
 };
 
 /** Places longer than this are clamped with a "show more" toggle. */
@@ -24,10 +25,12 @@ interface OutageCardProps {
 }
 
 export function OutageCard({ outage, today }: OutageCardProps) {
+  const t = useTranslations("Card");
+  const tRepair = useTranslations("RepairType");
   const placeId = useId();
   const [expanded, setExpanded] = useState(false);
   const relativeDay = getRelativeDay(outage.date, today);
-  const badge = relativeDay && RELATIVE_DAY_BADGES[relativeDay];
+
   const isHidden = outage.place === PLACE_HIDDEN;
   const isLong = outage.place.length > LONG_PLACE_CHARS;
 
@@ -43,14 +46,16 @@ export function OutageCard({ outage, today }: OutageCardProps) {
             {formatDuration(outage.timeFrom, outage.timeTo)}
           </span>
         </h5>
-        {badge && <Badge className={badge.className}>{badge.label}</Badge>}
+        {relativeDay && (
+          <Badge className={RELATIVE_DAY_BADGE_CLASSES[relativeDay]}>{t(relativeDay)}</Badge>
+        )}
       </div>
 
       <dl className="mt-3 grid gap-2 text-sm">
         <div className="flex gap-2">
           <dt>
             <MapPinIcon className="mt-0.5 size-4 text-muted-foreground" aria-hidden />
-            <span className="sr-only">Где</span>
+            <span className="sr-only">{t("where")}</span>
           </dt>
           <dd className="min-w-0 flex-1">
             <p
@@ -61,7 +66,7 @@ export function OutageCard({ outage, today }: OutageCardProps) {
                 isLong && !expanded && "line-clamp-4",
               )}
             >
-              {outage.place}
+              {isHidden ? t("placeHidden") : outage.place}
             </p>
             {isLong && (
               <Button
@@ -72,7 +77,7 @@ export function OutageCard({ outage, today }: OutageCardProps) {
                 aria-controls={placeId}
                 onClick={() => setExpanded((value) => !value)}
               >
-                {expanded ? "Свернуть" : "Показать полностью"}
+                {expanded ? t("showLess") : t("showMore")}
               </Button>
             )}
           </dd>
@@ -80,19 +85,20 @@ export function OutageCard({ outage, today }: OutageCardProps) {
         <div className="flex gap-2 text-muted-foreground">
           <dt>
             <CableIcon className="mt-0.5 size-4" aria-hidden />
-            <span className="sr-only">Объект</span>
+            <span className="sr-only">{t("equipment")}</span>
           </dt>
           <dd className="min-w-0 break-words">{outage.dispatchName}</dd>
         </div>
         <div className="flex gap-2 text-muted-foreground">
           <dt>
             <WrenchIcon className="mt-0.5 size-4" aria-hidden />
-            <span className="sr-only">Вид работ</span>
+            <span className="sr-only">{t("workType")}</span>
           </dt>
           <dd className="flex flex-1 flex-wrap justify-between gap-x-3">
-            <span>{REPAIR_TYPE_LABELS[outage.repairType]}</span>
+            <span>{tRepair(outage.repairType)}</span>
             <ExternalLink href={outage.sourceUrl} className="text-xs leading-5 font-normal">
-              Источник<span className="sr-only">: график АЖК</span>
+              {t("source")}
+              <span className="sr-only">{t("sourceDetails")}</span>
             </ExternalLink>
           </dd>
         </div>

@@ -1,7 +1,8 @@
+import { useTranslations } from "next-intl";
+
 import { EmptyState } from "@/components/outages/empty-state";
 import { OutageList } from "@/components/outages/outage-list";
 import { type ScheduleCoverage } from "@/lib/filter";
-import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
 import { type AzhkOutage } from "@/lib/azhk/schema";
 import { cn } from "@/lib/utils";
 
@@ -27,13 +28,15 @@ export function ResultsSection({
   onReset,
   hideHeading = false,
 }: ResultsSectionProps) {
+  const t = useTranslations("Results");
+
   return (
     <section aria-labelledby="results-heading" className="space-y-3">
       <h2 id="results-heading" className={cn("text-lg font-semibold", hideHeading && "sr-only")}>
-        Отключения
+        {t("heading")}
       </h2>
       <p role="status" className="text-sm text-muted-foreground">
-        Найдено {results.length} {pluralize(results.length, OUTAGE_FORMS)}
+        {t("found", { count: results.length })}
       </p>
       {results.length > 0 ? (
         <OutageList outages={results} today={today} />

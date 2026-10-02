@@ -1,17 +1,31 @@
 import { ImageResponse } from "next/og";
+import { getTranslations } from "next-intl/server";
 
 import { loadOgFonts } from "@/lib/og/fonts";
+import { DEFAULT_LOCALE, isLocale, LOCALES } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site";
 
-export const alt = `${siteConfig.name} — ${siteConfig.tagline}`;
+// Generated once at build time, so it also works with `output: "export"`.
+export const dynamic = "force-static";
+
+// The brand name reads the same in every language.
+export const alt = siteConfig.name;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
+
+// One image per language, generated at build time (works on any static host).
+export function generateStaticParams() {
+  return LOCALES.map((locale) => ({ locale }));
+}
 
 // Decorative tiles in the brand's yellow → amber palette.
 const SWATCHES = ["#3f3f46", "#78350f", "#b45309", "#f59e0b", "#fde047"];
 const TILE_LEVELS = [3, 1, 4, 2, 0, 2, 1, 3];
 
-export default async function OpenGraphImage() {
+export default async function OpenGraphImage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale: isLocale(locale) ? locale : DEFAULT_LOCALE });
+
   return new ImageResponse(
     <div
       style={{
@@ -48,10 +62,10 @@ export default async function OpenGraphImage() {
         </div>
         <div style={{ fontSize: 38, marginTop: 24, color: "#d4d4d8" }}>
           {/* Keep the one-letter preposition with the next word when the line wraps. */}
-          {siteConfig.tagline.replace(/ в /g, " в\u00a0")}
+          {t("Common.tagline").replace(/ в /g, " в\u00a0")}
         </div>
         <div style={{ fontSize: 24, marginTop: 40, color: "#a1a1aa" }}>
-          Поиск по улице · график АЖК · неофициальный сервис
+          {t("Metadata.ogFeatures")}
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { SearchIcon, XIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useEffect, useId, useRef, useState } from "react";
 
 import { Button } from "@/components/ui/button";
@@ -17,6 +18,7 @@ interface StreetSearchProps {
 }
 
 export function StreetSearch({ value, onCommit }: StreetSearchProps) {
+  const t = useTranslations("Search");
   const inputId = useId();
   const hintId = useId();
   const inputRef = useRef<HTMLInputElement>(null);
@@ -59,7 +61,7 @@ export function StreetSearch({ value, onCommit }: StreetSearchProps) {
         inputRef.current?.blur(); // hides the on-screen keyboard on phones
       }}
     >
-      <Label htmlFor={inputId}>Улица или микрорайон</Label>
+      <Label htmlFor={inputId}>{t("label")}</Label>
       <div className="relative">
         <SearchIcon
           className="pointer-events-none absolute top-1/2 left-3 size-4 -translate-y-1/2 text-muted-foreground"
@@ -74,7 +76,7 @@ export function StreetSearch({ value, onCommit }: StreetSearchProps) {
           autoComplete="off"
           spellCheck={false}
           maxLength={MAX_QUERY_LENGTH}
-          placeholder="Например, Айгерим-1 или Ратушного"
+          placeholder={t("placeholder")}
           aria-describedby={hintId}
           value={draft}
           onChange={(event) => setDraft(event.target.value)}
@@ -85,7 +87,7 @@ export function StreetSearch({ value, onCommit }: StreetSearchProps) {
             type="button"
             variant="ghost"
             size="icon"
-            aria-label="Очистить поиск"
+            aria-label={t("clear")}
             className="absolute top-1/2 right-1.5 -translate-y-1/2"
             onClick={() => {
               setDraft("");
@@ -98,7 +100,7 @@ export function StreetSearch({ value, onCommit }: StreetSearchProps) {
         )}
       </div>
       <p id={hintId} className="text-xs text-muted-foreground">
-        Можно писать «мкр», «м-н» или без сокращений; регистр и ё/е не важны.
+        {t("hint")}
       </p>
     </form>
   );

@@ -1,4 +1,5 @@
 import { CalendarClockIcon, CalendarRangeIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { ExternalLink } from "@/components/layout/external-link";
 import { formatDayMonth } from "@/lib/dates";
@@ -19,8 +20,13 @@ interface ScheduleNoticeProps {
 
 /** Which week the data covers — and a warning once that week is over. */
 export function ScheduleNotice({ schedule, today }: ScheduleNoticeProps) {
+  const t = useTranslations("Schedule");
+  const tCommon = useTranslations("Common");
   const isOutdated = today > schedule.weekEnd;
-  const period = `с ${formatDayMonth(schedule.weekStart)} по ${formatDayMonth(schedule.weekEnd)}`;
+  const period = tCommon("period", {
+    from: formatDayMonth(schedule.weekStart),
+    to: formatDayMonth(schedule.weekEnd),
+  });
   const Icon = isOutdated ? CalendarClockIcon : CalendarRangeIcon;
 
   return (
@@ -35,16 +41,24 @@ export function ScheduleNotice({ schedule, today }: ScheduleNoticeProps) {
       <Icon className="mt-0.5 size-4 shrink-0" aria-hidden />
       {isOutdated ? (
         <span>
-          <strong className="font-semibold">Новый график ещё не опубликован.</strong> Последний —{" "}
-          {period}. Проверьте{" "}
-          <ExternalLink href={siteConfig.azhkScheduleUrl}>список графиков АЖК</ExternalLink>.
+          <strong className="font-semibold">{t("outdatedTitle")}</strong>{" "}
+          {t.rich("outdated", {
+            period,
+            link: (chunks) => (
+              <ExternalLink href={siteConfig.azhkScheduleUrl}>{chunks}</ExternalLink>
+            ),
+          })}
         </span>
       ) : (
         <span>
-          <ExternalLink href={schedule.sourceUrl} className="font-normal">
-            График АЖК {period}
-          </ExternalLink>
-          . Отключения за другие дни появятся, когда АЖК опубликует следующий график.
+          {t.rich("current", {
+            period,
+            link: (chunks) => (
+              <ExternalLink href={schedule.sourceUrl} className="font-normal">
+                {chunks}
+              </ExternalLink>
+            ),
+          })}
         </span>
       )}
     </p>

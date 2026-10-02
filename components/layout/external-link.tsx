@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import { type ComponentProps } from "react";
 
 import { cn } from "@/lib/utils";
@@ -8,6 +9,8 @@ export function ExternalLink({
   className,
   ...props
 }: Omit<ComponentProps<"a">, "target" | "rel">) {
+  const t = useTranslations("Common");
+
   return (
     <a
       target="_blank"
@@ -19,7 +22,7 @@ export function ExternalLink({
       {...props}
     >
       {children}
-      <span className="sr-only"> (откроется в новой вкладке)</span>
+      <span className="sr-only"> {t("opensInNewTab")}</span>
     </a>
   );
 }

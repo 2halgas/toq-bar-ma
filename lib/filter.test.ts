@@ -4,7 +4,6 @@ import { type AzhkOutage } from "@/lib/azhk/schema";
 import {
   countByRes,
   DEFAULT_FILTERS,
-  describeDateFilter,
   filterOutages,
   getScheduleCoverage,
   groupOutages,
@@ -43,15 +42,6 @@ describe("resolveDateRange", () => {
       from: "2026-10-05",
       to: "2026-10-05",
     });
-  });
-});
-
-describe("describeDateFilter", () => {
-  it("labels every kind of date filter", () => {
-    expect(describeDateFilter({ kind: "today" })).toBe("на сегодня");
-    expect(describeDateFilter({ kind: "tomorrow" })).toBe("на завтра");
-    expect(describeDateFilter({ kind: "week" })).toBe("на неделю");
-    expect(describeDateFilter({ kind: "date", date: "2026-10-05" })).toBe("на 5 октября");
   });
 });
 

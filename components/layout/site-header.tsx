@@ -1,10 +1,14 @@
 import { ZapIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { DisclaimerBanner } from "@/components/layout/disclaimer-banner";
+import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { siteConfig } from "@/lib/site";
 
 export function SiteHeader() {
+  const t = useTranslations("Common");
+
   return (
     <header className="mx-auto w-full max-w-7xl space-y-4 px-4 pt-4 pb-2 sm:px-6 sm:pt-6">
       <div className="flex items-start justify-between gap-4">
@@ -19,10 +23,13 @@ export function SiteHeader() {
             <h1 className="text-xl leading-tight font-semibold tracking-tight sm:text-2xl">
               {siteConfig.name}
             </h1>
-            <p className="text-sm text-muted-foreground">Плановые отключения света в Алматы</p>
+            <p className="text-sm text-muted-foreground">{t("tagline")}</p>
           </div>
         </div>
-        <ThemeToggle />
+        <div className="flex shrink-0 items-center gap-1">
+          <LanguageSwitcher />
+          <ThemeToggle />
+        </div>
       </div>
       <DisclaimerBanner />
     </header>

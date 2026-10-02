@@ -1,6 +1,7 @@
 "use client";
 
 import { ListIcon, MapIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 
 import { OutageFilters } from "@/components/filters/outage-filters";
@@ -26,6 +27,7 @@ interface OutagesExplorerProps {
 }
 
 export function OutagesExplorer({ outages, locations, schedule }: OutagesExplorerProps) {
+  const t = useTranslations("Explorer");
   const today = useAlmatyToday();
   const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
   const { filters, updateFilters, resetFilters } = useOutageFilters();
@@ -114,12 +116,12 @@ export function OutagesExplorer({ outages, locations, schedule }: OutagesExplore
           <TabsList className="h-11! w-full">
             <TabsTrigger value="list" className="text-sm">
               <ListIcon aria-hidden />
-              Список
+              {t("listTab")}
               <span className="text-muted-foreground tabular-nums">{results.length}</span>
             </TabsTrigger>
             <TabsTrigger value="map" className="text-sm">
               <MapIcon aria-hidden />
-              Карта
+              {t("mapTab")}
             </TabsTrigger>
           </TabsList>
         </div>
@@ -133,7 +135,7 @@ export function OutagesExplorer({ outages, locations, schedule }: OutagesExplore
           {results.length > 0 && (
             <Button variant="outline" className="h-11 w-full" onClick={() => setMobileView("list")}>
               <ListIcon aria-hidden />
-              Показать списком: {results.length}
+              {t("showAsList", { count: results.length })}
             </Button>
           )}
         </TabsContent>

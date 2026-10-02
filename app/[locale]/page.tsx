@@ -1,10 +1,18 @@
-import { Suspense } from "react";
+import { notFound } from "next/navigation";
+import { useTranslations } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { use, Suspense } from "react";
 
 import { OutagesExplorer } from "@/components/outages-explorer";
+import { isLocale } from "@/i18n/routing";
 import { getGeocache, getOutagesData } from "@/lib/data";
 import { buildOutageViews } from "@/lib/map-points";
 
-export default function Home() {
+export default function Home({ params }: PageProps<"/[locale]">) {
+  const { locale } = use(params);
+  if (!isLocale(locale)) notFound();
+  setRequestLocale(locale);
+
   const { outages: rawOutages, title, sourceUrl, weekStart, weekEnd } = getOutagesData();
   // Joined at build time, so the client gets only coordinates for places in this schedule.
   const { outages, locations } = buildOutageViews(rawOutages, getGeocache());
@@ -23,11 +31,13 @@ export default function Home() {
 }
 
 function ExplorerSkeleton() {
+  const t = useTranslations("Common");
+
   return (
     <div
       className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-4 sm:px-6 lg:grid-cols-[minmax(22rem,28rem)_minmax(0,1fr)] lg:gap-8"
       aria-busy="true"
-      aria-label="Загрузка"
+      aria-label={t("loading")}
     >
       <div className="space-y-4">
         {[44, 40, 40].map((height, index) => (

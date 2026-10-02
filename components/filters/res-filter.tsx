@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useId } from "react";
 
 import { Label } from "@/components/ui/label";
@@ -23,27 +24,28 @@ interface ResFilterProps {
 }
 
 export function ResFilter({ value, options, onChange }: ResFilterProps) {
+  const t = useTranslations("ResFilter");
   const triggerId = useId();
   const hintId = useId();
 
   return (
     <div className="space-y-1.5">
-      <Label htmlFor={triggerId}>РЭС</Label>
+      <Label htmlFor={triggerId}>{t("label")}</Label>
       <Select
         value={value === null ? ALL : String(value)}
         onValueChange={(next) => onChange(next === ALL ? null : Number(next))}
       >
         <SelectTrigger id={triggerId} aria-describedby={hintId} className="h-10! w-full">
           {/* Explicit label: the trigger shouldn't repeat the per-option counts. */}
-          <SelectValue>{value === null ? "Все РЭС" : formatRes(value)}</SelectValue>
+          <SelectValue>{value === null ? t("all") : formatRes(value)}</SelectValue>
         </SelectTrigger>
         <SelectContent position="popper">
-          <SelectItem value={ALL}>Все РЭС</SelectItem>
+          <SelectItem value={ALL}>{t("all")}</SelectItem>
           {options.map(({ res, count }) => (
             <SelectItem key={res} value={String(res)}>
               <span>{formatRes(res)}</span>
               <span className="ml-auto pl-3 text-muted-foreground tabular-nums">
-                <span className="sr-only">, отключений: </span>
+                <span className="sr-only">{t("countLabel")}</span>
                 {count}
               </span>
             </SelectItem>
@@ -51,7 +53,7 @@ export function ResFilter({ value, options, onChange }: ResFilterProps) {
         </SelectContent>
       </Select>
       <p id={hintId} className="text-xs text-muted-foreground">
-        Район электрических сетей АЖК. Не знаете свой — просто ищите по улице.
+        {t("hint")}
       </p>
     </div>
   );

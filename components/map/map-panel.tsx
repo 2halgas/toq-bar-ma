@@ -2,16 +2,16 @@
 
 import { MapIcon } from "lucide-react";
 import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
 import { type ReactNode } from "react";
 
 import { type MapPoint } from "@/lib/map-points";
-import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
 import { cn } from "@/lib/utils";
 
 // Leaflet touches `window` on import, so the map itself never renders on the server.
 const OutageMap = dynamic(
   () => import("@/components/map/outage-map").then((module) => module.OutageMap),
-  { ssr: false, loading: () => <MapPlaceholder>Загружаем карту…</MapPlaceholder> },
+  { ssr: false, loading: () => <MapLoading /> },
 );
 
 interface MapPanelProps {
@@ -23,15 +23,15 @@ interface MapPanelProps {
 }
 
 export function MapPanel({ points, unmappedCount, onShowInList, className }: MapPanelProps) {
+  const t = useTranslations("Map");
+
   return (
     <section aria-labelledby="map-heading" className={cn("flex flex-col gap-3", className)}>
       <div>
         <h2 id="map-heading" className="text-lg font-semibold">
-          Карта
+          {t("heading")}
         </h2>
-        <p className="text-sm text-muted-foreground">
-          Улицы и микрорайоны из графика. Нажмите на точку, чтобы увидеть отключения.
-        </p>
+        <p className="text-sm text-muted-foreground">{t("description")}</p>
       </div>
 
       <div className="relative isolate h-[60dvh] min-h-80 overflow-hidden rounded-xl border bg-muted lg:h-auto lg:min-h-0 lg:flex-1">
@@ -39,12 +39,16 @@ export function MapPanel({ points, unmappedCount, onShowInList, className }: Map
       </div>
 
       <p className="text-xs text-muted-foreground">
-        Точка — примерное положение улицы или микрорайона, а не конкретного дома.
-        {unmappedCount > 0 &&
-          ` Без точки на карте: ${unmappedCount} ${pluralize(unmappedCount, OUTAGE_FORMS)} — смотрите в списке.`}
+        {t("accuracy")}
+        {unmappedCount > 0 && ` ${t("unmapped", { count: unmappedCount })}`}
       </p>
     </section>
   );
+}
+
+function MapLoading() {
+  const t = useTranslations("Map");
+  return <MapPlaceholder>{t("loading")}</MapPlaceholder>;
 }
 
 function MapPlaceholder({ children }: { children: ReactNode }) {

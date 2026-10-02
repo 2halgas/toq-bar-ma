@@ -1,7 +1,8 @@
+import { useTranslations } from "next-intl";
+
 import { OutageCard } from "@/components/outages/outage-card";
 import { formatDayHeading } from "@/lib/dates";
 import { groupOutages } from "@/lib/filter";
-import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
 import { formatRes, type AzhkOutage } from "@/lib/azhk/schema";
 
 interface OutageListProps {
@@ -10,6 +11,7 @@ interface OutageListProps {
 }
 
 export function OutageList({ outages, today }: OutageListProps) {
+  const t = useTranslations("Common");
   const days = groupOutages(outages);
 
   return (
@@ -27,7 +29,7 @@ export function OutageList({ outages, today }: OutageListProps) {
               <span className="font-semibold">{formatDayHeading(day.date)}</span>
               <span className="sr-only">, </span>
               <span className="text-sm font-normal text-muted-foreground">
-                {count} {pluralize(count, OUTAGE_FORMS)}
+                {t("outages", { count })}
               </span>
             </h3>
 

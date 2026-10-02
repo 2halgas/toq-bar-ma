@@ -1,6 +1,7 @@
 "use client";
 
 import { RotateCcwIcon } from "lucide-react";
+import { useTranslations } from "next-intl";
 
 import { DateFilter } from "@/components/filters/date-filter";
 import { ResFilter } from "@/components/filters/res-filter";
@@ -25,16 +26,18 @@ export function OutageFilters({
   onQueryCommit,
   onReset,
 }: OutageFiltersProps) {
+  const t = useTranslations("Filters");
+
   return (
     <section aria-labelledby="filters-heading" className="space-y-4">
       <div className="flex min-h-8 items-center justify-between gap-2">
         <h2 id="filters-heading" className="text-lg font-semibold">
-          Поиск
+          {t("heading")}
         </h2>
         {!isDefault && (
           <Button variant="ghost" size="sm" onClick={onReset}>
             <RotateCcwIcon aria-hidden />
-            Сбросить
+            {t("reset")}
           </Button>
         )}
       </div>

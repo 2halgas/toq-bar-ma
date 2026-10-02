@@ -22,14 +22,6 @@ export const REPAIR_TYPE_IDS = [
 export const RepairTypeSchema = z.enum(REPAIR_TYPE_IDS);
 export type RepairType = z.infer<typeof RepairTypeSchema>;
 
-export const REPAIR_TYPE_LABELS: Record<RepairType, string> = {
-  current_repair: "Текущий ремонт",
-  capital_repair: "Капитальный ремонт",
-  contractor_works: "Подрядные работы",
-  defect_elimination: "Устранение дефектов",
-  other: "Другое",
-};
-
 /** Substation id as written in dispatch names, normalized to `ТП-1234`. */
 export const SubstationSchema = z.string().regex(/^ТП-\d+$/, "Expected ТП-<number>");
 

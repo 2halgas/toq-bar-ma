@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { useId } from "react";
 
 import { Label } from "@/components/ui/label";
@@ -7,16 +8,12 @@ import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 import { type DateFilter as DateFilterValue } from "@/lib/filter";
 import { cn } from "@/lib/utils";
 
-const PRESETS = [
-  { kind: "today", label: "Сегодня" },
-  { kind: "tomorrow", label: "Завтра" },
-  { kind: "week", label: "Неделя" },
-] as const;
+const PRESETS = ["today", "tomorrow", "week"] as const;
 
-type Preset = (typeof PRESETS)[number]["kind"];
+type Preset = (typeof PRESETS)[number];
 
 function isPreset(value: string): value is Preset {
-  return PRESETS.some((preset) => preset.kind === value);
+  return (PRESETS as readonly string[]).includes(value);
 }
 
 interface DateFilterProps {
@@ -25,6 +22,7 @@ interface DateFilterProps {
 }
 
 export function DateFilter({ value, onChange }: DateFilterProps) {
+  const t = useTranslations("DateFilter");
   const labelId = useId();
   const dateInputId = useId();
   const pickedDate = value.kind === "date" ? value.date : "";
@@ -32,7 +30,7 @@ export function DateFilter({ value, onChange }: DateFilterProps) {
   return (
     <div className="space-y-1.5">
       <span id={labelId} className="text-sm leading-none font-medium">
-        Дата
+        {t("label")}
       </span>
       <div className="flex flex-col gap-2 min-[420px]:flex-row">
         <ToggleGroup
@@ -47,18 +45,18 @@ export function DateFilter({ value, onChange }: DateFilterProps) {
         >
           {PRESETS.map((preset) => (
             <ToggleGroupItem
-              key={preset.kind}
-              value={preset.kind}
+              key={preset}
+              value={preset}
               className="h-10 flex-1 px-3 data-[state=on]:bg-primary data-[state=on]:text-primary-foreground min-[420px]:flex-none"
             >
-              {preset.label}
+              {t(preset)}
             </ToggleGroupItem>
           ))}
         </ToggleGroup>
 
         <div className="min-[420px]:w-44">
           <Label htmlFor={dateInputId} className="sr-only">
-            Другая дата
+            {t("otherDate")}
           </Label>
           <input
             id={dateInputId}

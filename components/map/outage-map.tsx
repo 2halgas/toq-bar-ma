@@ -4,6 +4,7 @@ import "leaflet/dist/leaflet.css";
 import "leaflet.markercluster/dist/MarkerCluster.css";
 
 import L, { type MarkerCluster } from "leaflet";
+import { useTranslations } from "next-intl";
 import { useEffect, useMemo } from "react";
 import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
@@ -13,7 +14,6 @@ import { formatRes } from "@/lib/azhk/schema";
 import { formatShortDate } from "@/lib/dates";
 import { ALMATY_VIEWBOX } from "@/lib/geo/geocache";
 import { type MapPoint } from "@/lib/map-points";
-import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
 
 // Standard OSM tiles need no API key; globals.css desaturates/inverts them per theme.
 const TILE_URL = "https://tile.openstreetmap.org/{z}/{x}/{y}.png";
@@ -103,6 +103,7 @@ export interface OutageMapProps {
 }
 
 export function OutageMap({ points, onShowInList }: OutageMapProps) {
+  const t = useTranslations("Map");
   const markers = useMemo(
     () =>
       points.map((point) => ({
@@ -134,7 +135,7 @@ export function OutageMap({ points, onShowInList }: OutageMapProps) {
             key={point.key}
             position={[point.lat, point.lon]}
             icon={icon}
-            title={`${point.label}: ${point.outages.length} ${pluralize(point.outages.length, OUTAGE_FORMS)}`}
+            title={t("markerTitle", { label: point.label, count: point.outages.length })}
             {...options}
           >
             <Popup>
@@ -149,11 +150,11 @@ export function OutageMap({ points, onShowInList }: OutageMapProps) {
                     </li>
                   ))}
                   {point.outages.length > POPUP_LIST_LIMIT && (
-                    <li>и ещё {point.outages.length - POPUP_LIST_LIMIT}</li>
+                    <li>{t("more", { count: point.outages.length - POPUP_LIST_LIMIT })}</li>
                   )}
                 </ul>
                 <Button size="sm" className="w-full" onClick={() => onShowInList(point.label)}>
-                  Показать в списке
+                  {t("showInList")}
                 </Button>
               </div>
             </Popup>

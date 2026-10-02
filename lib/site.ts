@@ -9,10 +9,8 @@ function resolveSiteUrl(): string {
 
 export const siteConfig = {
   url: resolveSiteUrl(),
+  /** Brand name, the same in every language; taglines and descriptions live in messages/. */
   name: "Тоқ бар ма?",
-  tagline: "Плановые отключения света в Алматы",
-  description:
-    "Неофициальная карта плановых отключений электроэнергии в Алматы по графикам АО «Алатау Жарык Компаниясы».",
   /** Official AZhK page listing weekly planned outage schedules. */
   azhkScheduleUrl: "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics",
   // TODO: replace with the real repository URL once it exists.
