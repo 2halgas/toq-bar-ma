@@ -1,6 +1,13 @@
 import { describe, expect, it } from "vitest";
 
-import { addDaysToIsoDate, getAlmatyToday } from "@/lib/dates";
+import {
+  addDaysToIsoDate,
+  formatDayHeading,
+  formatShortDate,
+  formatUpdatedAt,
+  getAlmatyToday,
+  getRelativeDay,
+} from "@/lib/dates";
 
 describe("getAlmatyToday", () => {
   it("uses Almaty time (UTC+5), not the machine's time zone", () => {
@@ -23,5 +30,30 @@ describe("addDaysToIsoDate", () => {
 
   it("throws on malformed input", () => {
     expect(() => addDaysToIsoDate("2026-10", 1)).toThrow(RangeError);
+  });
+});
+
+describe("getRelativeDay", () => {
+  it("labels today and tomorrow only", () => {
+    expect(getRelativeDay("2026-10-02", "2026-10-02")).toBe("today");
+    expect(getRelativeDay("2026-10-03", "2026-10-02")).toBe("tomorrow");
+    expect(getRelativeDay("2026-11-01", "2026-10-31")).toBe("tomorrow");
+    expect(getRelativeDay("2026-10-04", "2026-10-02")).toBeNull();
+    expect(getRelativeDay("2026-10-01", "2026-10-02")).toBeNull();
+  });
+});
+
+describe("formatting", () => {
+  it("formats day headings in Russian with a capital letter", () => {
+    expect(formatDayHeading("2026-10-02")).toBe("Пятница, 2 октября");
+    expect(formatDayHeading("2026-10-05")).toBe("Понедельник, 5 октября");
+  });
+
+  it("formats short dates", () => {
+    expect(formatShortDate("2026-10-02")).toBe("2 окт., пт");
+  });
+
+  it("shows the update time in Almaty", () => {
+    expect(formatUpdatedAt("2026-10-02T11:10:00.000Z")).toMatch(/2 октября 2026.*16:10/);
   });
 });
