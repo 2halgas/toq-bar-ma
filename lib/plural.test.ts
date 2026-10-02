@@ -1,8 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { pluralize } from "@/lib/plural";
-
-const forms = { one: "отключение", few: "отключения", many: "отключений" };
+import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
 
 describe("pluralize", () => {
   it.each([
@@ -20,6 +18,6 @@ describe("pluralize", () => {
     [111, "отключений"],
     [101, "отключение"],
   ])("%i → %s", (count, expected) => {
-    expect(pluralize(count, forms)).toBe(expected);
+    expect(pluralize(count, OUTAGE_FORMS)).toBe(expected);
   });
 });

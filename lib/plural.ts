@@ -14,3 +14,9 @@ export function pluralize(count: number, forms: RussianPluralForms): string {
   const category = pluralRules.select(count);
   return category === "one" || category === "few" ? forms[category] : forms.many;
 }
+
+export const OUTAGE_FORMS: RussianPluralForms = {
+  one: "отключение",
+  few: "отключения",
+  many: "отключений",
+};

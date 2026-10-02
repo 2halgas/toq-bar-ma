@@ -3,10 +3,12 @@
 import { useMemo } from "react";
 
 import { OutageFilters } from "@/components/filters/outage-filters";
+import { EmptyState } from "@/components/outages/empty-state";
+import { OutageList } from "@/components/outages/outage-list";
 import { useAlmatyToday } from "@/hooks/use-almaty-today";
 import { useOutageFilters } from "@/hooks/use-outage-filters";
 import { countByDistrict, filterOutages } from "@/lib/filter";
-import { pluralize } from "@/lib/plural";
+import { OUTAGE_FORMS, pluralize } from "@/lib/plural";
 import { type Outage } from "@/lib/schema";
 import { toQueryString } from "@/lib/search-params";
 
@@ -26,12 +28,14 @@ export function OutagesExplorer({ outages }: OutagesExplorerProps) {
     [outages, filters, today],
   );
 
+  const isDefault = toQueryString(filters) === "";
+
   return (
     <div className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-4 sm:px-6 lg:grid-cols-[minmax(0,26rem)_1fr]">
       <OutageFilters
         filters={filters}
         districtCounts={districtCounts}
-        isDefault={toQueryString(filters) === ""}
+        isDefault={isDefault}
         onChange={updateFilters}
         onQueryCommit={(query) => updateFilters({ query })}
         onReset={resetFilters}
@@ -42,17 +46,13 @@ export function OutagesExplorer({ outages }: OutagesExplorerProps) {
           Отключения
         </h2>
         <p role="status" className="text-sm text-muted-foreground">
-          Найдено {results.length}{" "}
-          {pluralize(results.length, { one: "отключение", few: "отключения", many: "отключений" })}
+          Найдено {results.length} {pluralize(results.length, OUTAGE_FORMS)}
         </p>
-        {/* Temporary plain list — replaced by grouped cards in the next step. */}
-        <ul className="space-y-1 text-sm">
-          {results.map((outage) => (
-            <li key={outage.id}>
-              {outage.date} · {outage.timeFrom}–{outage.timeTo} · {outage.street}, {outage.houses}
-            </li>
-          ))}
-        </ul>
+        {results.length > 0 ? (
+          <OutageList outages={results} today={today} />
+        ) : (
+          <EmptyState query={filters.query} hasActiveFilters={!isDefault} onReset={resetFilters} />
+        )}
       </section>
     </div>
   );

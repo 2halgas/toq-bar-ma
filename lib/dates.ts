@@ -61,3 +61,16 @@ const updatedAtFormatter = new Intl.DateTimeFormat("ru-RU", {
 export function formatUpdatedAt(isoDateTime: string): string {
   return updatedAtFormatter.format(new Date(isoDateTime));
 }
+
+function minutesOfDay(time: string): number {
+  const [hours = 0, minutes = 0] = time.split(":").map(Number);
+  return hours * 60 + minutes;
+}
+
+/** Length of an outage window, e.g. "8 ч", "4 ч 30 мин", "45 мин". */
+export function formatDuration(timeFrom: string, timeTo: string): string {
+  const total = Math.max(0, minutesOfDay(timeTo) - minutesOfDay(timeFrom));
+  const hours = Math.floor(total / 60);
+  const minutes = total % 60;
+  return [hours && `${hours} ч`, minutes && `${minutes} мин`].filter(Boolean).join(" ") || "0 мин";
+}

@@ -3,6 +3,7 @@ import { describe, expect, it } from "vitest";
 import {
   addDaysToIsoDate,
   formatDayHeading,
+  formatDuration,
   formatShortDate,
   formatUpdatedAt,
   getAlmatyToday,
@@ -55,5 +56,16 @@ describe("formatting", () => {
 
   it("shows the update time in Almaty", () => {
     expect(formatUpdatedAt("2026-10-02T11:10:00.000Z")).toMatch(/2 октября 2026.*16:10/);
+  });
+});
+
+describe("formatDuration", () => {
+  it.each([
+    ["09:00", "17:00", "8 ч"],
+    ["09:00", "13:30", "4 ч 30 мин"],
+    ["10:15", "11:00", "45 мин"],
+    ["10:00", "10:00", "0 мин"],
+  ])("%s–%s → %s", (from, to, expected) => {
+    expect(formatDuration(from, to)).toBe(expected);
   });
 });
