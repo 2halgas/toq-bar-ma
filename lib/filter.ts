@@ -58,11 +58,11 @@ export function describeDateFilter(filter: DateFilter): string {
   }
 }
 
-export function filterOutages(
-  outages: readonly AzhkOutage[],
+export function filterOutages<T extends AzhkOutage>(
+  outages: readonly T[],
   filters: OutageFilters,
   today: string,
-): AzhkOutage[] {
+): T[] {
   const { from, to } = resolveDateRange(filters.date, today);
 
   return outages.filter(

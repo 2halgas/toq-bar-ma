@@ -1,16 +1,23 @@
 import { Suspense } from "react";
 
 import { OutagesExplorer } from "@/components/outages-explorer";
-import { getOutagesData } from "@/lib/data";
+import { getGeocache, getOutagesData } from "@/lib/data";
+import { buildOutageViews } from "@/lib/map-points";
 
 export default function Home() {
-  const { outages, title, sourceUrl, weekStart, weekEnd } = getOutagesData();
+  const { outages: rawOutages, title, sourceUrl, weekStart, weekEnd } = getOutagesData();
+  // Joined at build time, so the client gets only coordinates for places in this schedule.
+  const { outages, locations } = buildOutageViews(rawOutages, getGeocache());
 
   // The explorer reads filters from the URL, so it renders on the client; the
   // header and footer around it are still prerendered.
   return (
     <Suspense fallback={<ExplorerSkeleton />}>
-      <OutagesExplorer outages={outages} schedule={{ title, sourceUrl, weekStart, weekEnd }} />
+      <OutagesExplorer
+        outages={outages}
+        locations={locations}
+        schedule={{ title, sourceUrl, weekStart, weekEnd }}
+      />
     </Suspense>
   );
 }
@@ -18,7 +25,7 @@ export default function Home() {
 function ExplorerSkeleton() {
   return (
     <div
-      className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-4 sm:px-6 lg:grid-cols-[minmax(20rem,24rem)_minmax(0,1fr)] lg:gap-8"
+      className="mx-auto grid w-full max-w-7xl gap-6 px-4 py-4 sm:px-6 lg:grid-cols-[minmax(22rem,28rem)_minmax(0,1fr)] lg:gap-8"
       aria-busy="true"
       aria-label="Загрузка"
     >
@@ -31,15 +38,7 @@ function ExplorerSkeleton() {
           />
         ))}
       </div>
-      <div className="space-y-3">
-        {[48, 160, 160].map((height, index) => (
-          <div
-            key={index}
-            className="rounded-xl bg-muted motion-safe:animate-pulse"
-            style={{ height }}
-          />
-        ))}
-      </div>
+      <div className="h-[60dvh] min-h-80 rounded-xl bg-muted motion-safe:animate-pulse lg:h-[calc(100dvh-2rem)]" />
     </div>
   );
 }

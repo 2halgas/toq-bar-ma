@@ -12,6 +12,7 @@ import { auditPrivacy } from "@/lib/azhk/privacy-audit";
 
 const FILES = [
   "data/outages.json",
+  "data/geocache.json",
   ...(existsSync("data/raw") ? readdirSync("data/raw").map((name) => join("data/raw", name)) : []),
 ].filter((path) => existsSync(path));
 

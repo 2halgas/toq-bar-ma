@@ -1,7 +1,9 @@
 import { type z } from "zod";
 
+import rawGeocache from "@/data/geocache.json";
 import rawOutages from "@/data/outages.json";
 import { AzhkOutagesFileSchema, type AzhkOutagesFile } from "@/lib/azhk/schema";
+import { GeocacheSchema, type Geocache } from "@/lib/geo/geocache";
 
 export const DATA_FILE_PATH = "data/outages.json";
 
@@ -61,4 +63,23 @@ let cached: AzhkOutagesFile | undefined;
 export function getOutagesData(): AzhkOutagesFile {
   cached ??= parseOutagesFile(rawOutages);
   return cached;
+}
+
+let cachedGeocache: Geocache | undefined;
+
+/** Geocoded toponyms (data/geocache.json), validated once per process. */
+export function getGeocache(): Geocache {
+  if (!cachedGeocache) {
+    const parsed = GeocacheSchema.safeParse(rawGeocache);
+    if (!parsed.success) {
+      const message = `data/geocache.json failed validation: ${parsed.error.issues
+        .slice(0, 5)
+        .map((issue) => `${issue.path.join(".")}: ${issue.message}`)
+        .join("; ")}`;
+      console.error(`\n[geocache] ${message}\n`);
+      throw new OutagesDataError(message, [message]);
+    }
+    cachedGeocache = parsed.data;
+  }
+  return cachedGeocache;
 }

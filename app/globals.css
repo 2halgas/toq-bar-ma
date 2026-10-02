@@ -192,3 +192,50 @@
     stroke-width: 4px;
   }
 }
+
+/* Outage markers and clusters on the map. */
+@layer components {
+  .outage-marker-icon {
+    background: none;
+    border: 0;
+  }
+
+  .outage-marker {
+    display: grid;
+    place-items: center;
+    width: var(--size);
+    height: var(--size);
+    border-radius: 9999px;
+    background: var(--brand);
+    color: oklch(0.145 0 0);
+    font-size: 0.75rem;
+    font-weight: 600;
+    font-variant-numeric: tabular-nums;
+    border: 2px solid var(--background);
+    box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
+  }
+
+  .outage-marker--cluster {
+    background: oklch(0.7 0.18 50);
+    font-size: 0.8125rem;
+    box-shadow:
+      0 0 0 4px color-mix(in oklch, oklch(0.7 0.18 50) 35%, transparent),
+      0 1px 4px rgb(0 0 0 / 0.35);
+  }
+
+  .leaflet-popup-content-wrapper,
+  .leaflet-popup-tip {
+    background: var(--popover);
+    color: var(--popover-foreground);
+  }
+
+  .leaflet-container a.leaflet-popup-close-button {
+    color: var(--muted-foreground);
+  }
+
+  .leaflet-marker-icon:focus-visible {
+    outline: 3px solid var(--ring);
+    outline-offset: 2px;
+    border-radius: 9999px;
+  }
+}
