@@ -34,7 +34,7 @@ const MIN_REQUEST_INTERVAL_MS = 1_100;
 const CITY_SUFFIX = "Алматы, Казахстан";
 
 const contact = process.env.GEOCODER_CONTACT;
-const USER_AGENT = `toq-bar-ma/0.1 (Almaty planned outages map; ${contact ?? siteConfig.githubUrl})`;
+const USER_AGENT = `toq-bar-ma/0.1 (Almaty planned outages map; ${contact || siteConfig.githubUrl})`;
 
 const TYPE_WORDS: Record<ToponymKind, string> = {
   мкр: "микрорайон",

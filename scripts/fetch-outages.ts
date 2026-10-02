@@ -23,9 +23,11 @@ const OUTPUT_PATH = "data/outages.json";
 const RAW_DIR = "data/raw";
 const MIN_REQUEST_INTERVAL_MS = 1_100;
 const REQUEST_TIMEOUT_MS = 30_000;
+const MAX_ATTEMPTS = 3;
+const RETRY_DELAY_MS = 5_000;
 
 const USER_AGENT = `toq-bar-ma/0.1 (unofficial Almaty planned outages map; ${
-  process.env.AZHK_CONTACT ?? siteConfig.githubUrl
+  process.env.AZHK_CONTACT || siteConfig.githubUrl
 })`;
 
 let lastRequestAt = 0;
@@ -36,12 +38,34 @@ async function politeFetch(url: string): Promise<string> {
   lastRequestAt = Date.now();
 
   console.log(`GET ${url}`);
-  const response = await fetch(url, {
-    headers: { "User-Agent": USER_AGENT, "Accept-Language": "ru" },
-    signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
-  });
-  if (!response.ok) throw new Error(`${url} responded ${response.status} ${response.statusText}`);
-  return response.text();
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const response = await fetch(url, {
+        headers: { "User-Agent": USER_AGENT, "Accept-Language": "ru" },
+        signal: AbortSignal.timeout(REQUEST_TIMEOUT_MS),
+      });
+      if (!response.ok)
+        throw new Error(`${url} responded ${response.status} ${response.statusText}`);
+      return await response.text();
+    } catch (error) {
+      if (attempt >= MAX_ATTEMPTS) throw error;
+      const delay = RETRY_DELAY_MS * attempt;
+      console.warn(
+        `  attempt ${attempt} failed (${describeError(error)}); retrying in ${delay / 1000}s`,
+      );
+      await new Promise((done) => setTimeout(done, delay));
+    }
+  }
+}
+
+/** "fetch failed" alone says nothing; the network reason is in `cause` (ECONNRESET, ETIMEDOUT…). */
+function describeError(error: unknown): string {
+  const parts: string[] = [];
+  for (let current = error; current instanceof Error; current = current.cause) {
+    const code = (current as { code?: unknown }).code;
+    parts.push(typeof code === "string" ? `${current.message} [${code}]` : current.message);
+  }
+  return parts.length > 0 ? parts.join(" ← ") : String(error);
 }
 
 function readExisting(path: string): AzhkOutagesFile | undefined {
@@ -125,6 +149,6 @@ async function main(): Promise<void> {
 }
 
 main().catch((error: unknown) => {
-  console.error(error instanceof Error ? error.message : error);
+  console.error(describeError(error));
   process.exit(1);
 });
