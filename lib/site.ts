@@ -1,9 +1,18 @@
+/** Production address on Cloudflare Pages. */
+const PRODUCTION_URL = "https://toq-bar-ma.pages.dev";
+
 /**
- * Public URL of the site, used for canonical links, hreflang and OG images.
- * Set NEXT_PUBLIC_SITE_URL as a build variable for production.
+ * Public URL of the site, used for canonical links, hreflang and OG images:
+ * NEXT_PUBLIC_SITE_URL if set (e.g. a custom domain), else on Cloudflare Pages
+ * the production address for `main` and the deployment's own URL for previews.
  */
 function resolveSiteUrl(): string {
   if (process.env.NEXT_PUBLIC_SITE_URL) return process.env.NEXT_PUBLIC_SITE_URL;
+  if (process.env.CF_PAGES === "1") {
+    return process.env.CF_PAGES_BRANCH === "main"
+      ? PRODUCTION_URL
+      : (process.env.CF_PAGES_URL ?? PRODUCTION_URL);
+  }
   return "http://localhost:3000";
 }
 
