@@ -1,7 +1,7 @@
 name: Update data
 
 # Daily: fetch the latest AZhK schedule, geocode new places, and commit data/ if
-# anything changed. The push triggers a Cloudflare Pages redeploy.
+# anything changed. The push triggers a Cloudflare redeploy.
 on:
   schedule:
     - cron: "0 1 * * *" # 06:00 in Almaty (UTC+5)
@@ -57,7 +57,7 @@ jobs:
         run: pnpm data:audit
       - run: pnpm data:validate
       - run: pnpm test
-      - run: pnpm build:static # what Cloudflare Pages deploys
+      - run: pnpm build:static # what Cloudflare deploys
 
       - name: Commit changes
         run: |

@@ -9,7 +9,7 @@
 
 An unofficial, mobile-first map of planned power outages in Almaty. Type your street and see in a few seconds whether, when and why the power will be cut. The data is parsed every day from the weekly schedules published by Alatau Zharyk Company (AZhK).
 
-**Live demo:** _coming soon_ <!-- TODO: https://toq-bar-ma.pages.dev -->
+**Live demo:** _coming soon_ <!-- TODO: production URL -->
 
 ## Features
 
@@ -35,7 +35,7 @@ expand rowspan/colspan ─► normalize dates, times, repair types ─► redact
 extract streets / microdistricts ─► OpenStreetMap Nominatim ─► data/geocache.json
    │  pnpm data:audit ─► no name-like patterns allowed
    ▼
-commit ─► Cloudflare Pages rebuilds the static site
+commit ─► Cloudflare rebuilds the static site
 ```
 
 A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this every day at 06:00 Almaty time and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass.
@@ -59,7 +59,7 @@ Tests use synthetic HTML and fictional names only.
 - [cheerio](https://cheerio.js.org) for parsing, [zod](https://zod.dev) for validating every file that enters the app
 - [date-fns](https://date-fns.org) (ru locale); “today” is always computed in `Asia/Almaty`
 - [next-intl](https://next-intl.dev) for ru / kk / en, statically rendered per locale (no middleware)
-- [Vitest](https://vitest.dev), ESLint, Prettier, GitHub Actions. Static export hosted on [Cloudflare Pages](https://pages.cloudflare.com); works on any static host. No backend.
+- [Vitest](https://vitest.dev), ESLint, Prettier, GitHub Actions. Static export served by [Cloudflare Workers static assets](https://developers.cloudflare.com/workers/static-assets/); works on any static host. No backend.
 
 ## Getting started
 
@@ -91,17 +91,15 @@ Both are optional: without them the User-Agent points to this repository. Set th
 
 ## Deploying
 
-The site is a plain static export (`pnpm build:static` → `out/`), deployed with Cloudflare Pages' Git integration: every push to `main` — including the daily data commit — rebuilds it.
+The site is a plain static export (`pnpm build:static` → `out/`) served by Cloudflare Workers static assets — no Worker script, see [`wrangler.jsonc`](wrangler.jsonc). Workers Builds redeploys on every push to `main`, including the daily data commit.
 
-1. **Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git**, pick this repository.
+1. **Cloudflare dashboard → Workers & Pages → Create → Import a repository**, pick this repository.
 2. Build settings:
-   - Framework preset: **None**
    - Build command: `pnpm build:static`
-   - Build output directory: `out`
-3. Environment variables (Production):
-   - `NEXT_PUBLIC_SITE_URL` = the production URL, e.g. `https://toq-bar-ma.pages.dev` (canonical links, hreflang, OG images)
+   - Deploy command: `npx wrangler deploy`
+3. **Settings → Build → Variables and secrets:** `NEXT_PUBLIC_SITE_URL` = the production URL, e.g. `https://toq-bar-ma.<account>.workers.dev` (canonical links, hreflang, OG images).
 
-   Node.js comes from `.node-version`; pnpm switches itself to the version pinned in `package.json`. Response headers (long-term caching of hashed assets, basic security headers) live in [`public/_headers`](public/_headers).
+   Node.js comes from `.node-version`; pnpm switches itself to the version pinned in `package.json`. Response headers (long-term caching of hashed assets, basic security headers) live in [`public/_headers`](public/_headers). The same `out/` also works on Cloudflare Pages, Netlify or GitHub Pages.
 
 4. In GitHub **Settings → Actions → General**, allow workflows **read and write** permissions so the daily job can push, then run **Actions → Update data → Run workflow** once to check that everything works.
 
