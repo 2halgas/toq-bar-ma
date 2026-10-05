@@ -4,14 +4,13 @@ name: Update data
 # Fetch it, geocode new places, and commit data/ if anything changed. The push
 # triggers a Cloudflare Pages redeploy.
 #
-# Scheduled runs can start late when GitHub is busy (worst at the top of the
-# hour), hence odd minutes and a second attempt. If the schedule is already in
-# place the second run commits nothing. Run it by hand for a late schedule.
+# Started on time by a Cloudflare Cron Trigger (trigger/, via workflow_dispatch):
+# GitHub's own `schedule` runs can start hours late or be skipped. The schedule
+# below is only a fallback; a repeated run finds no changes and commits nothing.
 on:
   schedule:
     - cron: "7 4 * * 1" # Monday 09:07 in Almaty (UTC+5)
     - cron: "47 4 * * 1" # Monday 09:47, in case AZhK published late
-    - cron: "1 6 * * 1" # TEMP: Monday 11:01, one-off check that scheduled runs work — remove after
   workflow_dispatch:
     inputs:
       force:

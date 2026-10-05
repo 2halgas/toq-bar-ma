@@ -1,0 +1,23 @@
+// Cron-only Worker that starts the "Update data" GitHub Actions workflow on
+// time. GitHub's own `schedule` runs can start hours late; Cloudflare Cron
+// Triggers fire on the minute. No HTTP routes: it has no public URL.
+//
+// Deploy:   pnpm trigger:deploy
+// Secret:   pnpm trigger:secret   (fine-grained token, this repo only, Actions: read & write)
+{
+  "name": "toq-bar-ma-trigger",
+  "main": "index.ts",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": false,
+  "preview_urls": false,
+  "triggers": {
+    // UTC. Almaty is UTC+5: Monday 09:07 and 09:47, when AZhK has published the week.
+    "crons": ["7 4 * * 1", "47 4 * * 1"],
+  },
+  "vars": {
+    "GITHUB_REPO": "2halgas/toq-bar-ma",
+    "GITHUB_WORKFLOW": "update-data.yml",
+    "GITHUB_REF": "main",
+  },
+  "observability": { "enabled": true },
+}

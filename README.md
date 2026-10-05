@@ -50,7 +50,7 @@ extract streets / microdistricts ─► OpenStreetMap Nominatim ─► data/geoc
 commit ─► Cloudflare Pages rebuilds the static site
 ```
 
-A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this every Monday at 09:07 and 09:47 Almaty time — AZhK publishes the week's schedule on Monday morning — and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass.
+A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this every Monday at 09:07 and 09:47 Almaty time — AZhK publishes the week's schedule on Monday morning — and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass. GitHub's own `schedule` runs can start hours late, so the workflow is started on the minute by a tiny cron-only Cloudflare Worker ([`trigger/`](trigger/index.ts)) via `workflow_dispatch`; the GitHub schedule stays as a fallback.
 
 ## Privacy
 
@@ -115,6 +115,16 @@ The site is a plain static export (`pnpm build:static` → `out/`) on Cloudflare
    Node.js comes from `.node-version`; pnpm switches itself to the version pinned in `package.json`. Response headers (long-term caching of hashed assets, basic security headers) live in [`public/_headers`](public/_headers). The same `out/` also works on Netlify or GitHub Pages.
 
 4. In GitHub **Settings → Actions → General**, allow workflows **read and write** permissions so the weekly job can push, then run **Actions → Update data → Run workflow** once to check that everything works.
+
+5. **On-time trigger** (optional, recommended): create a [fine-grained token](https://github.com/settings/personal-access-tokens/new) for this repository only with **Actions: Read and write**, then:
+
+   ```bash
+   pnpm dlx wrangler@4 login
+   pnpm trigger:deploy
+   pnpm trigger:secret   # paste the token
+   ```
+
+   The Worker has no routes and no `workers.dev` URL; it only runs on its Cron Triggers.
 
 > GitHub pauses scheduled workflows in repositories with no activity for 60 days. If that happens, re-enable it from the Actions tab.
 

@@ -17,7 +17,9 @@
     "data:fetch": "tsx scripts/fetch-outages.ts",
     "data:audit": "tsx scripts/audit-privacy.ts",
     "data:geocode": "tsx scripts/geocode.ts",
-    "build:static": "STATIC_EXPORT=1 next build"
+    "build:static": "STATIC_EXPORT=1 next build",
+    "trigger:deploy": "pnpm dlx wrangler@4 deploy --config trigger/wrangler.jsonc",
+    "trigger:secret": "pnpm dlx wrangler@4 secret put GITHUB_TOKEN --config trigger/wrangler.jsonc"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

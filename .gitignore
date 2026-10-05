@@ -43,3 +43,6 @@ next-env.d.ts
 .claude
 # raw AZhK schedule pages (already redacted, still kept out of git)
 /data/raw/
+
+# Cloudflare Worker local secrets
+.dev.vars*
