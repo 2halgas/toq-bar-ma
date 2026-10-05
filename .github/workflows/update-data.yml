@@ -1,10 +1,16 @@
 name: Update data
 
-# Daily: fetch the latest AZhK schedule, geocode new places, and commit data/ if
-# anything changed. The push triggers a Cloudflare redeploy.
+# Weekly: AZhK publishes the Mon–Fri schedule once a week, on Monday morning.
+# Fetch it, geocode new places, and commit data/ if anything changed. The push
+# triggers a Cloudflare Pages redeploy.
+#
+# Scheduled runs can start late when GitHub is busy (worst at the top of the
+# hour), hence odd minutes and a second attempt. If the schedule is already in
+# place the second run commits nothing. Run it by hand for a late schedule.
 on:
   schedule:
-    - cron: "0 1 * * *" # 06:00 in Almaty (UTC+5)
+    - cron: "7 4 * * 1" # Monday 09:07 in Almaty (UTC+5)
+    - cron: "47 4 * * 1" # Monday 09:47, in case AZhK published late
   workflow_dispatch:
     inputs:
       force:

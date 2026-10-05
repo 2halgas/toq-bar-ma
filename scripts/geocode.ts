@@ -129,7 +129,7 @@ function readCache(path: string): Geocache {
   return cache;
 }
 
-/** Sorted keys keep diffs small when the daily job commits the cache. */
+/** Sorted keys keep diffs small when the weekly job commits the cache. */
 function writeCache(path: string, cache: Geocache): void {
   const sorted = Object.fromEntries(
     Object.entries(cache).sort(([a], [b]) => a.localeCompare(b, "ru")),

@@ -19,7 +19,7 @@
   </picture>
 </p>
 
-An unofficial, mobile-first map of planned power outages in Almaty. Type your street and see in a few seconds whether, when and why the power will be cut. The data is parsed every day from the weekly schedules published by Alatau Zharyk Company (AZhK).
+An unofficial, mobile-first map of planned power outages in Almaty. Type your street and see in a few seconds whether, when and why the power will be cut. The data is parsed from the weekly schedules published by Alatau Zharyk Company (AZhK).
 
 **Live demo:** [toq-bar-ma.pages.dev](https://toq-bar-ma.pages.dev)
 
@@ -38,7 +38,7 @@ An unofficial, mobile-first map of planned power outages in Almaty. Type your st
 
 ```
 azhk.kz schedule list ─► newest «город Алматы» schedule ─► HTML table
-   │  pnpm data:fetch (daily, 1 req/s)
+   │  pnpm data:fetch (Mondays, 1 req/s)
    ▼
 expand rowspan/colspan ─► normalize dates, times, repair types ─► redact personal names
    ─► dedupe ─► zod validation ─► data/outages.json
@@ -50,7 +50,7 @@ extract streets / microdistricts ─► OpenStreetMap Nominatim ─► data/geoc
 commit ─► Cloudflare Pages rebuilds the static site
 ```
 
-A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this every day at 06:00 Almaty time and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass.
+A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this every Monday at 09:07 and 09:47 Almaty time — AZhK publishes the week's schedule on Monday morning — and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass.
 
 ## Privacy
 
@@ -103,7 +103,7 @@ Both are optional: without them the User-Agent points to this repository. Set th
 
 ## Deploying
 
-The site is a plain static export (`pnpm build:static` → `out/`) on Cloudflare Pages with Git integration: every push to `main` — including the daily data commit — rebuilds it, and other branches get preview URLs.
+The site is a plain static export (`pnpm build:static` → `out/`) on Cloudflare Pages with Git integration: every push to `main` — including the weekly data commit — rebuilds it, and other branches get preview URLs.
 
 1. **Cloudflare dashboard → Workers & Pages → Create → Pages → Connect to Git**, pick this repository.
 2. Build settings:
@@ -114,7 +114,7 @@ The site is a plain static export (`pnpm build:static` → `out/`) on Cloudflare
 
    Node.js comes from `.node-version`; pnpm switches itself to the version pinned in `package.json`. Response headers (long-term caching of hashed assets, basic security headers) live in [`public/_headers`](public/_headers). The same `out/` also works on Netlify or GitHub Pages.
 
-4. In GitHub **Settings → Actions → General**, allow workflows **read and write** permissions so the daily job can push, then run **Actions → Update data → Run workflow** once to check that everything works.
+4. In GitHub **Settings → Actions → General**, allow workflows **read and write** permissions so the weekly job can push, then run **Actions → Update data → Run workflow** once to check that everything works.
 
 > GitHub pauses scheduled workflows in repositories with no activity for 60 days. If that happens, re-enable it from the Actions tab.
 
@@ -144,7 +144,7 @@ Map data and geocoding © [OpenStreetMap](https://www.openstreetmap.org/copyrigh
 
 ## Roadmap
 
-- [x] Parser for AZhK schedules, updated daily
+- [x] Parser for AZhK schedules, updated weekly
 - [ ] Individual buildings on the map (geocoding house numbers)
 - [ ] Telegram bot with notifications for a saved address
 - [x] Kazakh and English localization
