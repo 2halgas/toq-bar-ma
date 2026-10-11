@@ -38,7 +38,7 @@ An unofficial, mobile-first map of planned power outages in Almaty. Type your st
 
 ```
 azhk.kz schedule list ─► newest «город Алматы» schedule ─► HTML table
-   │  pnpm data:fetch (Mondays, 1 req/s)
+   │  pnpm data:fetch (Sun & Mon, 1 req/s)
    ▼
 expand rowspan/colspan ─► normalize dates, times, repair types ─► redact personal names
    ─► dedupe ─► zod validation ─► data/outages.json
@@ -50,7 +50,7 @@ extract streets / microdistricts ─► OpenStreetMap Nominatim ─► data/geoc
 commit ─► Cloudflare Pages rebuilds the static site
 ```
 
-A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this every Monday at 09:07 and 09:47 Almaty time — AZhK publishes the week's schedule on Monday morning — and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass. GitHub's own `schedule` runs can start hours late, so the workflow is started on the minute by a tiny cron-only Cloudflare Worker ([`trigger/`](trigger/index.ts)) via `workflow_dispatch`; the GitHub schedule stays as a fallback.
+A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this on Sundays and Mondays at 09:07 and 09:47 Almaty time — AZhK publishes the week's schedule on one of those mornings — and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass. GitHub's own `schedule` runs can start hours late, so the workflow is started on the minute by a tiny cron-only Cloudflare Worker ([`trigger/`](trigger/index.ts)) via `workflow_dispatch`; the GitHub schedule stays as a fallback.
 
 ## Privacy
 

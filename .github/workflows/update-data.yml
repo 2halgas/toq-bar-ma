@@ -1,6 +1,6 @@
 name: Update data
 
-# Weekly: AZhK publishes the Mon–Fri schedule once a week, on Monday morning.
+# Weekly: AZhK publishes the Mon–Fri schedule once a week, on Sunday or Monday morning.
 # Fetch it, geocode new places, and commit data/ if anything changed. The push
 # triggers a Cloudflare Pages redeploy.
 #
@@ -9,8 +9,8 @@ name: Update data
 # below is only a fallback; a repeated run finds no changes and commits nothing.
 on:
   schedule:
-    - cron: "7 4 * * 1" # Monday 09:07 in Almaty (UTC+5)
-    - cron: "47 4 * * 1" # Monday 09:47, in case AZhK published late
+    - cron: "7 4 * * 0,1" # Sunday and Monday 09:07 in Almaty (UTC+5)
+    - cron: "47 4 * * 0,1" # and 09:47, in case AZhK published late
   workflow_dispatch:
     inputs:
       force:
