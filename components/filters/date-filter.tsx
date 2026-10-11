@@ -54,7 +54,9 @@ export function DateFilter({ value, onChange }: DateFilterProps) {
           ))}
         </ToggleGroup>
 
-        <div className="min-[420px]:w-44">
+        {/* Takes whatever the buttons leave (and may shrink) instead of a fixed width,
+            so it never pushes the page wider — fonts and native date fields vary by browser. */}
+        <div className="min-w-0 min-[420px]:max-w-48 min-[420px]:flex-1">
           <Label htmlFor={dateInputId} className="sr-only">
             {t("otherDate")}
           </Label>
@@ -67,8 +69,10 @@ export function DateFilter({ value, onChange }: DateFilterProps) {
                 event.target.value ? { kind: "date", date: event.target.value } : { kind: "week" },
               )
             }
+            // Native date inputs have an intrinsic min width: `min-w-0` lets it obey `w-full`.
+            // (No `block`/`appearance-none`: iOS Safari then misaligns the value vertically.)
             className={cn(
-              "h-10 w-full rounded-lg border border-input bg-transparent px-3 text-base outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm dark:bg-input/30 dark:[color-scheme:dark]",
+              "h-10 w-full min-w-0 rounded-lg border border-input bg-transparent px-3 text-left text-base outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm dark:bg-input/30 dark:[color-scheme:dark] [&::-webkit-date-and-time-value]:text-left",
               pickedDate
                 ? "border-primary font-medium ring-1 ring-primary"
                 : "text-muted-foreground",
