@@ -5,7 +5,7 @@ import { use, Suspense } from "react";
 
 import { OutagesExplorer } from "@/components/outages-explorer";
 import { isLocale } from "@/i18n/routing";
-import { getGeocache, getOutagesData } from "@/lib/data";
+import { getGeocache, getOutagesData, getStreets } from "@/lib/data";
 import { buildOutageViews } from "@/lib/map-points";
 
 export default function Home({ params }: PageProps<"/[locale]">) {
@@ -14,8 +14,13 @@ export default function Home({ params }: PageProps<"/[locale]">) {
   setRequestLocale(locale);
 
   const { outages: rawOutages, title, sourceUrl, weekStart, weekEnd } = getOutagesData();
-  // Joined at build time, so the client gets only coordinates for places in this schedule.
-  const { outages, locations, placeNames } = buildOutageViews(rawOutages, getGeocache());
+  // Joined at build time, so the client gets only coordinates for places in this
+  // schedule — never the street geometry itself.
+  const { outages, locations, placeNames } = buildOutageViews(
+    rawOutages,
+    getGeocache(),
+    getStreets(),
+  );
 
   // The explorer reads filters from the URL, so it renders on the client; the
   // header and footer around it are still prerendered.

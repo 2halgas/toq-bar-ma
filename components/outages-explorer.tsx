@@ -77,8 +77,8 @@ export function OutagesExplorer({
   const coverage = getScheduleCoverage(resolveDateRange(filters.date, today), schedule);
 
   // From a map popup: search for that place and bring the list into view.
-  const showInList = (label: string) => {
-    updateFilters({ query: label });
+  const showInList = (query: string) => {
+    updateFilters({ query });
     setMobileView("list");
     document.getElementById("results-heading")?.scrollIntoView({ behavior: "smooth" });
   };

@@ -133,7 +133,14 @@ The site is a plain static export (`pnpm build:static` → `out/`) on Cloudflare
 
 ## Map accuracy
 
-A marker is the approximate centre of a street or microdistrict as found by Nominatim, not a specific building — long streets get a single point. About 85–90 % of places in a typical schedule are found; the rest (often typos in the source, e.g. «Веницианова») are still in the list, and the map says how many outages it couldn't place. Lookups are restricted to Almaty's district bounds so same-named streets in Talgar or Kaskelen don't show up.
+Most outages list several streets, and Nominatim alone returns an arbitrary piece of each one — so «Сатпаева, Айманова, Мынбаева, Гагарина» used to be four points scattered along four long streets. Now:
+
+- [`pnpm data:streets`](scripts/fetch-streets.ts) caches the **full geometry** of every street from OpenStreetMap (Overpass) in `data/streets.json` — build time only, never shipped to the browser.
+- [`placeOutage`](lib/geo/placement.ts) finds where an outage's streets **come closest together**. If all of them pass within 700 m of one spot, the outage is drawn as **one marker with a shaded block** over the nearby stretches of its streets; otherwise the farthest street is dropped and the rest tried again.
+- A street that doesn't meet the others is placed on its stretch nearest the block or the outage's microdistrict; one more than 3 km away is a same-named street elsewhere and is left off the map. A lone street is placed in its middle, not at its first OSM piece.
+- Microdistricts, and streets OSM doesn't have, stay geocoded points. Lookups are restricted to Almaty's district bounds.
+
+For a typical week about 80 % of streets have geometry and two thirds of multi-street outages become a single block. Everything on the map is also in the list, and the map says how many outages it couldn't place.
 
 ## Project structure
 

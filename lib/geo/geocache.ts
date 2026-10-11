@@ -36,4 +36,8 @@ export interface MapLocation {
   label: string;
   lat: number;
   lon: number;
+  /** Search text for "show in list"; defaults to the label. */
+  query?: string;
+  /** [[south, west], [north, east]] of an area where several streets meet. */
+  bounds?: [[number, number], [number, number]];
 }

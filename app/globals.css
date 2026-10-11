@@ -215,6 +215,16 @@
     box-shadow: 0 1px 4px rgb(0 0 0 / 0.35);
   }
 
+  /* The block where an outage's streets meet (see lib/geo/placement.ts). */
+  .outage-area {
+    fill: var(--brand);
+    fill-opacity: 0.22;
+    stroke: var(--brand);
+    stroke-opacity: 0.9;
+    stroke-width: 1.5;
+    stroke-dasharray: 4 3;
+  }
+
   .outage-marker--cluster {
     background: oklch(0.7 0.18 50);
     font-size: 0.8125rem;

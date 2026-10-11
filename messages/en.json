@@ -126,7 +126,7 @@
     "heading": "Map",
     "description": "Streets and microdistricts from the schedule. Tap a point to see its outages.",
     "loading": "Loading map…",
-    "accuracy": "A point marks the approximate position of a street or microdistrict, not a specific building.",
+    "accuracy": "A shaded block is where an outage's streets meet. A single point marks the approximate position of a street or microdistrict, not a specific building.",
     "unmapped": "Not on the map: {count, plural, one {# outage} other {# outages}} — see the list.",
     "markerTitle": "{label}: {count, plural, one {# outage} other {# outages}}",
     "more": "and {count} more",

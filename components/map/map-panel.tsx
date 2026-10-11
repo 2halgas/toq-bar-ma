@@ -18,7 +18,7 @@ interface MapPanelProps {
   points: MapPoint[];
   /** Outages in the current results that have no point on the map. */
   unmappedCount: number;
-  onShowInList: (label: string) => void;
+  onShowInList: (query: string) => void;
   className?: string;
 }
 

@@ -2,8 +2,10 @@ import { type z } from "zod";
 
 import rawGeocache from "@/data/geocache.json";
 import rawOutages from "@/data/outages.json";
+import rawStreets from "@/data/streets.json";
 import { AzhkOutagesFileSchema, type AzhkOutagesFile } from "@/lib/azhk/schema";
 import { GeocacheSchema, type Geocache } from "@/lib/geo/geocache";
+import { StreetsCacheSchema, type StreetsCache } from "@/lib/geo/streets";
 
 export const DATA_FILE_PATH = "data/outages.json";
 
@@ -82,4 +84,26 @@ export function getGeocache(): Geocache {
     cachedGeocache = parsed.data;
   }
   return cachedGeocache;
+}
+
+let cachedStreets: StreetsCache | undefined;
+
+/**
+ * Street geometry (data/streets.json), validated once per process. Optional for
+ * the map: if the file is broken the build goes on with geocoded points only.
+ */
+export function getStreets(): StreetsCache {
+  if (!cachedStreets) {
+    const parsed = StreetsCacheSchema.safeParse(rawStreets);
+    if (!parsed.success) {
+      console.warn(
+        `\n[streets] data/streets.json failed validation, using geocoded points only: ${parsed.error.issues
+          .slice(0, 3)
+          .map((issue) => `${issue.path.join(".")}: ${issue.message}`)
+          .join("; ")}\n`,
+      );
+    }
+    cachedStreets = parsed.success ? parsed.data : {};
+  }
+  return cachedStreets;
 }

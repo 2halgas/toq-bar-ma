@@ -37,8 +37,8 @@ describe("buildOutageViews", () => {
 
   it("keeps only toponyms that were found, with display labels", () => {
     expect(locations).toEqual({
-      "мкр айгерим 1": { label: "мкр. Айгерим-1", lat: 43.27, lon: 76.84 },
-      "ул азаттык": { label: "ул. Азаттык", lat: 43.274, lon: 76.85 },
+      "мкр айгерим 1": { label: "мкр. Айгерим-1", query: "Айгерим-1", lat: 43.27, lon: 76.84 },
+      "ул азаттык": { label: "ул. Азаттык", query: "Азаттык", lat: 43.274, lon: 76.85 },
     });
   });
 

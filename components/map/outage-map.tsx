@@ -6,7 +6,7 @@ import "leaflet.markercluster/dist/MarkerCluster.css";
 import L, { type MarkerCluster } from "leaflet";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useMemo } from "react";
-import { MapContainer, Marker, Popup, TileLayer, useMap } from "react-leaflet";
+import { MapContainer, Marker, Popup, Rectangle, TileLayer, useMap } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-cluster";
 
 import { Button } from "@/components/ui/button";
@@ -72,8 +72,9 @@ function FitToPoints({ points }: { points: MapPoint[] }) {
         map.fitBounds(ALMATY_BOUNDS);
         return;
       }
+      // Areas count with their whole rectangle, not just the marker in the middle.
       const bounds = L.latLngBounds(
-        points.map((point) => [point.lat, point.lon] as [number, number]),
+        points.flatMap((point) => point.bounds ?? [[point.lat, point.lon] as [number, number]]),
       );
       map.fitBounds(bounds, { padding: [32, 32], maxZoom: 15 });
     };
@@ -98,7 +99,7 @@ function FitToPoints({ points }: { points: MapPoint[] }) {
 
 export interface OutageMapProps {
   points: MapPoint[];
-  onShowInList: (label: string) => void;
+  onShowInList: (query: string) => void;
 }
 
 export function OutageMap({ points, onShowInList }: OutageMapProps) {
@@ -125,6 +126,19 @@ export function OutageMap({ points, onShowInList }: OutageMapProps) {
     >
       <TileLayer url={TILE_URL} attribution={ATTRIBUTION} maxZoom={19} />
       <FitToPoints points={points} />
+      {/* Areas under the markers; not clickable, the marker in the middle is. */}
+      {points.map(
+        (point) =>
+          point.bounds && (
+            <Rectangle
+              key={`area-${point.key}`}
+              bounds={point.bounds}
+              interactive={false}
+              // A creation option (not pathOptions, which only restyles): colours come from CSS.
+              className="outage-area"
+            />
+          ),
+      )}
       <MarkerClusterGroup
         chunkedLoading
         showCoverageOnHover={false}
@@ -156,7 +170,11 @@ export function OutageMap({ points, onShowInList }: OutageMapProps) {
                     <li>{t("more", { count: point.outages.length - POPUP_LIST_LIMIT })}</li>
                   )}
                 </ul>
-                <Button size="sm" className="w-full" onClick={() => onShowInList(point.label)}>
+                <Button
+                  size="sm"
+                  className="w-full"
+                  onClick={() => onShowInList(point.query ?? point.label)}
+                >
                   {t("showInList")}
                 </Button>
               </div>
