@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 
 import { OutageFilters } from "@/components/filters/outage-filters";
+import { SavedPlaces } from "@/components/filters/saved-places";
 import { MapPanel } from "@/components/map/map-panel";
 import { ResultsSection } from "@/components/outages/results-section";
 import { ScheduleNotice, type ScheduleInfo } from "@/components/outages/schedule-notice";
@@ -13,9 +14,11 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { useAlmatyToday } from "@/hooks/use-almaty-today";
 import { DESKTOP_MEDIA_QUERY, useMediaQuery } from "@/hooks/use-media-query";
 import { useOutageFilters } from "@/hooks/use-outage-filters";
+import { useSavedPlaces } from "@/hooks/use-saved-places";
 import { countByRes, filterOutages, getScheduleCoverage, resolveDateRange } from "@/lib/filter";
 import { type MapLocation } from "@/lib/geo/geocache";
 import { buildMapPoints, countUnmapped, type OutageView } from "@/lib/map-points";
+import { countUpcoming, isPlaceSaved } from "@/lib/saved-places";
 import { toQueryString } from "@/lib/search-params";
 import { suggestPlaces } from "@/lib/suggest";
 
@@ -40,6 +43,7 @@ export function OutagesExplorer({
   const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
   const { filters, updateFilters, resetFilters } = useOutageFilters();
   const [mobileView, setMobileView] = useState<MobileView>("list");
+  const savedPlaces = useSavedPlaces();
 
   const results = useMemo(() => filterOutages(outages, filters, today), [outages, filters, today]);
   const points = useMemo(() => buildMapPoints(results, locations), [results, locations]);
@@ -61,6 +65,14 @@ export function OutagesExplorer({
     return suggestPlaces(filters.query, names);
   }, [results.length, outages, filters, today, placeNames]);
 
+  // Counted over the whole remaining schedule, whatever date or РЭС is selected:
+  // "anything coming up for my street?" is the point of saving it.
+  const savedPlaceCounts = useMemo(
+    () =>
+      savedPlaces.places.map((query) => ({ query, count: countUpcoming(outages, query, today) })),
+    [savedPlaces.places, outages, today],
+  );
+
   const isDefault = toQueryString(filters) === "";
   const coverage = getScheduleCoverage(resolveDateRange(filters.date, today), schedule);
 
@@ -79,6 +91,16 @@ export function OutagesExplorer({
       onChange={updateFilters}
       onQueryCommit={(query) => updateFilters({ query })}
       onReset={resetFilters}
+      savedPlaces={
+        <SavedPlaces
+          query={filters.query}
+          isQuerySaved={isPlaceSaved(savedPlaces.places, filters.query)}
+          places={savedPlaceCounts}
+          onSelect={(query) => updateFilters({ query })}
+          onSave={savedPlaces.save}
+          onRemove={savedPlaces.remove}
+        />
+      }
     />
   );
 

@@ -74,6 +74,7 @@ describe("message catalogs", () => {
       site: "S",
       hours: "H",
       places: "PP",
+      max: 5,
     };
     for (const key of Object.keys(flat[locale])) {
       // Rich-text messages need tag handlers; markup() accepts plain functions.

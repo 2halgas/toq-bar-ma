@@ -48,6 +48,16 @@
     "clear": "Clear search",
     "hint": "Addresses are in Russian, as in the AZhK schedule, but you can search in Latin script: aigerim 1, ratushnogo, Abay Ave."
   },
+  "MyPlaces": {
+    "heading": "My places",
+    "save": "Save “{query}”",
+    "saved": "In my places",
+    "unsave": "Remove “{query}” from my places",
+    "full": "You can save up to {max} places",
+    "select": "{place}: {count, plural, =0 {no outages} one {# outage} other {# outages}} in the schedule",
+    "remove": "Remove “{place}”",
+    "note": "Stored only in this browser and never sent anywhere."
+  },
   "DateFilter": {
     "label": "Date",
     "today": "Today",

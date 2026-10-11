@@ -2,6 +2,7 @@
 
 import { RotateCcwIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
+import { type ReactNode } from "react";
 
 import { DateFilter } from "@/components/filters/date-filter";
 import { ResFilter } from "@/components/filters/res-filter";
@@ -16,6 +17,8 @@ interface OutageFiltersProps {
   onChange: (patch: Partial<Filters>) => void;
   onQueryCommit: (query: string) => void;
   onReset: () => void;
+  /** "My places", right under the search it fills in. */
+  savedPlaces: ReactNode;
 }
 
 export function OutageFilters({
@@ -25,6 +28,7 @@ export function OutageFilters({
   onChange,
   onQueryCommit,
   onReset,
+  savedPlaces,
 }: OutageFiltersProps) {
   const t = useTranslations("Filters");
 
@@ -41,7 +45,10 @@ export function OutageFilters({
           </Button>
         )}
       </div>
-      <StreetSearch value={filters.query} onCommit={onQueryCommit} />
+      <div className="space-y-2">
+        <StreetSearch value={filters.query} onCommit={onQueryCommit} />
+        {savedPlaces}
+      </div>
       <DateFilter value={filters.date} onChange={(date) => onChange({ date })} />
       <ResFilter value={filters.res} options={resOptions} onChange={(res) => onChange({ res })} />
     </section>

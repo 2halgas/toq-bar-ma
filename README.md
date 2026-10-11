@@ -28,6 +28,7 @@ An unofficial, mobile-first map of planned power outages in Almaty. Type your st
 - **Street search** that forgives how people type: `м-н` / `м-он` / `мкр.` / `мкр`, `ул.`, `пр-т`, case, `ё`/`е`, Kazakh letters (`Ақжар` → `Акжар`), hyphens and extra spaces — and Latin script in any common romanization (`aigerim 1`, `Zhetysu`/`Jetisu`, `Şañyraq`, `Abay Ave`) or Russian typed on an English layout (`fqutHbv`). When nothing matches, it suggests a place from the schedule one typo away (`гагрина` → _Did you mean: Гагарина_), without ever mixing near misses into the results.
 - **Filters** by date (today / tomorrow / week / any day) and power network unit (РЭС), **stored in the URL** so any view can be shared as a link.
 - **List** grouped by day and РЭС: time and duration, affected addresses, equipment (substation), repair type, “today” / “tomorrow” badges.
+- **My places:** save up to five streets and see at a glance how many outages each has in the rest of the schedule. Kept in the browser's `localStorage` only — never sent anywhere.
 - **Add to calendar:** any outage, or every result of a street search, as an `.ics` file built in the browser — Apple, Google and Outlook calendars, with a reminder the evening before.
 - **Map** of the streets and microdistricts mentioned in the schedule, with clustered markers; click a marker to see its outages or filter the list by that place.
 - **Honest empty states:** “no outages planned” is distinguished from “no schedule published for these dates yet”.
