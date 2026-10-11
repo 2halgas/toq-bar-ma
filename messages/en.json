@@ -77,6 +77,16 @@
     "sourceDetails": ": AZhK schedule",
     "placeHidden": "Address hidden — see the schedule on the AZhK website"
   },
+  "Calendar": {
+    "add": "Add to calendar",
+    "addLabel": "Add to calendar: {date}, {hours}",
+    "addAll": "Add all to calendar ({count})",
+    "summary": "Power outage: {place}",
+    "andMore": "{places} and {count} more",
+    "source": "AZhK schedule: {url}",
+    "disclaimer": "Unofficial data from {site}. Always check the AZhK schedule.",
+    "reminder": "Planned power outage {hours}"
+  },
   "RepairType": {
     "current_repair": "Routine repair",
     "capital_repair": "Major repair",

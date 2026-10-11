@@ -77,6 +77,16 @@
     "sourceDetails": ": график АЖК",
     "placeHidden": "Адрес скрыт — см. график на сайте АЖК"
   },
+  "Calendar": {
+    "add": "В календарь",
+    "addLabel": "Добавить в календарь: {date}, {hours}",
+    "addAll": "Все в календарь ({count})",
+    "summary": "Отключение света: {place}",
+    "andMore": "{places} и ещё {count}",
+    "source": "График АЖК: {url}",
+    "disclaimer": "Неофициальные данные с {site}. Сверяйтесь с графиком АЖК.",
+    "reminder": "Плановое отключение света {hours}"
+  },
   "RepairType": {
     "current_repair": "Текущий ремонт",
     "capital_repair": "Капитальный ремонт",

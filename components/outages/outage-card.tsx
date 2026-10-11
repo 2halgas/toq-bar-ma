@@ -1,14 +1,15 @@
 "use client";
 
-import { CableIcon, ClockIcon, MapPinIcon, WrenchIcon } from "lucide-react";
-import { useTranslations } from "next-intl";
+import { CableIcon, CalendarPlusIcon, ClockIcon, MapPinIcon, WrenchIcon } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
 import { useId, useState } from "react";
 
 import { ExternalLink } from "@/components/layout/external-link";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { useCalendarExport } from "@/hooks/use-calendar-export";
 import { PLACE_HIDDEN, type AzhkOutage } from "@/lib/azhk/schema";
-import { formatDuration, getRelativeDay, type RelativeDay } from "@/lib/dates";
+import { formatDuration, formatShortDate, getRelativeDay, type RelativeDay } from "@/lib/dates";
 import { cn } from "@/lib/utils";
 
 const RELATIVE_DAY_BADGE_CLASSES: Record<RelativeDay, string> = {
@@ -28,6 +29,9 @@ export function OutageCard({ outage, today }: OutageCardProps) {
   const t = useTranslations("Card");
   const tCommon = useTranslations("Common");
   const tRepair = useTranslations("RepairType");
+  const tCalendar = useTranslations("Calendar");
+  const locale = useLocale();
+  const exportToCalendar = useCalendarExport();
   const placeId = useId();
   const [expanded, setExpanded] = useState(false);
   const relativeDay = getRelativeDay(outage.date, today);
@@ -105,12 +109,26 @@ export function OutageCard({ outage, today }: OutageCardProps) {
             <WrenchIcon className="mt-0.5 size-4" aria-hidden />
             <span className="sr-only">{t("workType")}</span>
           </dt>
-          <dd className="flex flex-1 flex-wrap justify-between gap-x-3">
+          <dd className="flex flex-1 flex-wrap justify-between gap-x-3 gap-y-1">
             <span>{tRepair(outage.repairType)}</span>
-            <ExternalLink href={outage.sourceUrl} className="text-xs leading-5 font-normal">
-              {t("source")}
-              <span className="sr-only">{t("sourceDetails")}</span>
-            </ExternalLink>
+            <span className="flex items-center gap-3">
+              <button
+                type="button"
+                className="inline-flex items-center gap-1 rounded-sm text-xs leading-5 underline underline-offset-4 hover:decoration-2 focus-visible:ring-3 focus-visible:ring-ring/50 focus-visible:outline-none"
+                aria-label={tCalendar("addLabel", {
+                  date: formatShortDate(outage.date, locale),
+                  hours: `${outage.timeFrom}–${outage.timeTo}`,
+                })}
+                onClick={() => exportToCalendar([outage], `toq-bar-ma-${outage.date}.ics`)}
+              >
+                <CalendarPlusIcon className="size-3.5" aria-hidden />
+                {tCalendar("add")}
+              </button>
+              <ExternalLink href={outage.sourceUrl} className="text-xs leading-5 font-normal">
+                {t("source")}
+                <span className="sr-only">{t("sourceDetails")}</span>
+              </ExternalLink>
+            </span>
           </dd>
         </div>
       </dl>

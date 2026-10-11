@@ -77,6 +77,16 @@
     "sourceDetails": ": АЖК кестесі",
     "placeHidden": "Мекенжай жасырылған — АЖК сайтындағы кестені қараңыз"
   },
+  "Calendar": {
+    "add": "Күнтізбеге",
+    "addLabel": "Күнтізбеге қосу: {date}, {hours}",
+    "addAll": "Барлығын күнтізбеге ({count})",
+    "summary": "Жарық өшіру: {place}",
+    "andMore": "{places} және тағы {count}",
+    "source": "АЖК кестесі: {url}",
+    "disclaimer": "Бейресми деректер, дереккөз: {site}. АЖК кестесімен салыстырыңыз.",
+    "reminder": "Жоспарлы жарық өшіру {hours}"
+  },
   "RepairType": {
     "current_repair": "Ағымдағы жөндеу",
     "capital_repair": "Күрделі жөндеу",

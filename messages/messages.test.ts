@@ -69,6 +69,11 @@ describe("message catalogs", () => {
       label: "L",
       from: "F",
       to: "T",
+      place: "P",
+      url: "U",
+      site: "S",
+      hours: "H",
+      places: "PP",
     };
     for (const key of Object.keys(flat[locale])) {
       // Rich-text messages need tag handlers; markup() accepts plain functions.
