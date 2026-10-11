@@ -21,9 +21,19 @@ const LatLonSchema = z.tuple([
   z.number().min(ALMATY_VIEWBOX.west).max(ALMATY_VIEWBOX.east),
 ]);
 
+/**
+ * Bump whenever `matchesOsmName` / `overpassNamePattern` change what they find:
+ * entries fetched under an older version are fetched again (found or not), so
+ * a street matched only partly before — «Мынбаева» without «улица Керима
+ * Мынбаева» — gets its full geometry.
+ */
+export const STREET_MATCHER_VERSION = 2;
+
 export const StreetEntrySchema = z.discriminatedUnion("status", [
   z.object({
     status: z.literal("found"),
+    /** `STREET_MATCHER_VERSION` this was fetched with; missing = 1. */
+    matcher: z.number().int().optional(),
     /** OSM names that matched, e.g. ["проспект Гагарина"] — for auditing. */
     osmNames: z.array(z.string()).min(1),
     /** Connected pieces of the street, each simplified. */
@@ -32,6 +42,7 @@ export const StreetEntrySchema = z.discriminatedUnion("status", [
   }),
   z.object({
     status: z.literal("not_found"),
+    matcher: z.number().int().optional(),
     fetchedAt: z.iso.datetime({ offset: true }),
   }),
 ]);

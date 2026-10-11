@@ -136,7 +136,7 @@ The site is a plain static export (`pnpm build:static` → `out/`) on Cloudflare
 Most outages list several streets, and Nominatim alone returns an arbitrary piece of each one — so «Сатпаева, Айманова, Мынбаева, Гагарина» used to be four points scattered along four long streets. Now:
 
 - [`pnpm data:streets`](scripts/fetch-streets.ts) caches the **full geometry** of every street from OpenStreetMap (Overpass) in `data/streets.json` — build time only, never shipped to the browser.
-- [`placeOutage`](lib/geo/placement.ts) finds where an outage's streets **come closest together**. If all of them pass within 700 m of one spot, the outage is drawn as **one marker with a shaded block** over the nearby stretches of its streets; otherwise the farthest street is dropped and the rest tried again.
+- [`placeOutage`](lib/geo/placement.ts) finds where an outage's streets **come closest together**. If all of them pass within 500 m of one spot, the outage is drawn as **one marker with a shaded block** over the nearby stretches of its streets; otherwise the farthest street is dropped and the rest tried again.
 - A street that doesn't meet the others is placed on its stretch nearest the block or the outage's microdistrict; one more than 3 km away is a same-named street elsewhere and is left off the map. A lone street is placed in its middle, not at its first OSM piece.
 - Microdistricts, and streets OSM doesn't have, stay geocoded points. Lookups are restricted to Almaty's district bounds.
 

@@ -13,8 +13,13 @@ import { LINEAR_KINDS, toMetres, type LatLon, type StreetsCache } from "@/lib/ge
  * gets the middle of its stretch instead of wherever its first OSM piece starts.
  */
 
-/** An area holds together if every street passes within this distance of its centre. */
-export const MAX_AREA_SPREAD_M = 700;
+/**
+ * An area holds together if every street passes within this distance of its
+ * centre. A real block is ~250 m across the street; the margin covers outages
+ * listing a dozen streets of one neighbourhood, while a street known only from
+ * a far-off fragment is dropped instead of stretching the area over it.
+ */
+export const MAX_AREA_SPREAD_M = 500;
 /**
  * A street further than this from the outage's area or microdistrict is a
  * same-named street elsewhere in the city (the real one is missing from OSM):

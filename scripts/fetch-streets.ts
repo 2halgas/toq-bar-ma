@@ -7,6 +7,8 @@
  *   pnpm data:streets --limit 20          # at most 20 new streets (for testing)
  *   pnpm data:streets --retry-not-found   # also retry previous misses
  *
+ * Entries fetched with an older STREET_MATCHER_VERSION are always fetched again.
+ *
  * Overpass usage policy (https://dev.overpass-api.de/overpass-doc/en/preface/commons.html):
  * one query at a time, an identifying User-Agent, results cached. Streets rarely
  * change, so anything cached — including "not found" — is never requested again
@@ -27,6 +29,7 @@ import {
   matchesOsmName,
   overpassNamePattern,
   prepareLines,
+  STREET_MATCHER_VERSION,
   StreetEntrySchema,
   streetCoreName,
   type LatLon,
@@ -133,9 +136,10 @@ function entryFor(toponym: Toponym, ways: readonly OverpassWay[], fetchedAt: str
     geometries.push(way.geometry.map(({ lat, lon }) => [lat, lon] as LatLon));
   }
   const lines = prepareLines(geometries);
+  const matcher = STREET_MATCHER_VERSION;
   return lines.length > 0
-    ? { status: "found", osmNames: [...osmNames].sort(), lines, fetchedAt }
-    : { status: "not_found", fetchedAt };
+    ? { status: "found", matcher, osmNames: [...osmNames].sort(), lines, fetchedAt }
+    : { status: "not_found", matcher, fetchedAt };
 }
 
 /** Entries that no longer pass the schema are dropped and fetched again. */
@@ -183,7 +187,11 @@ async function main(): Promise<void> {
   const cache = readCache(cachePath);
   const uncached = [...streets.values()].filter((toponym) => {
     const cached = cache[toponym.key];
-    return !cached || (values["retry-not-found"] && cached.status === "not_found");
+    return (
+      !cached ||
+      (cached.matcher ?? 1) < STREET_MATCHER_VERSION ||
+      (values["retry-not-found"] && cached.status === "not_found")
+    );
   });
   const pending = uncached.slice(0, limit);
   console.log(
