@@ -13,6 +13,8 @@ interface EmptyStateProps {
   coverage: ScheduleCoverage;
   schedule: { weekStart: string; weekEnd: string };
   onReset: () => void;
+  suggestions: string[];
+  onSuggest: (query: string) => void;
 }
 
 export function EmptyState({
@@ -21,6 +23,8 @@ export function EmptyState({
   coverage,
   schedule,
   onReset,
+  suggestions,
+  onSuggest,
 }: EmptyStateProps) {
   const t = useTranslations("Empty");
   const tCommon = useTranslations("Common");
@@ -55,6 +59,22 @@ export function EmptyState({
       </span>
       <h3 className="mt-4 font-semibold">{title}</h3>
       <p className="mt-1 max-w-sm text-sm text-muted-foreground">{description}</p>
+      {coverage === "covered" && suggestions.length > 0 && (
+        <div className="mt-4 flex flex-wrap items-center justify-center gap-2">
+          <span className="text-sm">{t("didYouMean")}</span>
+          {suggestions.map((name) => (
+            <Button
+              key={name}
+              variant="secondary"
+              size="sm"
+              lang="ru"
+              onClick={() => onSuggest(name)}
+            >
+              {name}
+            </Button>
+          ))}
+        </div>
+      )}
       {hasActiveFilters && (
         <Button variant="outline" className="mt-4" onClick={onReset}>
           <RotateCcwIcon aria-hidden />

@@ -15,7 +15,7 @@ export default function Home({ params }: PageProps<"/[locale]">) {
 
   const { outages: rawOutages, title, sourceUrl, weekStart, weekEnd } = getOutagesData();
   // Joined at build time, so the client gets only coordinates for places in this schedule.
-  const { outages, locations } = buildOutageViews(rawOutages, getGeocache());
+  const { outages, locations, placeNames } = buildOutageViews(rawOutages, getGeocache());
 
   // The explorer reads filters from the URL, so it renders on the client; the
   // header and footer around it are still prerendered.
@@ -24,6 +24,7 @@ export default function Home({ params }: PageProps<"/[locale]">) {
       <OutagesExplorer
         outages={outages}
         locations={locations}
+        placeNames={placeNames}
         schedule={{ title, sourceUrl, weekStart, weekEnd }}
       />
     </Suspense>

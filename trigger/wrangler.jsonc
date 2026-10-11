@@ -12,7 +12,8 @@
   "preview_urls": false,
   "triggers": {
     // UTC. Almaty is UTC+5: Monday 09:07 and 09:47, when AZhK has published the week.
-    "crons": ["7 4 * * 1", "47 4 * * 1"],
+    // Day names, not numbers: in Cloudflare cron 1 is Sunday, unlike GitHub's (1 = Monday).
+    "crons": ["7 4 * * MON", "47 4 * * MON"],
   },
   "vars": {
     "GITHUB_REPO": "2halgas/toq-bar-ma",

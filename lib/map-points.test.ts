@@ -20,7 +20,7 @@ const geocache: Geocache = {
 };
 
 describe("buildOutageViews", () => {
-  const { outages, locations } = buildOutageViews(
+  const { outages, locations, placeNames } = buildOutageViews(
     [
       makeOutage({ id: "a", place: "м-н Айгерим-1, ул.Азаттык" }),
       makeOutage({ id: "b", place: "ул. Веницианова" }),
@@ -39,6 +39,14 @@ describe("buildOutageViews", () => {
     expect(locations).toEqual({
       "мкр айгерим 1": { label: "мкр. Айгерим-1", lat: 43.27, lon: 76.84 },
       "ул азаттык": { label: "ул. Азаттык", lat: 43.274, lon: 76.85 },
+    });
+  });
+
+  it("names every toponym, found or not, for typo suggestions", () => {
+    expect(placeNames).toEqual({
+      "мкр айгерим 1": "Айгерим-1",
+      "ул азаттык": "Азаттык",
+      "ул веницианова": "Веницианова",
     });
   });
 });

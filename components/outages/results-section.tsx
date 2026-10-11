@@ -14,6 +14,9 @@ interface ResultsSectionProps {
   coverage: ScheduleCoverage;
   schedule: { weekStart: string; weekEnd: string };
   onReset: () => void;
+  /** "Did you mean" place names when the query found nothing. */
+  suggestions: string[];
+  onSuggest: (query: string) => void;
   /** Hide the visible heading when a tab label already names the section. */
   hideHeading?: boolean;
 }
@@ -26,6 +29,8 @@ export function ResultsSection({
   coverage,
   schedule,
   onReset,
+  suggestions,
+  onSuggest,
   hideHeading = false,
 }: ResultsSectionProps) {
   const t = useTranslations("Results");
@@ -53,6 +58,8 @@ export function ResultsSection({
           coverage={coverage}
           schedule={schedule}
           onReset={onReset}
+          suggestions={suggestions}
+          onSuggest={onSuggest}
         />
       )}
     </section>

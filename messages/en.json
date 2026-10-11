@@ -93,6 +93,7 @@
     "noQueryMatches": "No planned outages match «{query}» on the selected dates. Check the spelling or try another date.",
     "noFilterMatches": "No planned outages match the selected filters. Try another date or RES.",
     "nothingPlanned": "Nothing is planned for these days in the published schedule.",
+    "didYouMean": "Did you mean:",
     "resetFilters": "Reset filters",
     "plannedOnly": "Only planned work is shown here. Emergency outages aren't listed, and schedules can change — check the <link>AZhK website</link>."
   },

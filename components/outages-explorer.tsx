@@ -17,16 +17,24 @@ import { countByRes, filterOutages, getScheduleCoverage, resolveDateRange } from
 import { type MapLocation } from "@/lib/geo/geocache";
 import { buildMapPoints, countUnmapped, type OutageView } from "@/lib/map-points";
 import { toQueryString } from "@/lib/search-params";
+import { suggestPlaces } from "@/lib/suggest";
 
 type MobileView = "list" | "map";
 
 interface OutagesExplorerProps {
   outages: OutageView[];
   locations: Record<string, MapLocation>;
+  /** Toponym key → name as written in the schedule; candidates for "did you mean". */
+  placeNames: Record<string, string>;
   schedule: ScheduleInfo;
 }
 
-export function OutagesExplorer({ outages, locations, schedule }: OutagesExplorerProps) {
+export function OutagesExplorer({
+  outages,
+  locations,
+  placeNames,
+  schedule,
+}: OutagesExplorerProps) {
   const t = useTranslations("Explorer");
   const today = useAlmatyToday();
   const isDesktop = useMediaQuery(DESKTOP_MEDIA_QUERY);
@@ -42,6 +50,16 @@ export function OutagesExplorer({ outages, locations, schedule }: OutagesExplore
     () => countByRes(outages, filterOutages(outages, { ...filters, res: null }, today)),
     [outages, filters, today],
   );
+
+  // Nothing found for the query: offer places with a similar name that do have
+  // outages on the selected dates and РЭС, so a suggestion never leads nowhere.
+  const suggestions = useMemo(() => {
+    if (results.length > 0 || !filters.query) return [];
+    const names = filterOutages(outages, { ...filters, query: "" }, today).flatMap((outage) =>
+      outage.toponymKeys.map((key) => placeNames[key] ?? ""),
+    );
+    return suggestPlaces(filters.query, names);
+  }, [results.length, outages, filters, today, placeNames]);
 
   const isDefault = toQueryString(filters) === "";
   const coverage = getScheduleCoverage(resolveDateRange(filters.date, today), schedule);
@@ -75,6 +93,8 @@ export function OutagesExplorer({ outages, locations, schedule }: OutagesExplore
         coverage={coverage}
         schedule={schedule}
         onReset={resetFilters}
+        suggestions={suggestions}
+        onSuggest={(query) => updateFilters({ query })}
         hideHeading={hideHeading}
       />
     </div>

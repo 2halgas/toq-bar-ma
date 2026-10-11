@@ -8,16 +8,23 @@ export type OutageView = AzhkOutage & { toponymKeys: string[] };
 /**
  * Server-side join of outages with the geocache: every outage gets its toponym
  * keys, and only toponyms that were actually found end up in `locations`.
+ * `placeNames` maps every key to its name as written, for "did you mean".
  */
 export function buildOutageViews(
   outages: readonly AzhkOutage[],
   geocache: Geocache,
-): { outages: OutageView[]; locations: Record<string, MapLocation> } {
+): {
+  outages: OutageView[];
+  locations: Record<string, MapLocation>;
+  placeNames: Record<string, string>;
+} {
   const locations: Record<string, MapLocation> = {};
+  const placeNames: Record<string, string> = {};
 
   const views = outages.map((outage) => {
     const toponyms = extractToponyms(outage.place);
     for (const toponym of toponyms) {
+      placeNames[toponym.key] ??= toponym.name;
       const entry = geocache[toponym.key];
       if (entry?.status === "found" && !locations[toponym.key]) {
         locations[toponym.key] = { label: toponym.label, lat: entry.lat, lon: entry.lon };
@@ -26,7 +33,7 @@ export function buildOutageViews(
     return { ...outage, toponymKeys: toponyms.map((toponym) => toponym.key) };
   });
 
-  return { outages: views, locations };
+  return { outages: views, locations, placeNames };
 }
 
 export interface MapPoint extends MapLocation {
