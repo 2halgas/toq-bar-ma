@@ -58,6 +58,14 @@ jobs:
         env:
           GEOCODER_CONTACT: ${{ secrets.GEOCODER_CONTACT }}
 
+      # Public Overpass servers are often overloaded: a failure here must not
+      # block the schedule update. Whatever was fetched is kept; the rest next run.
+      - name: Download street geometry (Overpass, cached)
+        run: pnpm data:streets
+        continue-on-error: true
+        env:
+          GEOCODER_CONTACT: ${{ secrets.GEOCODER_CONTACT }}
+
       # Gatekeepers: nothing is committed unless all of these pass.
       - name: Check for personal data
         run: pnpm data:audit
@@ -67,7 +75,7 @@ jobs:
 
       - name: Commit changes
         run: |
-          git add data/outages.json data/geocache.json
+          git add data/outages.json data/geocache.json data/streets.json
           if git diff --cached --quiet; then
             echo "No data changes."
             exit 0

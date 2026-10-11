@@ -85,14 +85,15 @@ pnpm dev        # http://localhost:3000
 pnpm check      # typecheck + lint + format check + unit tests
 ```
 
-| Script               | What it does                                                                                    |
-| -------------------- | ----------------------------------------------------------------------------------------------- |
-| `pnpm data:fetch`    | Download and parse the newest AZhK schedule into `data/outages.json` (`--force` to re-download) |
-| `pnpm data:geocode`  | Geocode places not yet in `data/geocache.json` (`--limit N`, `--retry-not-found`)               |
-| `pnpm data:audit`    | Fail if any data file contains name-like patterns                                               |
-| `pnpm data:validate` | Validate `data/outages.json` (also happens during `pnpm build`)                                 |
-| `pnpm build`         | Production build                                                                                |
-| `pnpm build:static`  | Plain static site in `out/` for any static host (GitHub Pages, Cloudflare Pages, Netlify)       |
+| Script               | What it does                                                                                                |
+| -------------------- | ----------------------------------------------------------------------------------------------------------- |
+| `pnpm data:fetch`    | Download and parse the newest AZhK schedule into `data/outages.json` (`--force` to re-download)             |
+| `pnpm data:geocode`  | Geocode places not yet in `data/geocache.json` (`--limit N`, `--retry-not-found`)                           |
+| `pnpm data:streets`  | Download full street geometry from OSM Overpass into `data/streets.json` (`--limit N`, `--retry-not-found`) |
+| `pnpm data:audit`    | Fail if any data file contains name-like patterns                                                           |
+| `pnpm data:validate` | Validate `data/outages.json` (also happens during `pnpm build`)                                             |
+| `pnpm build`         | Production build                                                                                            |
+| `pnpm build:static`  | Plain static site in `out/` for any static host (GitHub Pages, Cloudflare Pages, Netlify)                   |
 
 ### Environment variables
 

@@ -17,6 +17,7 @@
     "data:fetch": "tsx scripts/fetch-outages.ts",
     "data:audit": "tsx scripts/audit-privacy.ts",
     "data:geocode": "tsx scripts/geocode.ts",
+    "data:streets": "tsx scripts/fetch-streets.ts",
     "build:static": "STATIC_EXPORT=1 next build",
     "trigger:deploy": "pnpm --allow-build=esbuild --allow-build=workerd dlx wrangler@4 deploy --config trigger/wrangler.jsonc",
     "trigger:secret": "pnpm --allow-build=esbuild --allow-build=workerd dlx wrangler@4 secret put GITHUB_TOKEN --config trigger/wrangler.jsonc"
