@@ -1,5 +1,6 @@
 "use client";
 
+import { CalendarIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useId } from "react";
 
@@ -54,9 +55,16 @@ export function DateFilter({ value, onChange }: DateFilterProps) {
           ))}
         </ToggleGroup>
 
-        {/* Takes whatever the buttons leave (and may shrink) instead of a fixed width,
-            so it never pushes the page wider — fonts and native date fields vary by browser. */}
-        <div className="min-w-0 min-[420px]:max-w-48 min-[420px]:flex-1">
+        {/* Takes whatever the buttons leave (and may shrink) instead of a fixed width.
+            iOS 26 gives the native date input a minimum width wider than the screen and
+            ignores width/min-width, so the input is absolutely positioned (can't widen the
+            layout) and clipped by this box, which draws the border and focus ring itself. */}
+        <div
+          className={cn(
+            "relative h-10 min-w-0 overflow-hidden rounded-lg border border-input focus-within:border-ring focus-within:ring-3 focus-within:ring-ring/50 min-[420px]:max-w-48 min-[420px]:flex-1 dark:bg-input/30",
+            pickedDate && "border-primary ring-1 ring-primary",
+          )}
+        >
           <Label htmlFor={dateInputId} className="sr-only">
             {t("otherDate")}
           </Label>
@@ -69,15 +77,25 @@ export function DateFilter({ value, onChange }: DateFilterProps) {
                 event.target.value ? { kind: "date", date: event.target.value } : { kind: "week" },
               )
             }
-            // Native date inputs have an intrinsic min width: `min-w-0` lets it obey `w-full`.
-            // (No `block`/`appearance-none`: iOS Safari then misaligns the value vertically.)
+            // No `block`/`appearance-none`: iOS Safari then misaligns the value vertically.
             className={cn(
-              "h-10 w-full min-w-0 rounded-lg border border-input bg-transparent px-3 text-left text-base outline-none focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 md:text-sm dark:bg-input/30 dark:[color-scheme:dark] [&::-webkit-date-and-time-value]:text-left",
+              "peer absolute inset-0 size-full min-w-0 bg-transparent px-3 text-left text-base outline-none md:text-sm dark:[color-scheme:dark] [&::-webkit-date-and-time-value]:text-left",
               pickedDate
-                ? "border-primary font-medium ring-1 ring-primary"
-                : "text-muted-foreground",
+                ? "font-medium"
+                : // Empty: iOS shows a blank box and Chrome «дд.мм.гггг»; both are hidden
+                  // behind our own hint until the field is focused.
+                  "text-transparent focus:text-muted-foreground",
             )}
           />
+          {!pickedDate && (
+            <span
+              className="pointer-events-none absolute inset-y-0 left-3 flex items-center gap-2 text-base text-muted-foreground peer-focus:hidden md:text-sm"
+              aria-hidden
+            >
+              <CalendarIcon className="size-4" />
+              {t("otherDate")}
+            </span>
+          )}
         </div>
       </div>
     </div>
