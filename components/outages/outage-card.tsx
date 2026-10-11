@@ -68,7 +68,9 @@ export function OutageCard({ outage, today }: OutageCardProps) {
               id={placeId}
               lang={isHidden ? undefined : "ru"}
               className={cn(
-                "leading-relaxed break-words",
+                // «anywhere», not «break-word»: AZhK writes runs like «д.77,-45,оф.18,д.78,…»
+                // without spaces, and only «anywhere» stops them from widening the card.
+                "leading-relaxed wrap-anywhere",
                 isHidden && "text-muted-foreground italic",
                 isLong && !expanded && "line-clamp-4",
               )}
@@ -94,7 +96,7 @@ export function OutageCard({ outage, today }: OutageCardProps) {
             <CableIcon className="mt-0.5 size-4" aria-hidden />
             <span className="sr-only">{t("equipment")}</span>
           </dt>
-          <dd className="min-w-0 break-words" lang="ru">
+          <dd className="min-w-0 wrap-anywhere" lang="ru">
             {outage.dispatchName}
           </dd>
         </div>

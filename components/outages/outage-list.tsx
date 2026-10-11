@@ -41,7 +41,7 @@ export function OutageList({ outages, today }: OutageListProps) {
                     {t("res", { number: group.res })}
                   </h4>
                   {/* Two columns only while the list spans the screen; next to the map it's ≤ 28rem. */}
-                  <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-1">
+                  <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-1">
                     {group.outages.map((outage) => (
                       <li key={outage.id}>
                         <OutageCard outage={outage} today={today} />
