@@ -27,11 +27,9 @@ function subscribe(onChange: () => void): () => void {
 // Storage can be unavailable (private mode, blocked site data): then there are
 // simply no saved places, and saving does nothing.
 function readRaw(): string | null {
-  try {
-    return window.localStorage.getItem(SAVED_PLACES_STORAGE_KEY);
-  } catch {
-    return null;
-  }
+  const raw = window.localStorage.getItem(SAVED_PLACES_STORAGE_KEY);
+  if (raw === null) throw new Error("no saved places");
+  return raw;
 }
 
 function write(places: string[]): void {
