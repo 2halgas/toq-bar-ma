@@ -136,5 +136,12 @@
     "listTab": "List",
     "mapTab": "Map",
     "showAsList": "Show as list: {count}"
+  },
+  "Errors": {
+    "pageTitle": "Couldn't show the outages",
+    "pageDescription": "Something went wrong in the browser. Try again, or check the <link>schedule on the AZhK website</link>.",
+    "mapTitle": "The map didn't load",
+    "mapDescription": "The outage list works as usual.",
+    "retry": "Try again"
   }
 }

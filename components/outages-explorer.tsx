@@ -4,6 +4,7 @@ import { ListIcon, MapIcon } from "lucide-react";
 import { useTranslations } from "next-intl";
 import { useMemo, useState } from "react";
 
+import { MapErrorBoundary } from "@/components/errors/map-error-boundary";
 import { OutageFilters } from "@/components/filters/outage-filters";
 import { SavedPlaces } from "@/components/filters/saved-places";
 import { MapPanel } from "@/components/map/map-panel";
@@ -123,12 +124,14 @@ export function OutagesExplorer({
   );
 
   const renderMap = (className: string) => (
-    <MapPanel
-      points={points}
-      unmappedCount={unmappedCount}
-      onShowInList={showInList}
-      className={className}
-    />
+    <MapErrorBoundary className={className}>
+      <MapPanel
+        points={points}
+        unmappedCount={unmappedCount}
+        onShowInList={showInList}
+        className={className}
+      />
+    </MapErrorBoundary>
   );
 
   // One layout or the other is rendered (never both), so Leaflet mounts exactly once.
