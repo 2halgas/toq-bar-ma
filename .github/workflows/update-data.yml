@@ -7,6 +7,14 @@ name: Update data
 # Started on time by a Cloudflare Cron Trigger (trigger/, via workflow_dispatch):
 # GitHub's own `schedule` runs can start hours late or be skipped. The schedule
 # below is only a fallback; a repeated run finds no changes and commits nothing.
+#
+# Two jobs, so the one that can write to the repository never runs third-party code:
+# - prepare: installs dependencies and talks to azhk.kz, Nominatim and Overpass,
+#   with a read-only token. A compromised npm package here cannot push anything.
+# - commit:  no `pnpm install`, no project code — only checks the three JSON files
+#   it receives (with jq) and commits them. It is the only job allowed to write.
+#
+# Actions are pinned to commit SHAs (tags can be moved); Dependabot keeps them current.
 on:
   schedule:
     - cron: "7 4 * * 0,1" # Sunday and Monday 09:07 in Almaty (UTC+5)
@@ -19,7 +27,7 @@ on:
         default: false
 
 permissions:
-  contents: write
+  contents: read
 
 # Never let two runs race to push.
 concurrency:
@@ -27,14 +35,18 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  update:
+  prepare:
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false # nothing in this job may push
 
-      - uses: pnpm/action-setup@v5 # version comes from "packageManager" in package.json
-      - uses: actions/setup-node@v7
+      - uses: pnpm/action-setup@fc06bc1257f339d1d5d8b3a19a8cae5388b55320 # v5.0.0; version from "packageManager"
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .node-version
           cache: pnpm
@@ -42,7 +54,7 @@ jobs:
 
       # Redacted copies of schedule pages aren't committed; keep them between runs
       # so each week's page is downloaded only once.
-      - uses: actions/cache@v6
+      - uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
         with:
           path: data/raw
           key: azhk-raw-${{ github.run_id }}
@@ -66,15 +78,62 @@ jobs:
         env:
           GEOCODER_CONTACT: ${{ secrets.GEOCODER_CONTACT }}
 
-      # Gatekeepers: nothing is committed unless all of these pass.
+      # Gatekeepers: nothing is handed to the commit job unless all of these pass.
       - name: Check for personal data
         run: pnpm data:audit
       - run: pnpm data:validate
       - run: pnpm test
       - run: pnpm build:static # what Cloudflare deploys
 
+      - uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: data
+          path: |
+            data/outages.json
+            data/geocache.json
+            data/streets.json
+          if-no-files-found: error
+          retention-days: 3
+
+  commit:
+    needs: prepare
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      # The latest main, not the commit `prepare` started from: someone may have
+      # pushed in the meantime, and the data files don't depend on the code.
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: main
+
+      - uses: actions/download-artifact@9000827ccba6bdab643e8b6fd33ac0654aef8333 # v8.0.2
+        with:
+          name: data
+          path: ${{ runner.temp }}/data
+
+      # Only the three expected files, each valid JSON of the right shape and a sane
+      # size, ever reach data/. jq ships with the runner: no packages are installed.
+      - name: Check and place the data files
+        env:
+          INCOMING: ${{ runner.temp }}/data
+        run: |
+          set -euo pipefail
+          extra=$(find "$INCOMING" -type f ! -name outages.json ! -name geocache.json ! -name streets.json)
+          if [ -n "$extra" ]; then echo "Unexpected files: $extra"; exit 1; fi
+          for file in outages.json geocache.json streets.json; do
+            size=$(stat -c %s "$INCOMING/$file")
+            if [ "$size" -gt 10000000 ]; then echo "$file is too large ($size bytes)"; exit 1; fi
+          done
+          jq -e '(.outages | type == "array") and (.title | type == "string")' "$INCOMING/outages.json" > /dev/null
+          jq -e 'type == "object"' "$INCOMING/geocache.json" > /dev/null
+          jq -e 'type == "object"' "$INCOMING/streets.json" > /dev/null
+          cp "$INCOMING/outages.json" "$INCOMING/geocache.json" "$INCOMING/streets.json" data/
+
       - name: Commit changes
         run: |
+          set -euo pipefail
           git add data/outages.json data/geocache.json data/streets.json
           if git diff --cached --quiet; then
             echo "No data changes."
@@ -82,6 +141,7 @@ jobs:
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          title=$(node -p 'require("./data/outages.json").title')
+          # One line, no control characters: the title comes from the AZhK website.
+          title=$(jq -r '.title | gsub("[[:cntrl:]]"; "") | .[0:120]' data/outages.json)
           git commit -m "chore(data): update AZhK schedule — ${title}"
           git push

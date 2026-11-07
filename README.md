@@ -52,7 +52,7 @@ extract streets / microdistricts ─► OpenStreetMap Nominatim ─► data/geoc
 commit ─► Cloudflare Pages rebuilds the static site
 ```
 
-A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this on Sundays and Mondays at 09:07 and 09:47 Almaty time — AZhK publishes the week's schedule on one of those mornings — and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass. GitHub's own `schedule` runs can start hours late, so the workflow is started on the minute by a tiny cron-only Cloudflare Worker ([`trigger/`](trigger/index.ts)) via `workflow_dispatch`; the GitHub schedule stays as a fallback.
+A GitHub Actions workflow ([`update-data.yml`](.github/workflows/update-data.yml)) runs this on Sundays and Mondays at 09:07 and 09:47 Almaty time — AZhK publishes the week's schedule on one of those mornings — and commits `data/` only when something changed. Nothing is committed unless the privacy audit, data validation, tests and build all pass. The job that talks to the outside world and installs packages has a read-only token; a separate job without `pnpm install` checks the three JSON files and is the only one allowed to push. Actions are pinned to commit SHAs and kept current by Dependabot. GitHub's own `schedule` runs can start hours late, so the workflow is started on the minute by a tiny cron-only Cloudflare Worker ([`trigger/`](trigger/index.ts)) via `workflow_dispatch`; the GitHub schedule stays as a fallback.
 
 ## Privacy
 

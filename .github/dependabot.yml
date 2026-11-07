@@ -1,0 +1,25 @@
+# Weekly update pull requests. They run CI like any other PR; nothing merges by itself.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule:
+      interval: weekly
+      day: tuesday
+      timezone: Asia/Almaty
+    open-pull-requests-limit: 5
+    # One PR for all minor/patch updates instead of a dozen; majors come one by one.
+    groups:
+      minor-and-patch:
+        update-types: [minor, patch]
+
+  # Keeps the SHA-pinned actions in .github/workflows current (and their "# vX" comments).
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: weekly
+      day: tuesday
+      timezone: Asia/Almaty
+    groups:
+      actions:
+        patterns: ["*"]
