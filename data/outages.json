@@ -1,15 +1,15 @@
 {
   "source": "azhk",
-  "title": "город Алматы с 09.11.2026 года по 13.11.2026 года",
-  "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-  "weekStart": "2026-11-09",
-  "weekEnd": "2026-11-13",
-  "updatedAt": "2026-11-09T04:08:05.324Z",
+  "title": "город Алматы с 16.11.2026 года по 20.11.2026 года",
+  "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+  "weekStart": "2026-11-16",
+  "weekEnd": "2026-11-20",
+  "updatedAt": "2026-11-16T04:08:04.983Z",
   "outages": [
     {
-      "id": "8864eae45b6b",
+      "id": "7c8dbea1e632",
       "res": 1,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1065 выход \"Запад\"",
@@ -20,140 +20,140 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "Азия\", ТОО \"Алматинские тепловые сети\" пр. Суюнбая, ул. Грибоедова,ул. Нусупбекова ул. Расковой, ул. Пестковского, ул. Ипподромная, ул. Болтирик Шешена",
       "placeNormalized": "азия, тоо алматинские тепловые сети пр суюнбая, ул грибоедова, ул нусупбекова ул расковой, ул пестковского, ул ипподромная, ул болтирик шешена",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "ac37bd83bfd9",
+      "id": "34abe4a56840",
       "res": 1,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-1310 выход \"Север\"",
+      "dispatchName": "РУ-10/0,4 кВ ТП-1268 допуск ТМ",
       "substations": [
-        "ТП-1310"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "ж/д: мкр. Айгерим-1 ул. Алматинская; ул. Набережная; ул.C.Ашимова, ул.Наби.",
-      "placeNormalized": "ж/д: мкр айгерим 1 ул алматинская; ул набережная; ул c ашимова, ул наби",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "9388b164f54c",
-      "res": 1,
-      "date": "2026-11-09",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4 кВ с-1,2 ТП-1323 допуск ТМ",
-      "substations": [
-        "ТП-1323"
+        "ТП-1268"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ТОО \"Алатау Прогресс\" -пр. Рыскулова зап. ул. Ырысты; ТОО \"Береке-7\" - пр. Рыскулова 103/21",
-      "placeNormalized": "тоо алатау прогресс пр рыскулова зап ул ырысты; тоо береке 7 пр рыскулова 103/21",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "[ИП] - ул.Северное кольцо, д.25; ТОО \" Компания \"Юпитер\" - ул.Северное кольцо, д.19; ТОО \"Достар Сауда\" - ул.Северное кольцо, д.8; [частное лицо] - м-он \"Шапагат\", ул.Шоссейная; [частное лицо] - ул.Северное кольцо, д.27А; ТОО \"DM-Stpoy Company\" - ул.Северное кольцо.",
+      "placeNormalized": "ул северное кольцо, д 25; тоо компания юпитер ул северное кольцо, д 19; тоо достар сауда ул северное кольцо, д 8; мкр шапагат, ул шоссейная; ул северное кольцо, д 27а; тоо dm stpoy company ул северное кольцо",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "c5bc3f95626e",
+      "id": "1faed0990d4e",
       "res": 1,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-0,4 кВ ТП-1430",
+      "dispatchName": "РУ-10/0,4 кВ ТП-1313 допуск ТМ",
       "substations": [
-        "ТП-1430"
+        "ТП-1313"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ж/дома: м-н Улжан-1 ул. Байтас 2-30; ул. Жанажол 2-29; ул. К. Жалайыри 245; Сарбастау 52-97",
-      "placeNormalized": "ж/дома: мкр улжан 1 ул байтас 2 30; ул жанажол 2 29; ул к жалайыри 245; сарбастау 52 97",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "жилые дома (частный сектор) мкр. Кок Кайнар ул.Мамбетова 8-78, 1-59",
+      "placeNormalized": "жилые дома (частный сектор) мкр кок кайнар ул мамбетова 8 78, 1 59",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "020b786536d8",
+      "id": "f380d824d342",
       "res": 1,
-      "date": "2026-11-10",
+      "date": "2026-11-16",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-1065 выход \"Восток\"",
+      "dispatchName": "РУ-6 кВ c-1 ТП-1123",
       "substations": [
-        "ТП-1065"
+        "ТП-1123"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Азия\", ТОО \"Алматинские тепловые сети\" пр. Суюнбая, ул. Грибоедова,ул. Нусупбекова ул. Расковой, ул. Пестковского, ул. Ипподромная, ул. Болтирик Шешена",
-      "placeNormalized": "азия, тоо алматинские тепловые сети пр суюнбая, ул грибоедова, ул нусупбекова ул расковой, ул пестковского, ул ипподромная, ул болтирик шешена",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ж/дома: ул. Кашгарская 4-8, Макатаева 156, Масанчи, 3-7",
+      "placeNormalized": "ж/дома: ул кашгарская 4 8, макатаева 156, масанчи, 3 7",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "c0eb5643cd2f",
+      "id": "1d164430a01e",
       "res": 1,
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-1310 выход \"Юг\"",
+      "dispatchName": "РУ-6/0,4 кВ ТП-1504 допуск ТМ",
       "substations": [
-        "ТП-1310"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "ж/д: мкр. Айгерим-1 ул. Алматинская; ул. Набережная; ул.C.Ашимова, ул.Наби.",
-      "placeNormalized": "ж/д: мкр айгерим 1 ул алматинская; ул набережная; ул c ашимова, ул наби",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "eb6536888a94",
-      "res": 1,
-      "date": "2026-11-10",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-6/0,4 кВ с-1,2 ТП-1500 допуск ТМ",
-      "substations": [
-        "ТП-1500"
+        "ТП-1504"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "КазНИВИ - пр.Райымбека, д.223",
-      "placeNormalized": "казниви пр райымбека, д 223",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "АО \"Акционерная компания \"Қазақстан жолдары\" - ул.Ратушного, д.88, АО \"Медтехника\"-ул.Ратушного, д.64А, [частное лицо] -ул.Ратушного, д.60А, [частное лицо] - ул.Ратушного, д.70, [частное лицо] -ул.Ратушного, д.78 Б",
+      "placeNormalized": "ао акционерная компания казакстан жолдары ул ратушного, д 88, ао медтехника ул ратушного, д 64а, ул ратушного, д 60а, ул ратушного, д 70, ул ратушного, д 78 б",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "44deb848595f",
+      "id": "66c87bd688e4",
       "res": 1,
-      "date": "2026-11-10",
+      "date": "2026-11-17",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-6/0,4 кВ ТП-1274",
+      "dispatchName": "РУ-0,4 кВ ТП-1707",
       "substations": [
-        "ТП-1274"
+        "ТП-1707"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "РГУ \"ЗГМЦ\" Комитета по ВР МСХ РК\" - пер.Галилея, д.138; жилые дома (частный сектор) ул. Галилея 42-182а",
-      "placeNormalized": "ргу згмц комитета по вр мсх рк пер галилея, д 138; жилые дома (частный сектор) ул галилея 42 182а",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "жилые дома (частный сектор) м-н Шанырак-2, ул. Аристов 25а-59; Жалантос бахадур 138/1-158;, Жанкожа батыра 160-268;, Кайынсай 35, Кенжайлау 8-26; Малова 23-51; Рахимова 132-251, Сырым батыр 14;, Тойшибек батыра 187/1-225.",
+      "placeNormalized": "жилые дома (частный сектор) мкр шанырак 2, ул аристов 25а 59; жалантос бахадур 138/1 158;, жанкожа батыра 160 268;, кайынсай 35, кенжайлау 8 26; малова 23 51; рахимова 132 251, сырым батыр 14;, тойшибек батыра 187/1 225",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "6abb79d595e8",
+      "id": "94c4ce95a154",
       "res": 1,
-      "date": "2026-11-11",
+      "date": "2026-11-17",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-0,4 кВ ТП-1301",
+      "substations": [
+        "ТП-1301"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "жилые дома (частный сектор): мкр. Туркестан, мкр. Айгерим-1 ул. МТФ д. 3,11,28, мкр. Шанырак-2 ул. Сыганак д.2",
+      "placeNormalized": "жилые дома (частный сектор): мкр туркестан, мкр айгерим 1 ул мтф д 3,11,28, мкр шанырак 2 ул сыганак д 2",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "27c7522c3c8f",
+      "res": 1,
+      "date": "2026-11-18",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-6/0,4 кВ ТП-1577 допуск ТМ",
+      "substations": [
+        "ТП-1577"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ТОО \"Торговый дом \"АВТОЦЕНТР-БАВАРИЯ\"- пр.Райымбека, д.уг.Фурманова115/23; ТОО \"Компания\"Акко\" - г.Алматы, ул.Панфилова, д.20; АО \"Авиационная компания \"САЯХАТ\" - ул.Панфилова, д.21; ТОО \"АйНаз и К\" - ул.Панфилова, д.20; ТОО \"Время - принт\" - пр.Райымбека, д.115; ТОО \"\"Liеferant\" (Лиферант) - ул.Панфилова, д.10; [ИП] - ул.Панфилова, д.19.",
+      "placeNormalized": "тоо торговый дом автоцентр бавария пр райымбека, д уг фурманова115/23; тоо компания акко г алматы, ул панфилова, д 20; ао авиационная компания саяхат ул панфилова, д 21; тоо айназ и к ул панфилова, д 20; тоо время принт пр райымбека, д 115; тоо liеferant (лиферант) ул панфилова, д 10; ул панфилова, д 19",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "c8c862ed905b",
+      "res": 1,
+      "date": "2026-11-18",
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1586 выход \"Запад\"",
@@ -164,68 +164,68 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "жилые дома (частный сектор) ул. Абаканская; ул. Болтитирк шешен; ул. Бондаренко; ул. Грибоедова; ул. Жангельдина; ул. Есенова; ул. Кузнецкая; ул. Натарова; ул. Нусупбекова; ул. Потанина.",
       "placeNormalized": "жилые дома (частный сектор) ул абаканская; ул болтитирк шешен; ул бондаренко; ул грибоедова; ул жангельдина; ул есенова; ул кузнецкая; ул натарова; ул нусупбекова; ул потанина",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "5ef921475b5b",
+      "id": "a02cf8ba09ff",
       "res": 1,
-      "date": "2026-11-11",
+      "date": "2026-11-18",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-1308выход \"Юг\", \"Юго-Запад\"",
+      "dispatchName": "РУ-6/0,4 кВ ТП-1195",
       "substations": [
-        "ТП-1308"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "жилые дома (частный сектор) ул. Наби, ул. Алматинская, ул. С.Ашимова",
-      "placeNormalized": "жилые дома (частный сектор) ул наби, ул алматинская, ул с ашимова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "51590437656e",
-      "res": 1,
-      "date": "2026-11-11",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-6/0,4 кВ с-1,2 ТП-1583 допуск ТМ",
-      "substations": [
-        "ТП-1583"
+        "ТП-1195"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ТОО \"Экспресс - Сервис\" - пр.Жансугурова, д.176А",
-      "placeNormalized": "тоо экспресс сервис пр жансугурова, д 176а",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "РГУ \"Учреждение ЛА-155/6\" КУИС МВД РК, ТОО \"БАСФ Центральная Азия\", [частное лицо], пр. Райымбека д.219А",
+      "placeNormalized": "ргу учреждение ла 155/6 куис мвд рк, тоо басф центральная азия,, пр райымбека д 219а",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "bc09f5e29fdf",
+      "id": "c207f4faabaf",
       "res": 1,
-      "date": "2026-11-11",
+      "date": "2026-11-19",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-0,4 кВ ТП-1258",
+      "dispatchName": "РУ-6/0,4 кВ ТП-1509 допуск ТМ",
       "substations": [
-        "ТП-1258"
+        "ТП-1509"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "пр. Райымбека 243 Б,В,Г, 245 Г",
-      "placeNormalized": "пр райымбека 243 б,в,г, 245 г",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ТОО \"Прима Дистрибьюшн\" - ул.Ратушного, д.90А",
+      "placeNormalized": "тоо прима дистрибьюшн ул ратушного, д 90а",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "05a570ce5012",
+      "id": "d5806dab02fa",
       "res": 1,
-      "date": "2026-11-12",
+      "date": "2026-11-19",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-10 кВ с-2 ТП-1845",
+      "substations": [
+        "ТП-1845"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ТОО \"Технолюкс KINLONG\" - ул.Уссурийская, д.120; ТОО \" АЗКА КОНСАЛТИНГ - СЕРВИС\" - ул.Табачно-заводская, д.67/2а; жилые дома (частный сектор): пр. Рыскулова 2, 23; ул. Ботаническая 44-52; Бурхан 30, 32; Кочина 3-6; Лузина 1-14; Родионова 1-5; Росси 11; Салтыкова-Щедрина 1-17; Табачно-заводская 42-65; Шилова 2-6",
+      "placeNormalized": "тоо технолюкс kinlong ул уссурийская, д 120; тоо азка консалтинг сервис ул табачно заводская, д 67/2а; жилые дома (частный сектор): пр рыскулова 2, 23; ул ботаническая 44 52; бурхан 30, 32; кочина 3 6; лузина 1 14; родионова 1 5; росси 11; салтыкова щедрина 1 17; табачно заводская 42 65; шилова 2 6",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "4b646f559889",
+      "res": 1,
+      "date": "2026-11-19",
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1022 выход \"Север\"",
@@ -236,14 +236,14 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "жилые дома (частный сектор)ул. Пестковского, Баишева, Болтерек Шешена, Жангельдина, Есенова, Иссыкская, Колпаковского, Нусупбекова, Потанина, Расковой, Латыфа Хамиди, РГУ \"У-е по делам обороны г. Алматы\" Медеуского района",
       "placeNormalized": "жилые дома (частный сектор) ул пестковского, баишева, болтерек шешена, жангельдина, есенова, иссыкская, колпаковского, нусупбекова, потанина, расковой, латыфа хамиди, ргу у е по делам обороны г алматы медеуского района",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "94017fe4fd3f",
+      "id": "17e47c01c247",
       "res": 1,
-      "date": "2026-11-12",
+      "date": "2026-11-19",
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-1021-ТП-1057-ТП-1592",
@@ -254,70 +254,52 @@
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "жилые дома (частный сектор ул. Абаканская, Матросова, Мусоргского, Севастопольская Л.Хамиди, Ш.Муртаза, Шемякина, ул. Войникова, Волочаевская, Никопольская, Омская, Станиславского, Шелихова; ул. Баишева, Баянаульская , Кадырбекулы, Матросова, Латыфа Хамиди,Шемякина",
-      "placeNormalized": "жилые дома (частный сектор ул абаканская, матросова, мусоргского, севастопольская л хамиди, ш муртаза, шемякина, ул войникова, волочаевская, никопольская, омская, станиславского, шелихова; ул баишева, баянаульская, кадырбекулы, матросова, латыфа хамиди,шемякина",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "жилые дома (частный сектор ул. Абаканская, Матросова, Мусоргского, Севастопольская, Л.Хамиди, Ш.Муртаза, Шемякина, ул. Войникова, Волочаевская, Никопольская, Омская, Станиславского, Шелихова; ул. Баишева, Баянаульская , Кадырбекулы, Матросова, Латыфа Хамиди,Шемякина",
+      "placeNormalized": "жилые дома (частный сектор ул абаканская, матросова, мусоргского, севастопольская, л хамиди, ш муртаза, шемякина, ул войникова, волочаевская, никопольская, омская, станиславского, шелихова; ул баишева, баянаульская, кадырбекулы, матросова, латыфа хамиди,шемякина",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "619251badb4d",
+      "id": "618f32d3e37d",
       "res": 1,
-      "date": "2026-11-12",
+      "date": "2026-11-20",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-1308 выход \"Север\", \"Северо-Запад\"",
+      "dispatchName": "РУ-10 кВ с-2 ТП-1244",
       "substations": [
-        "ТП-1308"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "жилые дома (частный сектор) ул. Наби, ул. Алматинская, ул. С.Ашимова, ул.Бенберина",
-      "placeNormalized": "жилые дома (частный сектор) ул наби, ул алматинская, ул с ашимова, ул бенберина",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "fad26f1fbbc9",
-      "res": 1,
-      "date": "2026-11-12",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-6/0,4 кВ с-1,2 ТП-1594 допуск ТМ",
-      "substations": [
-        "ТП-1594"
+        "ТП-1244"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "многоэтажные жилые дома: пр. Рыскулова 58А, 62; ул. Макаренко 3, 50, 56, 64",
-      "placeNormalized": "многоэтажные жилые дома: пр рыскулова 58а, 62; ул макаренко 3, 50, 56, 64",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "многоквартирный жилой дом: ул. Столетова, д.13",
+      "placeNormalized": "многоквартирный жилой дом: ул столетова, д 13",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "e6de40b1a198",
+      "id": "2e398786d52e",
       "res": 1,
-      "date": "2026-11-12",
+      "date": "2026-11-20",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-6/0,4 кВ ТП-1188",
+      "dispatchName": "РУ-6/0,4 кВ ТП-1571 допуск ТМ",
       "substations": [
-        "ТП-1188"
+        "ТП-1571"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "пр.Абылай хана, д.55, ТОО \"Гостиница \"Жетысу\"; ул.Желтоксан, д.66, ТОО \"Олимпос-Алматы\"",
-      "placeNormalized": "пр абылай хана, д 55, тоо гостиница жетысу; ул желтоксан, д 66, тоо олимпос алматы",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "многоэтажные жилые дома: пр. Райымбека 137 а, б, в, г",
+      "placeNormalized": "многоэтажные жилые дома: пр райымбека 137 а, б, в, г",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "1acd3d53d0b2",
+      "id": "cbc2961b8381",
       "res": 1,
-      "date": "2026-11-13",
+      "date": "2026-11-20",
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4 кВ ТП-1022 выход \"Юго-Запад\"",
@@ -328,158 +310,32 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "жилые дома (частный сектор)ул. Пестковского, Баишева, Болтерек Шешена, Жангельдина, Есенова, Иссыкская, Колпаковского, Нусупбекова, Потанина, Расковой, Латыфа Хамиди, РГУ \"У-е по делам обороны г. Алматы\" Медеуского района",
       "placeNormalized": "жилые дома (частный сектор) ул пестковского, баишева, болтерек шешена, жангельдина, есенова, иссыкская, колпаковского, нусупбекова, потанина, расковой, латыфа хамиди, ргу у е по делам обороны г алматы медеуского района",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "fecc6e4a5a54",
+      "id": "e66fac19e074",
       "res": 1,
-      "date": "2026-11-13",
+      "date": "2026-11-21",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4 кВ ТП-1725 допуск ТМ",
+      "dispatchName": "РУ-6/0,4 кВ ТП-1570 допуск ТМ",
       "substations": [
-        "ТП-1725"
+        "ТП-1570"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "жилые дома (частный сектор) мкр. Шанырак-1 ул. Алпамыса 1-79г; Аулиеагаш 2-57; Жас Казах 83-111; Искакова 28а, Каратау 2-45; Кобыланды 1-22; Когалы 51; Окжетпес 9-40; Жылысай 35-68; Рахымов 18/11-18/12,Искакова 2-35",
-      "placeNormalized": "жилые дома (частный сектор) мкр шанырак 1 ул алпамыса 1 79г; аулиеагаш 2 57; жас казах 83 111; искакова 28а, каратау 2 45; кобыланды 1 22; когалы 51; окжетпес 9 40; жылысай 35 68; рахымов 18/11 18/12,искакова 2 35",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "АО \"Алматытехникаснаб\" - пр.Райымбека, д.165а; ТОО \"Фирма\"Азия-Паркет\" - пр.Райымбека, д.167Д; ОО\"Союз ученых,инженеров и специалистов в РК\" - пр.Райымбека, д.167; АО \"Каз.АТК им.Тынышпаева\" - пр.Райымбека, д.165; ТОО \"Nomad Ala(Номад Ала)\" - пр.Райымбека, д.169 А",
+      "placeNormalized": "ао алматытехникаснаб пр райымбека, д 165а; тоо фирма азия паркет пр райымбека, д 167д; оо союз ученых,инженеров и специалистов в рк пр райымбека, д 167; ао каз атк им тынышпаева пр райымбека, д 165; тоо nomad ala(номад ала) пр райымбека, д 169 а",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "b82710f30317",
-      "res": 1,
-      "date": "2026-11-13",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4 кВ ТП-1325 допуск ТМ",
-      "substations": [
-        "ТП-1325"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Кок-Кайнар, ул.Жангельдина, д.2 -[ИП], пер.Жангельдина, д.14 - ТОО \"FAM.ALLIANCE\" ж/д, ул.Заречная, д.4",
-      "placeNormalized": "мкр кок кайнар, ул жангельдина, д 2, пер жангельдина, д 14 тоо fam alliance ж/д, ул заречная, д 4",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "6f5e363832ff",
+      "id": "1f45a4dd6744",
       "res": 2,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "КЛ-6кВ РП-16- ТП-2377",
-      "substations": [
-        "ТП-2377"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "зап.ул.Байтурсынова, юж.пр.Абая - Абая, Кашгарская, Курмангазы, Байтурсынова",
-      "placeNormalized": "зап ул байтурсынова, юж пр абая абая, кашгарская, курмангазы, байтурсынова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "1a1db128a4e9",
-      "res": 2,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2384",
-      "substations": [
-        "ТП-2384"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Кулымбетова, Жемчужная, Карасай батыра, Тлендиева",
-      "placeNormalized": "кулымбетова, жемчужная, карасай батыра, тлендиева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "c1f15833280c",
-      "res": 2,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2299",
-      "substations": [
-        "ТП-2299"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "ст. Абая, Прокофьева, Есенжанова, Жемчужная",
-      "placeNormalized": "ст абая, прокофьева, есенжанова, жемчужная",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "1986a651cf1e",
-      "res": 2,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-2792",
-      "substations": [
-        "ТП-2792"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Шакарима, Аносова, Кулымбетова, Бруно",
-      "placeNormalized": "шакарима, аносова, кулымбетова, бруно",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "d4b036dea15e",
-      "res": 2,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-2392",
-      "substations": [
-        "ТП-2392"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Кулымбетова, Аносова, Карасай батыра, Бруно",
-      "placeNormalized": "кулымбетова, аносова, карасай батыра, бруно",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "2a29b8a554b5",
-      "res": 2,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-2045",
-      "substations": [
-        "ТП-2045"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Кабанбай батыра, Фурманова, Карасай батыра, Панфилова",
-      "placeNormalized": "кабанбай батыра, фурманова, карасай батыра, панфилова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "69414d56652b",
-      "res": 2,
-      "date": "2026-11-10",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "КЛ-6кВ РП-16- ТП-2365",
@@ -488,179 +344,55 @@
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "зап.ул.Байтурсынова, юж.пр.Абая - Абая, Досмухамедова, Курмангазы, Шарипова",
-      "placeNormalized": "зап ул байтурсынова, юж пр абая абая, досмухамедова, курмангазы, шарипова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Абая, Досмухамедова, Курмангазы, Шарипова и зап.ул.Байтурсынова, юж.пр.Абая",
+      "placeNormalized": "абая, досмухамедова, курмангазы, шарипова и зап ул байтурсынова, юж пр абая",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "f7a58e503f4c",
+      "id": "be3206afe6ad",
       "res": 2,
-      "date": "2026-11-10",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ф. 19/1- РП-13",
-      "substations": [],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Васнецова, Туркебаева, Толе би, Брусиловского",
-      "placeNormalized": "васнецова, туркебаева, толе би, брусиловского",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "28fcb95a01a5",
-      "res": 2,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-2034",
+      "dispatchName": "РУ-10кВ ТП-2730 с.1",
       "substations": [
-        "ТП-2034"
+        "ТП-2730"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Богенбай батыра, Наурызбай батыра, Толе би, Сейфуллина",
-      "placeNormalized": "богенбай батыра, наурызбай батыра, толе би, сейфуллина",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Толе би, Джумалиева, Казыбек би, Байзакова",
+      "placeNormalized": "толе би, джумалиева, казыбек би, байзакова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "b6665f675ed3",
+      "id": "f5016cc946c8",
       "res": 2,
-      "date": "2026-11-10",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2022",
+      "dispatchName": "ТП-2348 ВЛ-0,4кВ",
       "substations": [
-        "ТП-2022"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Богенбай батыра, Айманова, Толе би, Умбетбаева",
-      "placeNormalized": "богенбай батыра, айманова, толе би, умбетбаева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "31efb6256627",
-      "res": 2,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2385",
-      "substations": [
-        "ТП-2385"
+        "ТП-2348"
       ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "Шакарима, Тургут Озала, Кулымбетова, Туркебаева",
-      "placeNormalized": "шакарима, тургут озала, кулымбетова, туркебаева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Абая, Сейфуллина, Курмангазы, Амангельды",
+      "placeNormalized": "абая, сейфуллина, курмангазы, амангельды",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "9f8931a21446",
+      "id": "7a956b0e3d3f",
       "res": 2,
-      "date": "2026-11-10",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-2741",
-      "substations": [
-        "ТП-2741"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Дуйсенова, Розыбакиева, Райымбека, Верещагина",
-      "placeNormalized": "дуйсенова, розыбакиева, райымбека, верещагина",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "8c1e1046aec6",
-      "res": 2,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-2743",
-      "substations": [
-        "ТП-2743"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Дуйсенова, Аносова, Райымбека, Бруно",
-      "placeNormalized": "дуйсенова, аносова, райымбека, бруно",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "59e6bc3c5cf6",
-      "res": 2,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-2044",
-      "substations": [
-        "ТП-2044"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Казыбек би, Желтоксан, Айтеке би, Чайковского",
-      "placeNormalized": "казыбек би, желтоксан, айтеке би, чайковского",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "7ba07beaba74",
-      "res": 2,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "КЛ-6кВ РП-13 -ТП-2416",
-      "substations": [
-        "ТП-2416"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Васнецова, Туркебаева, Толе би, Брусиловского- Карасай батыра, Тургут Озала, Васнецова, Туркебаева",
-      "placeNormalized": "васнецова, туркебаева, толе би, брусиловского карасай батыра, тургут озала, васнецова, туркебаева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "9c8a6f263bde",
-      "res": 2,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2156",
-      "substations": [
-        "ТП-2156"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Джандосова, Ауэзова, Сатпаева, Клочкова",
-      "placeNormalized": "джандосова, ауэзова, сатпаева, клочкова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "2e6f42e0b8ba",
-      "res": 2,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2387",
+      "dispatchName": "ТП-2387 ВЛ-0,4 кВ",
       "substations": [
         "ТП-2387"
       ],
@@ -668,107 +400,268 @@
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
       "place": "Шакарима, Маршака, Кулымбетова, Брусиловского",
       "placeNormalized": "шакарима, маршака, кулымбетова, брусиловского",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "654d27631a43",
+      "id": "0fdb7834db5b",
       "res": 2,
-      "date": "2026-11-11",
+      "date": "2026-11-17",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-2728",
+      "dispatchName": "КЛ-6кВ ТП-2395-2365",
       "substations": [
-        "ТП-2728"
+        "ТП-2395"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Джандосова, Туркебаева, Сатпаева, Тлендиева",
-      "placeNormalized": "джандосова, туркебаева, сатпаева, тлендиева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Абая, Досмухамедова, Курмангазы, Шарипова",
+      "placeNormalized": "абая, досмухамедова, курмангазы, шарипова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "b3fb5ce5414c",
+      "id": "11eab2e67ce9",
       "res": 2,
-      "date": "2026-11-11",
+      "date": "2026-11-17",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-2375",
+      "dispatchName": "РУ-10кВ ТП-2704 с.1",
       "substations": [
-        "ТП-2375"
+        "ТП-2704"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Шакарима, Рахманинова, Кулымбетова, Тургут Озала",
-      "placeNormalized": "шакарима, рахманинова, кулымбетова, тургут озала",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Сатпаева, Егизбаева, Мынбаева, Тургут Озала",
+      "placeNormalized": "сатпаева, егизбаева, мынбаева, тургут озала",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "51d7597537ac",
+      "id": "fc31d03c85a4",
       "res": 2,
-      "date": "2026-11-12",
+      "date": "2026-11-17",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-2165",
+      "dispatchName": "ТП-2134 ВЛ-0,4кВ",
       "substations": [
-        "ТП-2165"
+        "ТП-2134"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "Шевченко, Муканова, Джамбула, Байзакова",
+      "placeNormalized": "шевченко, муканова, джамбула, байзакова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "fda788e63863",
+      "res": 2,
+      "date": "2026-11-17",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-2505 ВЛ-0,4 кВ",
+      "substations": [
+        "ТП-2505"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "Джандосова, Тургут Озала, Сатпаева, Туркебаева",
+      "placeNormalized": "джандосова, тургут озала, сатпаева, туркебаева",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "f116f06d2894",
+      "res": 2,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "КЛ-6кВ РП-13 -ТП-758",
+      "substations": [
+        "ТП-758"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Абая, Панфилова, Курмангазы, Байсеитовой",
-      "placeNormalized": "абая, панфилова, курмангазы, байсеитовой",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Сатпаева – ул.Туркебаева (ю-з) и Васнецова, Тургут Озала, Толе би, Туркебаева",
+      "placeNormalized": "ул сатпаева ул туркебаева (ю з) и васнецова, тургут озала, толе би, туркебаева",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "8b7ab82cd88d",
+      "id": "bbdd965ec583",
       "res": 2,
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "КЛ-6кВ РП-13 -ТП-2385",
+      "dispatchName": "ТП-2273",
       "substations": [
-        "ТП-2385"
+        "ТП-2273"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Шакарима, Тургут Озала, Кулымбетова, Туркебаева",
-      "placeNormalized": "шакарима, тургут озала, кулымбетова, туркебаева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Мынбаева, Тургут Озала, Абая, Бутлерова",
+      "placeNormalized": "мынбаева, тургут озала, абая, бутлерова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "ad0645b48b4b",
+      "id": "7f6c88e0a0cc",
       "res": 2,
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2294",
+      "dispatchName": "РУ-0,4кВТП-2033",
+      "substations": [],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "Шевченко, Мауленова, Джамбула, Сейфуллина",
+      "placeNormalized": "шевченко, мауленова, джамбула, сейфуллина",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "232e48508764",
+      "res": 2,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-2126 ВЛ-0,4кВ",
       "substations": [
-        "ТП-2294"
+        "ТП-2126"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "Муканова-Курмангазы (северо-запад)",
+      "placeNormalized": "муканова курмангазы (северо запад)",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "c103243ca0e6",
+      "res": 2,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-2299",
+      "substations": [
+        "ТП-2299"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "ст. Абая, Прокофьева, Есенжанова, Жемчужная",
+      "placeNormalized": "ст абая, прокофьева, есенжанова, жемчужная",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "c1988c833741",
+      "res": 2,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-2160",
+      "substations": [
+        "ТП-2160"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Айтеке би, Мирзояна, Гоголя, Исаева",
-      "placeNormalized": "айтеке би, мирзояна, гоголя, исаева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Абая, Байсеитовой, Курмангазы, Абылай хана",
+      "placeNormalized": "абая, байсеитовой, курмангазы, абылай хана",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "9671baea6861",
+      "id": "aa79470f936c",
       "res": 2,
-      "date": "2026-11-12",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2406",
+      "dispatchName": "РУ-0,4кВ ТП-2033",
+      "substations": [
+        "ТП-2033"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "Шевченко, Мауленова, Джамбула, Сейфуллина",
+      "placeNormalized": "шевченко, мауленова, джамбула, сейфуллина",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "08e3afd724d8",
+      "res": 2,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "КЛ-6кВ ТП-2273- ТП-2379",
+      "substations": [
+        "ТП-2273",
+        "ТП-2379"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "Мынбаева, Тургут Озала, Абая, Бутлерова и Абая, Гайдара, ст. Абая, Рахманинова",
+      "placeNormalized": "мынбаева, тургут озала, абая, бутлерова и абая, гайдара, ст абая, рахманинова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "d790e78c1499",
+      "res": 2,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-10кВ ТП-2391",
+      "substations": [
+        "ТП-2391"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "Кавказская, Прокофьева, Райымбека, Тлендиева",
+      "placeNormalized": "кавказская, прокофьева, райымбека, тлендиева",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "8374e07d7fa5",
+      "res": 2,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-2156 ВЛ-0,4кВ",
+      "substations": [
+        "ТП-2156"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "Джандосова, Ауэзова, Сатпаева, Клочкова",
+      "placeNormalized": "джандосова, ауэзова, сатпаева, клочкова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "a681e333592b",
+      "res": 2,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-2406",
       "substations": [
         "ТП-2406"
       ],
@@ -776,72 +669,108 @@
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
       "place": "Шакарима, Жемчужная, Кулымбетова, Тлендиева",
       "placeNormalized": "шакарима, жемчужная, кулымбетова, тлендиева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "9ca85fa8943e",
+      "id": "b23412f7d959",
       "res": 2,
-      "date": "2026-11-13",
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-2022",
+      "dispatchName": "РУ-6/0,4кВ ТП-2025",
       "substations": [
-        "ТП-2022"
+        "ТП-2025"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Богенбай батыра, Айманова, Толе би, Умбетбаева",
-      "placeNormalized": "богенбай батыра, айманова, толе би, умбетбаева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Богенбай батыра, Абылай хана, Толе би, Желтоксан",
+      "placeNormalized": "богенбай батыра, абылай хана, толе би, желтоксан",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "b4709943f872",
+      "id": "d8cc3a1b4a14",
       "res": 2,
-      "date": "2026-11-13",
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "КЛ-10кВ ТП-2503с1,с2-ТП-2502с1,с2",
+      "dispatchName": "ТП-2788",
       "substations": [
-        "ТП-2503",
-        "ТП-2502"
+        "ТП-2788"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Джандосова, пер. Вахтангова, 21 линия, Вахтангова - Джандосова, 22 линия, 21 линия, пер. Вахтангова",
-      "placeNormalized": "джандосова, пер вахтангова, 21 линия, вахтангова джандосова, 22 линия, 21 линия, пер вахтангова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "Дуйсенова, Тлендиева, Кавказская, Циалковского",
+      "placeNormalized": "дуйсенова, тлендиева, кавказская, циалковского",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "bf1175af6ae7",
+      "id": "a6f143cb4090",
       "res": 2,
-      "date": "2026-11-13",
+      "date": "2026-11-20",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2251",
+      "dispatchName": "КЛ-6кВ ТП-2273 - ТП-2378",
+      "substations": [
+        "ТП-2273",
+        "ТП-2378"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "Мынбаева, Тургут Озала, Абая, Бутлерова и ст. Абая, Бутлерова, Есенжанова, Туркебаева",
+      "placeNormalized": "мынбаева, тургут озала, абая, бутлерова и ст абая, бутлерова, есенжанова, туркебаева",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "1f0d6c7dd3ed",
+      "res": 2,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-10кВ ТП-2779",
+      "substations": [
+        "ТП-2779"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "Толе би, Даргомыжского, Дуйсенова, Грановского",
+      "placeNormalized": "толе би, даргомыжского, дуйсенова, грановского",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "73ed7ec78875",
+      "res": 2,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-2251 ВЛ-0,4кВ",
       "substations": [
         "ТП-2251"
       ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
       "place": "Сатпаева, Айманова, Мынбаева, Гагарина",
       "placeNormalized": "сатпаева, айманова, мынбаева, гагарина",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "7ca2914b1721",
+      "id": "9bbf87ae9645",
       "res": 2,
-      "date": "2026-11-13",
+      "date": "2026-11-20",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4 кВ ТП-2385",
+      "dispatchName": "ВЛ-0,4кВ ТП-2385",
       "substations": [
         "ТП-2385"
       ],
@@ -849,32 +778,50 @@
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
       "place": "Шакарима, Тургут Озала, Кулымбетова, Туркебаева",
       "placeNormalized": "шакарима, тургут озала, кулымбетова, туркебаева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "2c2553a70406",
+      "id": "b140f7cb1663",
       "res": 3,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3008",
+      "dispatchName": "ВЛ-0,4кВ ТП-3710",
       "substations": [
-        "ТП-3008"
+        "ТП-3710"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Акжар, ул.с.т Алатау",
-      "placeNormalized": "мкр акжар, ул с т алатау",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "м-он Алгабас. ул.Сәмен Батыр, Байтурсынова, Тауелсыздык.",
+      "placeNormalized": "мкр алгабас ул самен батыр, байтурсынова, тауелсыздык",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "c60033a1adbf",
+      "id": "316c19c324ff",
       "res": 3,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3705",
+      "substations": [
+        "ТП-3705"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "м-он Алгабас, ул.Оракты батыр, Сатпаева, Лермонтова.",
+      "placeNormalized": "мкр алгабас, ул оракты батыр, сатпаева, лермонтова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "f00e2a3eb903",
+      "res": 3,
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ТП-3671",
@@ -885,32 +832,32 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "м-он Калкаман-2, ул.Бегалиева, ул.Кудайбердиева, ул.Молдабекова.",
       "placeNormalized": "мкр калкаман 2, ул бегалиева, ул кудайбердиева, ул молдабекова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "66e774813371",
+      "id": "7e52d60f8e13",
       "res": 3,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3408",
+      "dispatchName": "ВЛ-0,4кВ ТП-3409",
       "substations": [
-        "ТП-3408"
+        "ТП-3409"
       ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Келимбетова, ул.Акниет, ул.Тарасова.",
-      "placeNormalized": "мкр акжар, ул келимбетова, ул акниет, ул тарасова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "с/т АЛМА-1",
+      "placeNormalized": "с/т алма 1",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "b1083c25e850",
+      "id": "def324e09a87",
       "res": 3,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3425",
@@ -921,14 +868,14 @@
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
       "place": "м-он Акжар, ул.Кұртка, ул.Касым Толебеков, ул.Аққұяш.",
       "placeNormalized": "мкр акжар, ул куртка, ул касым толебеков, ул аккуяш",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "e3a2b1350318",
+      "id": "a9273631c309",
       "res": 3,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3423",
@@ -939,32 +886,14 @@
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
       "place": "м-он Акжар, ул.Лашын, Амина Омирзакова, Берел.",
       "placeNormalized": "мкр акжар, ул лашын, амина омирзакова, берел",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "78e9ea131f44",
+      "id": "f6acfc65b2df",
       "res": 3,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3414",
-      "substations": [
-        "ТП-3414"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.М.Абдикалыков, Сұлтан Байсұлтанов, Тарасова.",
-      "placeNormalized": "мкр акжар, ул м абдикалыков, султан байсултанов, тарасова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "a4c93caa4c2d",
-      "res": 3,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3304",
@@ -975,140 +904,14 @@
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
       "place": "м-он Карагайлы, ул.Иван Щеголихин, ул.Амангельды, ул.Тажиева.",
       "placeNormalized": "мкр карагайлы, ул иван щеголихин, ул амангельды, ул тажиева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "fd229ac86947",
+      "id": "0962d423ee0d",
       "res": 3,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ -10кВ от РП-290 выход на ТП-3712",
-      "substations": [
-        "ТП-3712"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Алгабас",
-      "placeNormalized": "мкр алгабас",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "33a61c10baca",
-      "res": 3,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП - 3672",
-      "substations": [
-        "ТП-3672"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Калкаман-2, ул.Саке Батыра, д.86А, ул.Байтурсынова.",
-      "placeNormalized": "мкр калкаман 2, ул саке батыра, д 86а, ул байтурсынова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "d6e0d04a0136",
-      "res": 3,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3408",
-      "substations": [
-        "ТП-3408"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Келимбетова, ул.Акниет, ул.Тарасова.",
-      "placeNormalized": "мкр акжар, ул келимбетова, ул акниет, ул тарасова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "ba75c93734b3",
-      "res": 3,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3425",
-      "substations": [
-        "ТП-3425"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Кұртка, ул.Касым Толебеков, ул.Аққұяш.",
-      "placeNormalized": "мкр акжар, ул куртка, ул касым толебеков, ул аккуяш",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "f3ea008b2682",
-      "res": 3,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3423",
-      "substations": [
-        "ТП-3423"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Лашын, Амина Омирзакова, Берел.",
-      "placeNormalized": "мкр акжар, ул лашын, амина омирзакова, берел",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "116fc076e9d8",
-      "res": 3,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3424",
-      "substations": [
-        "ТП-3424"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Рымгали Нургали, ул.Кудайберген Султанбаев, ул.Закария Белибаев",
-      "placeNormalized": "мкр акжар, ул рымгали нургали, ул кудайберген султанбаев, ул закария белибаев",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "87691f4ed1b5",
-      "res": 3,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3304",
-      "substations": [
-        "ТП-3304"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Карагайлы, ул.Иван Щеголихин, ул.Амангельды, ул.Тажиева.",
-      "placeNormalized": "мкр карагайлы, ул иван щеголихин, ул амангельды, ул тажиева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "4b55dbf33cbd",
-      "res": 3,
-      "date": "2026-11-11",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3314",
@@ -1119,370 +922,32 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "м-он Карагайлы, ул. Енлик-Кебек, Алтын Зан, Айша биби.",
       "placeNormalized": "мкр карагайлы, ул енлик кебек, алтын зан, айша биби",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "d1a84f7de1cf",
+      "id": "ca76fe8d8fb2",
       "res": 3,
-      "date": "2026-11-11",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП - 3673",
+      "dispatchName": "ТП - 3672",
       "substations": [
-        "ТП-3673"
+        "ТП-3672"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Калкаман-2, ул.Кабылбаева, Момыш-улы, ул.Казахстанская.",
-      "placeNormalized": "мкр калкаман 2, ул кабылбаева, момыш улы, ул казахстанская",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "м-он Калкаман-2, ул.Саке Батыра, д.86А, ул.Байтурсынова.",
+      "placeNormalized": "мкр калкаман 2, ул саке батыра, д 86а, ул байтурсынова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "4f31e393422c",
+      "id": "d14d71f1392e",
       "res": 3,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3408",
-      "substations": [
-        "ТП-3408"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Келимбетова, ул.Акниет, ул.Тарасова.",
-      "placeNormalized": "мкр акжар, ул келимбетова, ул акниет, ул тарасова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "94f26145ad62",
-      "res": 3,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3425",
-      "substations": [
-        "ТП-3425"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Кұртка, ул.Касым Толебеков, ул.Аққұяш.",
-      "placeNormalized": "мкр акжар, ул куртка, ул касым толебеков, ул аккуяш",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "31840cac3e08",
-      "res": 3,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3423",
-      "substations": [
-        "ТП-3423"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Лашын, Амина Омирзакова, Берел.",
-      "placeNormalized": "мкр акжар, ул лашын, амина омирзакова, берел",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "e05a918fc59e",
-      "res": 3,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3413",
-      "substations": [
-        "ТП-3413"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Ер Төстік, Амина Омирзакова, Даулеткерей",
-      "placeNormalized": "мкр акжар, ул ер тостик, амина омирзакова, даулеткерей",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "17f1da3b79af",
-      "res": 3,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3304",
-      "substations": [
-        "ТП-3304"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Карагайлы, ул.Иван Щеголихин, ул.Амангельды, ул.Тажиева.",
-      "placeNormalized": "мкр карагайлы, ул иван щеголихин, ул амангельды, ул тажиева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "bf0ea21750e8",
-      "res": 3,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3759",
-      "substations": [
-        "ТП-3759"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Теректы, ул.Айналмалы, ул.Кожабекова, ул.Жас Отау.",
-      "placeNormalized": "мкр теректы, ул айналмалы, ул кожабекова, ул жас отау",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "8f1b5bb24c70",
-      "res": 3,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-3674",
-      "substations": [
-        "ТП-3674"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Калкаман-2, ул.Казыбекова, Исатая, Казахстанская.",
-      "placeNormalized": "мкр калкаман 2, ул казыбекова, исатая, казахстанская",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "8e5ca1770ea3",
-      "res": 3,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3408",
-      "substations": [
-        "ТП-3408"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Келимбетова, ул.Акниет, ул.Тарасова.",
-      "placeNormalized": "мкр акжар, ул келимбетова, ул акниет, ул тарасова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "6c67021be68f",
-      "res": 3,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3425",
-      "substations": [
-        "ТП-3425"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Кұртка, ул.Касым Толебеков, ул.Аққұяш.",
-      "placeNormalized": "мкр акжар, ул куртка, ул касым толебеков, ул аккуяш",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "9b7f32605943",
-      "res": 3,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3423",
-      "substations": [
-        "ТП-3423"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Лашын, Амина Омирзакова, Берел.",
-      "placeNormalized": "мкр акжар, ул лашын, амина омирзакова, берел",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "eb03dc4cca72",
-      "res": 3,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-10кВ ф.14-171А",
-      "substations": [],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар",
-      "placeNormalized": "мкр акжар",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "02aa0b5387dd",
-      "res": 3,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3405",
-      "substations": [
-        "ТП-3405"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Амина Омирзакова, Сұлтан Байсұлтанов, Ш.Айманова",
-      "placeNormalized": "мкр акжар, ул амина омирзакова, султан байсултанов, ш айманова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "a36556a8d7da",
-      "res": 3,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3304",
-      "substations": [
-        "ТП-3304"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Карагайлы, ул.Иван Щеголихин, ул.Амангельды, ул.Тажиева.",
-      "placeNormalized": "мкр карагайлы, ул иван щеголихин, ул амангельды, ул тажиева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "d6feb1d5da8d",
-      "res": 3,
-      "date": "2026-11-13",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3106",
-      "substations": [
-        "ТП-3106"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Таусамалы, ул.А Грозы, .Макатаева, Арман.",
-      "placeNormalized": "мкр таусамалы, ул а грозы, макатаева, арман",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "40f3fd76a446",
-      "res": 3,
-      "date": "2026-11-13",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-3310",
-      "substations": [
-        "ТП-3310"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Каргайлы,ул.Рыскулова, Абая",
-      "placeNormalized": "мкр каргайлы, ул рыскулова, абая",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "8d265a4a68ac",
-      "res": 3,
-      "date": "2026-11-13",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3408",
-      "substations": [
-        "ТП-3408"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Келимбетова, ул.Акниет, ул.Тарасова.",
-      "placeNormalized": "мкр акжар, ул келимбетова, ул акниет, ул тарасова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "0c1645d0dea3",
-      "res": 3,
-      "date": "2026-11-13",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3425",
-      "substations": [
-        "ТП-3425"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Кұртка, ул.Касым Толебеков, ул.Аққұяш.",
-      "placeNormalized": "мкр акжар, ул куртка, ул касым толебеков, ул аккуяш",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "c921aa02dfa6",
-      "res": 3,
-      "date": "2026-11-13",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-3423",
-      "substations": [
-        "ТП-3423"
-      ],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.Лашын, Амина Омирзакова, Берел.",
-      "placeNormalized": "мкр акжар, ул лашын, амина омирзакова, берел",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "dd5c3b0b7e92",
-      "res": 3,
-      "date": "2026-11-13",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-10кВ ф.14-171А",
-      "substations": [],
-      "repairType": "contractor_works",
-      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар",
-      "placeNormalized": "мкр акжар",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "454fa7973d9c",
-      "res": 3,
-      "date": "2026-11-13",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3409",
@@ -1491,16 +956,52 @@
       ],
       "repairType": "contractor_works",
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
-      "place": "м-он Акжар, ул.с/т АЛМА-1.",
-      "placeNormalized": "мкр акжар, ул с/т алма 1",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "с/т АЛМА-1",
+      "placeNormalized": "с/т алма 1",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "8523c9ea34e4",
+      "id": "15dd62d7a7a9",
       "res": 3,
-      "date": "2026-11-13",
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3408",
+      "substations": [
+        "ТП-3408"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Акжар, ул.Келимбетова, ул.Акниет, ул.Тарасова.",
+      "placeNormalized": "мкр акжар, ул келимбетова, ул акниет, ул тарасова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "a0daa75b87ea",
+      "res": 3,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3423",
+      "substations": [
+        "ТП-3423"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Акжар, ул.Лашын, Амина Омирзакова, Берел.",
+      "placeNormalized": "мкр акжар, ул лашын, амина омирзакова, берел",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "2a16815a6131",
+      "res": 3,
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-3304",
@@ -1511,176 +1012,538 @@
       "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
       "place": "м-он Карагайлы, ул.Иван Щеголихин, ул.Амангельды, ул.Тажиева.",
       "placeNormalized": "мкр карагайлы, ул иван щеголихин, ул амангельды, ул тажиева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "e0eba6530ae8",
-      "res": 4,
-      "date": "2026-11-09",
+      "id": "350def394c7d",
+      "res": 3,
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-4716 н/в вых. \"Север\"",
+      "dispatchName": "ВЛ-0,4кВ ТП-3301",
       "substations": [
-        "ТП-4716"
+        "ТП-3301"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Ожет ул.Ауэзова д.1-д.47А, д.65; ул.Ж.Садуакасова д.2- д.35; ул.Бекболата д.1- д.110",
-      "placeNormalized": "мкр ожет ул ауэзова д 1 д 47а, д 65; ул ж садуакасова д 2 д 35; ул бекболата д 1 д 110",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "м-он Карагайлы, ул.Кали Надырова, Бегайыл, Розыбакиева, Айша биби.",
+      "placeNormalized": "мкр карагайлы, ул кали надырова, бегайыл, розыбакиева, айша биби",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "1b8be391b66d",
-      "res": 4,
-      "date": "2026-11-09",
+      "id": "19819a598ee1",
+      "res": 3,
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-4753 н/в вых. \"ВЛ\"",
+      "dispatchName": "ТП - 3426",
       "substations": [
-        "ТП-4753"
+        "ТП-3426"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Кок-Кайнар ул.Акшагыл,ул.Аркалык",
-      "placeNormalized": "мкр кок кайнар ул акшагыл, ул аркалык",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "СО * Весна-1* Казграждансельпроект",
+      "placeNormalized": "со * весна 1* казграждансельпроект",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "5a7e05a798d5",
-      "res": 4,
-      "date": "2026-11-10",
+      "id": "5012ee0edff2",
+      "res": 3,
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-4534 н/в вых. \"ВЛ-1, ВЛ-2\"",
+      "dispatchName": "ВЛ-0,4кВ ТП-3409",
       "substations": [
-        "ТП-4534"
+        "ТП-3409"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "с/т АЛМА-1",
+      "placeNormalized": "с/т алма 1",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "1accc40dbec3",
+      "res": 3,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3425",
+      "substations": [
+        "ТП-3425"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Акжар, ул.Кұртка, ул.Касым Толебеков, ул.Аққұяш.",
+      "placeNormalized": "мкр акжар, ул куртка, ул касым толебеков, ул аккуяш",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "eede4a236aa8",
+      "res": 3,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3423",
+      "substations": [
+        "ТП-3423"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Акжар, ул.Лашын, Амина Омирзакова, Берел.",
+      "placeNormalized": "мкр акжар, ул лашын, амина омирзакова, берел",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "ff591a91fe45",
+      "res": 3,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3304",
+      "substations": [
+        "ТП-3304"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Карагайлы, ул.Иван Щеголихин, ул.Амангельды, ул.Тажиева.",
+      "placeNormalized": "мкр карагайлы, ул иван щеголихин, ул амангельды, ул тажиева",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "3ed93640d4da",
+      "res": 3,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3126",
+      "substations": [
+        "ТП-3126"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Мамыр, ул.Афцинао",
+      "placeNormalized": "мкр мамыр, ул афцинао",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "9c25b33cc55d",
+      "res": 3,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3102",
+      "substations": [
+        "ТП-3102"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Кожамьярова, пер.Винтера, ул. Палладина, ул. Жансугурова,ул.Великолукская,ул.Сокольского,ул.Еңлікгүл,ул.Егорова",
-      "placeNormalized": "ул кожамьярова, пер винтера, ул палладина, ул жансугурова, ул великолукская, ул сокольского, ул енликгул, ул егорова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "м-он Таусамалы, ул.Шакен Ниязбеков, Молдагуловой, Кажимукана.",
+      "placeNormalized": "мкр таусамалы, ул шакен ниязбеков, молдагуловой, кажимукана",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "72410f77c30e",
-      "res": 4,
-      "date": "2026-11-11",
+      "id": "f2536d01276b",
+      "res": 3,
+      "date": "2026-11-20",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-4534 н/в вых. \"ВЛ-3\"",
+      "dispatchName": "ВЛ-0,4кВ ТП-3103",
       "substations": [
-        "ТП-4534"
+        "ТП-3103"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Кожамьярова, пер.Винтера, ул. Палладина, ул. Жансугурова,ул.Великолукская,ул.Сокольского,ул.Еңлікгүл,ул.Егорова",
-      "placeNormalized": "ул кожамьярова, пер винтера, ул палладина, ул жансугурова, ул великолукская, ул сокольского, ул енликгул, ул егорова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "м-он Таусамалы, ул.Райымбек, Толе би, Ниязбеков.",
+      "placeNormalized": "мкр таусамалы, ул райымбек, толе би, ниязбеков",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "d1070506c07c",
-      "res": 4,
-      "date": "2026-11-12",
+      "id": "277dfc6aaecd",
+      "res": 3,
+      "date": "2026-11-20",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-4534 н/в вых. \"ВЛ-4\",\"ВЛ-5\"",
+      "dispatchName": "ТП-3601",
       "substations": [
-        "ТП-4534"
+        "ТП-3601"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Кожамьярова, пер.Винтера, ул. Палладина, ул. Жансугурова,ул.Великолукская,ул.Сокольского,ул.Еңлікгүл,ул.Егорова",
-      "placeNormalized": "ул кожамьярова, пер винтера, ул палладина, ул жансугурова, ул великолукская, ул сокольского, ул енликгул, ул егорова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "м-он Калкаман-2, ул.Кененбаев, Талжанова, Байтели.",
+      "placeNormalized": "мкр калкаман 2, ул кененбаев, талжанова, байтели",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "540d46985963",
-      "res": 4,
-      "date": "2026-11-13",
+      "id": "72122d5f0541",
+      "res": 3,
+      "date": "2026-11-20",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-4489 н/в вых. \"ВЛ\"",
+      "dispatchName": "ВЛ-0,4кВ ТП-3409",
       "substations": [
-        "ТП-4489"
+        "ТП-3409"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "с/т АЛМА-1",
+      "placeNormalized": "с/т алма 1",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "fa53ccbce916",
+      "res": 3,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3408",
+      "substations": [
+        "ТП-3408"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Акжар, ул.Келимбетова, ул.Акниет, ул.Тарасова.",
+      "placeNormalized": "мкр акжар, ул келимбетова, ул акниет, ул тарасова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "037601c6c827",
+      "res": 3,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3423",
+      "substations": [
+        "ТП-3423"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Акжар, ул.Лашын, Амина Омирзакова, Берел.",
+      "placeNormalized": "мкр акжар, ул лашын, амина омирзакова, берел",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "e729e5ec116f",
+      "res": 3,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3304",
+      "substations": [
+        "ТП-3304"
+      ],
+      "repairType": "contractor_works",
+      "repairTypeRaw": "подрядный ТОО \"Reco Stroy\"",
+      "place": "м-он Карагайлы, ул.Иван Щеголихин, ул.Амангельды, ул.Тажиева.",
+      "placeNormalized": "мкр карагайлы, ул иван щеголихин, ул амангельды, ул тажиева",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "ae7f6241c548",
+      "res": 3,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-3683",
+      "substations": [
+        "ТП-3683"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Бухтарминская д.2-11;ул.с/о Авиатор д.2-148/1",
-      "placeNormalized": "ул бухтарминская д 2 11; ул с/о авиатор д 2 148/1",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "м-он Калкаман-2, ул.Айбергенова, Саке батыр, Сураншы батыра.",
+      "placeNormalized": "мкр калкаман 2, ул айбергенова, саке батыр, сураншы батыра",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "47b581e30158",
+      "id": "a9b932d29bf2",
+      "res": 4,
+      "date": "2026-11-16",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-6кВ ТП-4367 с.1-ТП-4336 с.1 Ф.9-65",
+      "substations": [
+        "ТП-4367",
+        "ТП-4336"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр.Карасу, ул.Бурундайская, пер.Кошек батыра, д.п.Первомайский, оф.промзона, ул.Бұрхан, д.Первомайская, оф.промзона, мкр. \"Болашак\", д. 32, м-он \"Кемел\", ул.Промзона,мкр.Карасу, ул.Бурундайская, уч.85, пер.Кошек батыра, д.Бурундайское шоссе,Первомайский по. Округ,ул.Шоссейная, д. 51,пер.Кошек батыра, д.ПК \"Птицевод\",уч.4/3,Аэродромная 4Д",
+      "placeNormalized": "мкр карасу, ул бурундайская, пер кошек батыра, д п первомайский, оф промзона, ул бурхан, д первомайская, оф промзона, мкр болашак, д 32, мкр кемел, ул промзона, мкр карасу, ул бурундайская, уч 85, пер кошек батыра, д бурундайское шоссе,первомайский по округ, ул шоссейная, д 51,пер кошек батыра, д пк птицевод,уч 4/3,аэродромная 4д",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "d2456bfb3415",
+      "res": 4,
+      "date": "2026-11-16",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-4976,4375,9425,9407,9401,8427,4900,4948,9434,8423,9476,9419,9450",
+      "substations": [
+        "ТП-4976"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр.Карасу, ул.Бурундайская, пер.Кошек батыра, д.п.Первомайский, оф.промзона, ул.Бұрхан, д.Первомайская, оф.промзона, мкр. \"Болашак\", д. 32, м-он \"Кемел\", ул.Промзона,мкр.Карасу, ул.Бурундайская, уч.85, пер.Кошек батыра, д.Бурундайское шоссе,Первомайский по. Округ,ул.Шоссейная, д. 51,пер.Кошек батыра, д.ПК \"Птицевод\",уч.4/3,Аэродромная 4Д",
+      "placeNormalized": "мкр карасу, ул бурундайская, пер кошек батыра, д п первомайский, оф промзона, ул бурхан, д первомайская, оф промзона, мкр болашак, д 32, мкр кемел, ул промзона, мкр карасу, ул бурундайская, уч 85, пер кошек батыра, д бурундайское шоссе,первомайский по округ, ул шоссейная, д 51,пер кошек батыра, д пк птицевод,уч 4/3,аэродромная 4д",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "e3caf19e051b",
+      "res": 4,
+      "date": "2026-11-16",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-4392 н/в вых. \"Запад\",\"Юг\"",
+      "substations": [
+        "ТП-4392"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Баймагамбетова д.63-202, м-он\"Бакай\", д.УЧ13,ул.Айтыкова, д.143",
+      "placeNormalized": "ул баймагамбетова д 63 202, мкр бакай, д уч13, ул айтыкова, д 143",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "d769aeb96ff6",
+      "res": 4,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-6кВ ТП-4367 с.2-ТП-4336 с.2 Ф.6-65",
+      "substations": [
+        "ТП-4367",
+        "ТП-4336"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "м-он Карасу, ул.Бурундайская, д.47; м-он \"Кемел\", ул.Промбаза,ул.Апорт, д.пром.зона,мкр.Карасу, ул.Бурундайская, д.65,ул. Аэродромная,4Д, м-он Болашак,д.1-д.30, ул.Центральная,ул.Проездная,ул.Шоссейная, ул.Восточная, ул.Набережная, ул.Садовая,ул.Акшагыл, ул.Аркалык",
+      "placeNormalized": "мкр карасу, ул бурундайская, д 47; мкр кемел, ул промбаза, ул апорт, д пром зона, мкр карасу, ул бурундайская, д 65, ул аэродромная,4д, мкр болашак,д 1 д 30, ул центральная, ул проездная, ул шоссейная, ул восточная, ул набережная, ул садовая, ул акшагыл, ул аркалык",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "4338fa1b852b",
+      "res": 4,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-9499,8436,8429,4365,4755,4747",
+      "substations": [
+        "ТП-9499"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "м-он Карасу, ул.Бурундайская, д.47; м-он \"Кемел\", ул.Промбаза,ул.Апорт, д.пром.зона,мкр.Карасу, ул.Бурундайская, д.65,ул. Аэродромная,4Д, м-он Болашак,д.1-д.30, ул.Центральная,ул.Проездная,ул.Шоссейная, ул.Восточная, ул.Набережная, ул.Садовая,ул.Акшагыл, ул.Аркалык",
+      "placeNormalized": "мкр карасу, ул бурундайская, д 47; мкр кемел, ул промбаза, ул апорт, д пром зона, мкр карасу, ул бурундайская, д 65, ул аэродромная,4д, мкр болашак,д 1 д 30, ул центральная, ул проездная, ул шоссейная, ул восточная, ул набережная, ул садовая, ул акшагыл, ул аркалык",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "cc7f923e4b37",
+      "res": 4,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-4441 н/в вых. \"Север\"",
+      "substations": [
+        "ТП-4441"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул. Кузьмина д.13-35, ул. Рабочая д.2-24, ул.Ровенского д.14-24, ул.Егорова д.35-74, ул. Кассина д.27-43, ул.Серпуховская д.31, ул.Великолукская д.16А, ул.Сокольского д.23-61",
+      "placeNormalized": "ул кузьмина д 13 35, ул рабочая д 2 24, ул ровенского д 14 24, ул егорова д 35 74, ул кассина д 27 43, ул серпуховская д 31, ул великолукская д 16а, ул сокольского д 23 61",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "efe78b8e077f",
+      "res": 4,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-4416 н/в вых. \"Север\",\"Восток\"",
+      "substations": [
+        "ТП-4416"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Кожедуба, д.1-7,ул.Якубова, д.28-52,ул.Казакпаева д.3-20, ул.Папанина д.88-120,ул.Покрышкина, д.2А,ул.Суюнбая, д.199 Б,199в,199/3",
+      "placeNormalized": "ул кожедуба, д 1 7, ул якубова, д 28 52, ул казакпаева д 3 20, ул папанина д 88 120, ул покрышкина, д 2а, ул суюнбая, д 199 б,199в,199/3",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "6f15f10a6a50",
+      "res": 4,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-4416 н/в вых. \"Восток\",\"Запад\"",
+      "substations": [
+        "ТП-4416"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Кожедуба, д.1-7,ул.Якубова, д.28-52,ул.Казакпаева д.3-20, ул.Папанина д.88-120,ул.Покрышкина, д.2А,ул.Суюнбая, д.199 Б,199в,199/3",
+      "placeNormalized": "ул кожедуба, д 1 7, ул якубова, д 28 52, ул казакпаева д 3 20, ул папанина д 88 120, ул покрышкина, д 2а, ул суюнбая, д 199 б,199в,199/3",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "a2358b9bc521",
       "res": 5,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4кВ ТП-5025",
+      "dispatchName": "РУ-10/0,4кВ ТП-5666",
       "substations": [
-        "ТП-5025"
+        "ТП-5666"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Сатпаева/ул.Тимирязева/ул.Желтоксан/ул.Назарбаева",
-      "placeNormalized": "ул сатпаева/ ул тимирязева/ ул желтоксан/ ул назарбаева",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Архат\\пр.Дулати\\3-я улица \\ул.Квартал С, В,Г, Д-1,Е,А-1",
+      "placeNormalized": "мкр архат\\ пр дулати\\3 я ул \\ ул квартал с, в,г, д 1,е,а 1",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "42897b8f6074",
+      "id": "c21de49628b8",
       "res": 5,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-10кВ ТП-5192",
+      "dispatchName": "ВЛ-0,4кВ ТП-5176А",
       "substations": [
-        "ТП-5192"
+        "ТП-5176"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул. Арайлы д.2/12.",
-      "placeNormalized": "ул арайлы д 2/12",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Каблукова 85,67,43б,87/8,87/6,87,31,41,61,1,73,37,19,7,17,13,87/6а,31,83,15,23а,69,87,49,3,87/4, 95,97а,93,91",
+      "placeNormalized": "ул каблукова 85,67,43б,87/8,87/6,87,31,41,61,1,73,37,19,7,17,13,87/6а,31,83,15,23а,69,87,49,3,87/4, 95,97а,93,91",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "b130e072ad43",
+      "id": "b29e8ad06d60",
       "res": 5,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-5090",
+      "dispatchName": "РУ-6/0,4кВ ТП-5143",
       "substations": [
-        "ТП-5090"
+        "ТП-5143"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "Энергетик-2",
-      "placeNormalized": "энергетик 2",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Ерменсай, ул.Кырмызы",
+      "placeNormalized": "мкр ерменсай, ул кырмызы",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "58788fc3ea09",
+      "id": "e5aad2c1c45a",
       "res": 5,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-0,4кВ ТП-5148",
+      "substations": [
+        "ТП-5148"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Басенова 15, ул.Жарокова 217б, пр.Гагарина 196а, ул.Айманова 201, 203, 205, 209, 211, 236, 246, 236/6, ул.Умбетбаева 218, 220",
+      "placeNormalized": "ул басенова 15, ул жарокова 217б, пр гагарина 196а, ул айманова 201, 203, 205, 209, 211, 236, 246, 236/6, ул умбетбаева 218, 220",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "436e9eff7db4",
+      "res": 5,
+      "date": "2026-11-16",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-0,4кВ ТП-5026",
+      "substations": [
+        "ТП-5026"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "Площадь Республики",
+      "placeNormalized": "площадь республики",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "078df6d6852c",
+      "res": 5,
+      "date": "2026-11-16",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-10/0,4кВ ТП-5674",
+      "substations": [
+        "ТП-5674"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр.Хан-Тенгри",
+      "placeNormalized": "мкр хан тенгри",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "437cef441ab2",
+      "res": 5,
+      "date": "2026-11-17",
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4кВ ТП-5668",
@@ -1691,32 +1554,158 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "мкр.Архат\\пр.Дулати\\7-я улица \\ул.Квартал С",
       "placeNormalized": "мкр архат\\ пр дулати\\7 я ул \\ ул квартал с",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "65490952cb3f",
+      "id": "40d9cc8df8b6",
       "res": 5,
-      "date": "2026-11-09",
+      "date": "2026-11-17",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4кВ ТП-5663",
+      "dispatchName": "РУ-10/0,4кВ ТП-5688",
       "substations": [
-        "ТП-5663"
+        "ТП-5688"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Каргалы",
-      "placeNormalized": "мкр каргалы",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ЖК Хан Тенгри",
+      "placeNormalized": "жк хан тенгри",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "dd99602177dd",
+      "id": "88d37aa1094b",
       "res": 5,
-      "date": "2026-11-10",
+      "date": "2026-11-17",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-10/0,4кВ ТП-5694",
+      "substations": [
+        "ТП-5694"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр. Мирас 128 ЖК Тан Нуры",
+      "placeNormalized": "мкр мирас 128 жк тан нуры",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "e6028e060606",
+      "res": 5,
+      "date": "2026-11-17",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-10/0,4кВ ТП-5002",
+      "substations": [
+        "ТП-5002"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "бульвар Бухар Жырау д. 27/5",
+      "placeNormalized": "бульвар бухар жырау д 27/5",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "4621ba6af3d6",
+      "res": 5,
+      "date": "2026-11-18",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-10/0,4кВ ТП-5093",
+      "substations": [
+        "ТП-5093"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "А. Кекилбайулы д.38А, 38В,38Г",
+      "placeNormalized": "а кекилбайулы д 38а, 38в,38г",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "cd738e392e5b",
+      "res": 5,
+      "date": "2026-11-18",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-0,4кВ ТП-5668",
+      "substations": [
+        "ТП-5668"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр.Архат\\пр.Дулати\\7-я улица \\ул.Квартал С",
+      "placeNormalized": "мкр архат\\ пр дулати\\7 я ул \\ ул квартал с",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "498f65ac600c",
+      "res": 5,
+      "date": "2026-11-18",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-5124",
+      "substations": [
+        "ТП-5124"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Байтурсынова/ул.Р.Корсакова/пер.Шумный/ул.Габдулина",
+      "placeNormalized": "ул байтурсынова/ ул р корсакова/пер шумный/ ул габдулина",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "ccdb12c1ad9d",
+      "res": 5,
+      "date": "2026-11-18",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-0,4кВ ТП-5027",
+      "substations": [
+        "ТП-5027"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "г.Алматы, пл.Площадь Республики",
+      "placeNormalized": "г алматы, пл площадь республики",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "471fb0b6a6fd",
+      "res": 5,
+      "date": "2026-11-18",
+      "timeFrom": "09:00",
+      "timeTo": "17:00",
+      "dispatchName": "РУ-10/0,4кВ ТП-5094",
+      "substations": [
+        "ТП-5094"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Абиш Кекилбайулы, д.270",
+      "placeNormalized": "ул абиш кекилбайулы, д 270",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "c01fed3aa340",
+      "res": 5,
+      "date": "2026-11-19",
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-10/0,4кВ ТП-5001",
@@ -1727,230 +1716,30 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "п.Ерменсай, ул.Енбек-2",
       "placeNormalized": "п ерменсай, ул енбек 2",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "416b33ddb9b3",
+      "id": "453a46d0e3f3",
       "res": 5,
-      "date": "2026-11-10",
+      "date": "2026-11-19",
       "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "РУ-0,4кВ ТП-5640",
-      "substations": [
-        "ТП-5640"
-      ],
+      "dispatchName": "ВЛ-0,4кВ РП-300",
+      "substations": [],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Орбита-3",
-      "placeNormalized": "мкр орбита 3",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул. Шахтерская, ул. Декарта, ул. Мельникайте",
+      "placeNormalized": "ул шахтерская, ул декарта, ул мельникайте",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "5204e62890e1",
+      "id": "e2f68b337df2",
       "res": 5,
-      "date": "2026-11-10",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-5099",
-      "substations": [
-        "ТП-5099"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "с/т Энергетик",
-      "placeNormalized": "с/т энергетик",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "fcd706dca4c8",
-      "res": 5,
-      "date": "2026-11-10",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-0,4кВ ТП-5668",
-      "substations": [
-        "ТП-5668"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Архат\\пр.Дулати\\7-я улица \\ул.Квартал С",
-      "placeNormalized": "мкр архат\\ пр дулати\\7 я ул \\ ул квартал с",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "44effbe70741",
-      "res": 5,
-      "date": "2026-11-10",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4кВ ТП-5293",
-      "substations": [
-        "ТП-5293"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул. Манаса, 40, Бухар Жырау 47, 45, Байзакова 299А, 299,Коктем-3, д.3",
-      "placeNormalized": "ул манаса, 40, бухар жырау 47, 45, байзакова 299а, 299,коктем 3, д 3",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "ce0af0e0aa8b",
-      "res": 5,
-      "date": "2026-11-11",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4кВ ТП-5603",
-      "substations": [
-        "ТП-5603"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Баганашыл, ул.Мади, ул.Квартал",
-      "placeNormalized": "мкр баганашыл, ул мади, ул квартал",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "c3ada54c373c",
-      "res": 5,
-      "date": "2026-11-11",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4кВ ТП-5143",
-      "substations": [
-        "ТП-5143"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Ерменсай, ул.Кырмызы",
-      "placeNormalized": "мкр ерменсай, ул кырмызы",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "e0a2c59608d4",
-      "res": 5,
-      "date": "2026-11-11",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-5298",
-      "substations": [
-        "ТП-5298"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Баганашыл",
-      "placeNormalized": "мкр баганашыл",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "10db741ca9ee",
-      "res": 5,
-      "date": "2026-11-12",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4кВ ТП-5682",
-      "substations": [
-        "ТП-5682"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Дулати п.Кок-шокы, ул. Санаторий Алмарасан",
-      "placeNormalized": "ул дулати п кок шокы, ул санаторий алмарасан",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "8d1b216b40c2",
-      "res": 5,
-      "date": "2026-11-12",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-5144",
-      "substations": [
-        "ТП-5144"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Садов. общ.\"Свежесть\", мкр. Хан Тенгри",
-      "placeNormalized": "ул садов общ свежесть, мкр хан тенгри",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "b6a1deaeaf46",
-      "res": 5,
-      "date": "2026-11-12",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4кВ ТП-5602",
-      "substations": [
-        "ТП-5602"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "Аль-Фараби/Шашкина",
-      "placeNormalized": "аль фараби/шашкина",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "035a1f0d6938",
-      "res": 5,
-      "date": "2026-11-12",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-5298",
-      "substations": [
-        "ТП-5298"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Баганашыл",
-      "placeNormalized": "мкр баганашыл",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "8c3d6b861eb3",
-      "res": 5,
-      "date": "2026-11-13",
-      "timeFrom": "09:00",
-      "timeTo": "17:00",
-      "dispatchName": "РУ-10/0,4кВ ТП-5243",
-      "substations": [
-        "ТП-5243"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул. Наурызбай Батыра д.152",
-      "placeNormalized": "ул наурызбай батыра д 152",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "23a395c4fcc1",
-      "res": 5,
-      "date": "2026-11-13",
+      "date": "2026-11-19",
       "timeFrom": "09:00",
       "timeTo": "17:00",
       "dispatchName": "РУ-0,4кВ ТП-5285",
@@ -1961,266 +1750,86 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "ул.Тимирязева/ул.Жарокова",
       "placeNormalized": "ул тимирязева/ ул жарокова",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "22f076acf1ec",
-      "res": 6,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
+      "id": "e5ffadce3064",
+      "res": 5,
+      "date": "2026-11-20",
+      "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-6415 РУ-6кВ",
+      "dispatchName": "РУ-6кВ ТП-5141",
       "substations": [
-        "ТП-6415"
+        "ТП-5141"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "м-он \"Музтау\", ул.Айдарлы, д.7, ул.Ключевая, д.7, ул.Райымбека, д.Южная, ул.Райымбека, д.17 А, ул.Бейсеуова, ул.Райымбека, д.3, ул.Райымбека, д.30, ул.Бейсеуова, д.53А. ТОО \"Мобайл Телеком-Сервис\", АО \"КСЕЛЛ\", РДТ \"Алматытелеком\" - ф. АО \"Казахтелеком\", ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", Филиал УМГ АО \"Интергаз Центральная Азия\", ТОО \"КаР-Тел\". м-он \"Музтау\", ул.Райымбека, д.1-50, м-он \"Музтау\", ул.Айдарлы, д.1-40, с/т \"Гелиос\", д.УЧ36, 82, м-он \"Музтау\", ул.Асета Бейсеуова, д.10-50, м-он \"Музтау\", ул.Замартас, д.5-40, м-он \"Музтау\", ул.Южная, д.1-40, м-он \"Музтау\", ул.Чебунса, м-он \"Музтау\", ул.Чебунса10-60.",
-      "placeNormalized": "мкр музтау, ул айдарлы, д 7, ул ключевая, д 7, ул райымбека, д южная, ул райымбека, д 17 а, ул бейсеуова, ул райымбека, д 3, ул райымбека, д 30, ул бейсеуова, д 53а тоо мобайл телеком сервис, ао кселл, рдт алматытелеком ф ао казахтелеком, гкп на пхв акимата города алматы алматы кала жарык, филиал умг ао интергаз центральная азия, тоо кар тел мкр музтау, ул райымбека, д 1 50, мкр музтау, ул айдарлы, д 1 40, с/т гелиос, д уч36, 82, мкр музтау, ул асета бейсеуова, д 10 50, мкр музтау, ул замартас, д 5 40, мкр музтау, ул южная, д 1 40, мкр музтау, ул чебунса, мкр музтау, ул чебунса10 60",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Байсеитова\\пр.Нурсултана Назарбаева\\пр.Абая\\ул.Сатпаева",
+      "placeNormalized": "ул байсеитова\\ пр нурсултана назарбаева\\ пр абая\\ ул сатпаева",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "0f6384e3fe8d",
-      "res": 6,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
+      "id": "fc00e1d81938",
+      "res": 5,
+      "date": "2026-11-20",
+      "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-6217",
+      "dispatchName": "РУ-0,4кВ ТП-5286",
       "substations": [
-        "ТП-6217"
+        "ТП-5286"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "г.Алматы, п.Юбилейный, ул.Омарова, д.43; с/т Монтажник, д.11-77; с/т Коктобе, д.УЧ1-219; с/т Вентиляционник, д.УЧ2-133; с/т \"Магистраль\", д.3-77; ПК \"Горный Гигант\", д.2013, 2051",
-      "placeNormalized": "г алматы, п юбилейный, ул омарова, д 43; с/т монтажник, д 11 77; с/т коктобе, д уч1 219; с/т вентиляционник, д уч2 133; с/т магистраль, д 3 77; пк горный гигант, д 2013, 2051",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Коктем-2",
+      "placeNormalized": "мкр коктем 2",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "590f38a13c32",
-      "res": 6,
-      "date": "2026-11-09",
-      "timeFrom": "08:00",
+      "id": "150d8315f75e",
+      "res": 5,
+      "date": "2026-11-20",
+      "timeFrom": "09:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-6041",
+      "dispatchName": "ВЛ-0,4кВ ТП-5138",
       "substations": [
-        "ТП-6041"
+        "ТП-5138"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Лисаковская, д.105А-229; ул.Сазоновская, д.97-194; ул.Татыбекова, д.160А; ул.Таирова, д.139-191; АО \"КСЕЛЛ\"; Филиал УМГ АО \"Интергаз Центральная Азия\"",
-      "placeNormalized": "ул лисаковская, д 105а 229; ул сазоновская, д 97 194; ул татыбекова, д 160а; ул таирова, д 139 191; ао кселл; филиал умг ао интергаз центральная азия",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Рахат",
+      "placeNormalized": "мкр рахат",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "00b2be01e4e6",
+      "id": "44e035961349",
       "res": 6,
-      "date": "2026-11-10",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-6397 РУ-6/0,4кВ",
+      "dispatchName": "ВЛ-0,4кВ ТП-6045",
       "substations": [
-        "ТП-6397"
+        "ТП-6045"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Музтау, ул.Райымбека, д.60-67, АРЕНДА; м-он Музтау, ул.Асета Бейсеуова, д.28-67; м-он Музтау, ул.Бейсеуова, д.62; м-он Музтау, ул.ПК Горный Гигант, д.УЧ14/4; ул.Радлова, д.92/1; ПК \" Горный Гигант\" уч. 2669/10",
-      "placeNormalized": "мкр музтау, ул райымбека, д 60 67, аренда; мкр музтау, ул асета бейсеуова, д 28 67; мкр музтау, ул бейсеуова, д 62; мкр музтау, ул пк горный гигант, д уч14/4; ул радлова, д 92/1; пк горный гигант уч 2669/10",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Татыбекова, д.40-56, ул.Сазоновская, д.уг.Каратальской, КГП на ПХВ \"Алм-ский обл. Центр псих-го здоровья\" ГУ УЗ\", ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\". ул.Сазоновская, д.5-40, ул.Татыбекова, д.40-60, ул.Каратальская, д.1-30, ул.Сыр-Дарьинская, д.13-15",
+      "placeNormalized": "ул татыбекова, д 40 56, ул сазоновская, д уг каратальской, кгп на пхв алм ский обл центр псих го здоровья гу уз, гкп на пхв акимата города алматы алматы кала жарык ул сазоновская, д 5 40, ул татыбекова, д 40 60, ул каратальская, д 1 30, ул сыр дарьинская, д 13 15",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "1ca3853c1af5",
+      "id": "10f04ac1c8b2",
       "res": 6,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-6кВ ф.1-100 ТП-6463 cек.1",
-      "substations": [
-        "ТП-6463"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "г.Алматы, м.Каменское плато, ул.Каменское плато, д.20, Обсерватория 20; ул.Институт Ионосферы, д.2, 7А, 11, 41, д.УЧ5А, УЧ70; Радиостанция; с/т \"Автомобилист\", д.17-501, д.УЧ1-320; с/т \"Алатау\", д.1, 8/1, д.УЧ2, УЧ15; с/т \"Дружба\", д.УЧ31-32; с/т \"Парасат\", д.УЧ13; с/т Асыл Тау, д.1; с/т \"Садовод\", д.УЧ164; с/т Ионосфера, д.117А",
-      "placeNormalized": "г алматы, м каменское плато, ул каменское плато, д 20, обсерватория 20; ул институт ионосферы, д 2, 7а, 11, 41, д уч5а, уч70; радиостанция; с/т автомобилист, д 17 501, д уч1 320; с/т алатау, д 1, 8/1, д уч2, уч15; с/т дружба, д уч31 32; с/т парасат, д уч13; с/т асыл тау, д 1; с/т садовод, д уч164; с/т ионосфера, д 117а",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "f487c55a9088",
-      "res": 6,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-6505 РУ-10кВ",
-      "substations": [
-        "ТП-6505"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Митина, д.4; пр.Достык, д.266; Объединение собственников имущества \"Жилого комплекса \"Dostyk Residence\" (Достык Резиденс) (ул.Митина, д.4,4/1)",
-      "placeNormalized": "ул митина, д 4; пр достык, д 266; объединение собственников имущества жилого комплекса dostyk residence (достык резиденс) ( ул митина, д 4,4/1)",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "77dc83b676df",
-      "res": 6,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-6кВ ТП-6416 - РЛНД 614",
-      "substations": [
-        "ТП-6416"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Керей-Жәнібек хандар, д.470, 470А, 470Б, 470В",
-      "placeNormalized": "ул керей жанибек хандар, д 470, 470а, 470б, 470в",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "017b89533db0",
-      "res": 6,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-6252",
-      "substations": [
-        "ТП-6252"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "г.Алматы, ул.Армянская, д.5А, 5Б-9; ул.Береговая, д.6-41; ул.Луганского, д.83, 85, 107Б; ул.Ньютона, д.1А-9; ул.Фонвизина, д.6-35; пр.Достык, д.172, АО \"СПК \"Алматы\"; Филиал УМГ АО \"Интергаз Центральная Азия\"",
-      "placeNormalized": "г алматы, ул армянская, д 5а, 5б 9; ул береговая, д 6 41; ул луганского, д 83, 85, 107б; ул ньютона, д 1а 9; ул фонвизина, д 6 35; пр достык, д 172, ао спк алматы; филиал умг ао интергаз центральная азия",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "154ea4628d7a",
-      "res": 6,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-6087",
-      "substations": [
-        "ТП-6087"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "м-он Думан, ул.Хантенгри, д.1-20, 24А; ул.Татыбекова, д.1; ул.Халиуллина, д.134; ул.Кереку, д.1-40; ул.Есил, д.1-50; Филиал УМГ АО \"Интергаз Центральная Азия\"",
-      "placeNormalized": "мкр думан, ул хантенгри, д 1 20, 24а; ул татыбекова, д 1; ул халиуллина, д 134; ул кереку, д 1 40; ул есил, д 1 50; филиал умг ао интергаз центральная азия",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "ff70e22f8dfa",
-      "res": 6,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-6246 РУ-0,4кВ",
-      "substations": [
-        "ТП-6246"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Оспанова, д.28, 28/1, 30, 32, 36, 46, 52; ул.Керей-Жанибек хандар, д.105",
-      "placeNormalized": "ул оспанова, д 28, 28/1, 30, 32, 36, 46, 52; ул керей жанибек хандар, д 105",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "aaef4fb41d3d",
-      "res": 6,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-6708 РУ-6кВ сек.2",
-      "substations": [
-        "ТП-6708"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул.с/т Коктобе 1, д.21-28, УЧ48, УЧ51А; Восточнее ВОД-южнее ул.Толе-бисевернее направление; с/т Коктюбе1, д.36; с/т Коктобе 1, д.1; Государственное коммунальное предприятие на праве хозяйственного ведения акимата города Алматы \"Алматы Қала Жарық\" ул.Толе-би/ Восточно объездная дорога; Государственное учреждение \"Департамент полиции города Алматы Министерства внутренних дел Республики Казахстан\" ВОАД, уг.ул.Толе би",
-      "placeNormalized": "ул с/т коктобе 1, д 21 28, уч48, уч51а; восточнее вод южнее ул толе бисевернее направление; с/т коктюбе1, д 36; с/т коктобе 1, д 1; государственное коммунальное предприятие на праве хозяйственного ведения акимата города алматы алматы кала жарык ул толе би/ восточно объездная дорога; государственное учреждение департамент полиции города алматы министерства внутренних дел республики казахстан воад, уг ул толе би",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "d2a60f2e4a28",
-      "res": 6,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-6042",
-      "substations": [
-        "ТП-6042"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Татыбекова, д.89-152А; ул.Текемет, д.9Б-49; ул.Биембетова, д.25А-71/40; ул.Экибастузская, д.2-29; ул.Блока, д.14-41; ул.Гурилева, д.100-107; ул.Кабилова, д.86-125; ул.Погодина, д.75-106; АО \"Фонд недвижимости\"",
-      "placeNormalized": "ул татыбекова, д 89 152а; ул текемет, д 9б 49; ул биембетова, д 25а 71/40; ул экибастузская, д 2 29; ул блока, д 14 41; ул гурилева, д 100 107; ул кабилова, д 86 125; ул погодина, д 75 106; ао фонд недвижимости",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "177e7db52c4f",
-      "res": 6,
-      "date": "2026-11-12",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-6217",
-      "substations": [
-        "ТП-6217"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "г.Алматы, п.Юбилейный, ул.Омарова, д.43; с/т Монтажник, д.11-77; с/т Коктобе, д.УЧ1-219; с/т Вентиляционник, д.УЧ2-133; с/т \"Магистраль\", д.3-77; ПК \"Горный Гигант\", д.2013, 2051",
-      "placeNormalized": "г алматы, п юбилейный, ул омарова, д 43; с/т монтажник, д 11 77; с/т коктобе, д уч1 219; с/т вентиляционник, д уч2 133; с/т магистраль, д 3 77; пк горный гигант, д 2013, 2051",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "4c940b347e74",
-      "res": 6,
-      "date": "2026-11-13",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-6493 РУ-10кВ",
-      "substations": [
-        "ТП-6493"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Митина, д.4; ул.Луганского, д.1; Объединение собственников имущества \"Жилого комплекса \"Dostyk Residence\" (Достык Резиденс) ул.Митина, д.4,4/1",
-      "placeNormalized": "ул митина, д 4; ул луганского, д 1; объединение собственников имущества жилого комплекса dostyk residence (достык резиденс) ул митина, д 4,4/1",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "93cfd0f06d94",
-      "res": 6,
-      "date": "2026-11-13",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-6044",
@@ -2231,68 +1840,285 @@
       "repairTypeRaw": "устранение дефектов",
       "place": "ул.Татыбекова, д.72-92, уг.ул.Халиуллина; ул.Ключевая, уг.ул.Татыбекова; ул.Сазоновская, д.25А-106; ул.Лисаковская, д.1-42; ул.Сыр-Дарьинская, д.2-8; ул.Менделеева, д.16-31; ул.Халиуллина, д.22-31; ул.Таирова, д.4-139; ул.Уштобинская, д.2-31; ул.Биембетова, д.4",
       "placeNormalized": "ул татыбекова, д 72 92, уг ул халиуллина; ул ключевая, уг ул татыбекова; ул сазоновская, д 25а 106; ул лисаковская, д 1 42; ул сыр дарьинская, д 2 8; ул менделеева, д 16 31; ул халиуллина, д 22 31; ул таирова, д 4 139; ул уштобинская, д 2 31; ул биембетова, д 4",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "f8dc8ccd96cc",
+      "id": "caf318822ce4",
       "res": 6,
-      "date": "2026-11-13",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-6217",
+      "dispatchName": "ВЛ-6кВ РЛНД 614 - ТП-6416",
       "substations": [
-        "ТП-6217"
+        "ТП-6416"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "г.Алматы, п.Юбилейный, ул.Омарова, д.43; с/т Монтажник, д.11-77; с/т Коктобе, д.УЧ1-219; с/т Вентиляционник, д.УЧ2-133; с/т \"Магистраль\", д.3-77; ПК \"Горный Гигант\", д.2013, 2051",
-      "placeNormalized": "г алматы, п юбилейный, ул омарова, д 43; с/т монтажник, д 11 77; с/т коктобе, д уч1 219; с/т вентиляционник, д уч2 133; с/т магистраль, д 3 77; пк горный гигант, д 2013, 2051",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Керей-Жәнібек хандар, д.470, 470А, 470Б, 470В",
+      "placeNormalized": "ул керей жанибек хандар, д 470, 470а, 470б, 470в",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "a557f3a9b341",
+      "id": "038f34a0d283",
+      "res": 6,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-6045",
+      "substations": [
+        "ТП-6045"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Татыбекова, д.40-56, ул.Сазоновская, д.уг.Каратальской, КГП на ПХВ \"Алм-ский обл. Центр псих-го здоровья\" ГУ УЗ\", ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\". ул.Сазоновская, д.5-40, ул.Татыбекова, д.40-60, ул.Каратальская, д.1-30, ул.Сыр-Дарьинская, д.13-15",
+      "placeNormalized": "ул татыбекова, д 40 56, ул сазоновская, д уг каратальской, кгп на пхв алм ский обл центр псих го здоровья гу уз, гкп на пхв акимата города алматы алматы кала жарык ул сазоновская, д 5 40, ул татыбекова, д 40 60, ул каратальская, д 1 30, ул сыр дарьинская, д 13 15",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "25b6a7c6b155",
+      "res": 6,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-6311 РУ-6кВ",
+      "substations": [
+        "ТП-6311"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Сад.общ. \"г.Кок-Тюбе\", д.УЧ103; с/т Коктобе 1, д.УЧ71,72",
+      "placeNormalized": "ул сад общ г кок тюбе, д уч103; с/т коктобе 1, д уч71,72",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "4b51a5e96e24",
+      "res": 6,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-6288 РУ-6/0,4кВ",
+      "substations": [
+        "ТП-6288"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Зенкова; пр.Достык; ул.Кабанбай батыра",
+      "placeNormalized": "ул зенкова; пр достык; ул кабанбай батыра",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "65ec04fe9308",
+      "res": 6,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-6048",
+      "substations": [
+        "ТП-6048"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Халиуллина, д.34/90, ул. Беимбетова,65 ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", ул.Таирова, д.253Б, ул.Сарбайская, д.90-120, ул.Блока, д.45-50, ул.Гурилева, д.70-100, ул.Кабилова, д.101, ул.Халиуллина, д.30-60, ул.Биембетова, д.50-60, ул.Чаплина, д.70-155, ул.Темиртауская, д.15-25",
+      "placeNormalized": "ул халиуллина, д 34/90, ул беимбетова,65 гкп на пхв акимата города алматы алматы кала жарык, ул таирова, д 253б, ул сарбайская, д 90 120, ул блока, д 45 50, ул гурилева, д 70 100, ул кабилова, д 101, ул халиуллина, д 30 60, ул биембетова, д 50 60, ул чаплина, д 70 155, ул темиртауская, д 15 25",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "8e23b4de2a71",
+      "res": 6,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-6071",
+      "substations": [
+        "ТП-6071"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Оренбургская, д.16, 17-41, 202, ул. Оренбурская уг. ул. Шухова.ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", РДТ \"Алматытелеком\"- ф. АО\"Казахтелеком\", ГККП \"Дом школьников №5\", КГУ \"Общеобр. школа №64\". ул.Шокая Мустафы, д.55, 25, ул.Брянская, д.2- 6.ул.Шухова, д.28-74, ул.Портартурская, д.23, ул.Айдын, д.16-20, ул.Ахметсафина, д.13А-28, ул.Тажбенова, д.1-29, ул.Базарбаева, д.2-30, ул.Таллинская, д.1-4, ул.Луговая, д.1-20",
+      "placeNormalized": "ул оренбургская, д 16, 17 41, 202, ул оренбурская уг ул шухова гкп на пхв акимата города алматы алматы кала жарык, рдт алматытелеком ф ао казахтелеком, гккп дом школьников №5, кгу общеобр школа №64 ул шокая мустафы, д 55, 25, ул брянская, д 2 6 ул шухова, д 28 74, ул портартурская, д 23, ул айдын, д 16 20, ул ахметсафина, д 13а 28, ул тажбенова, д 1 29, ул базарбаева, д 2 30, ул таллинская, д 1 4, ул луговая, д 1 20",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "db1f3ed687f2",
+      "res": 6,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-10кВ ТП-6434 - ТП-6483",
+      "substations": [
+        "ТП-6434",
+        "ТП-6483"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Кожабергенова, д.1-40, Сад.общ. \"Весна\", д.9-10, Сад. общ.\"Садовод\", д.3, ул.Көңіл толқыны, д.2Б, м.Каменское плато, пер.Кербулакский, д.5-19, с/т\"Жантобе\", д.13А,50-201, ул.Оспанова, д.190, садов . общ.\"Жан Тобе\", д.УЧ57А.г.Алматы, м-он Каменское плато, ул.Байконурская, д.выше уг.Олимпийской РДТ \"Алматытелеком\"- ф. АО\"Казахтелеком\", ул.Олимпийская, д.1 ГКП на ПХВ акимата города Алматы \"Алматы Қала Жарық\", ул.Кожабергенова, д.5-9, ул.Олимпийская, д.1 КГУ \"Общ-я школа № 47\"; ул.Оспанова, д.83-89; ул.Жамакаева, д.221; ул.ПК\"Горный Гигант\", д.2476; ул.с/т\"Турксиб\", д.3; Филиал УМГ АО \"Интергаз Центральная Азия\" (м-он Каменское плато, ул.Оспанова), ТОО\"EMI\" (ул. Оспанова, д. 85/52), ПК \"Alatau Hills\" (ул. Оспанова, д. 85/52), ПК \"Alatau Hills\" (ул. Оспанова, д.85/52)",
+      "placeNormalized": "ул кожабергенова, д 1 40, сад общ весна, д 9 10, сад общ садовод, д 3, ул конил толкыны, д 2б, м каменское плато, пер кербулакский, д 5 19, с/т жантобе, д 13а,50 201, ул оспанова, д 190, садов общ жан тобе, д уч57а г алматы, мкр каменское плато, ул байконурская, д выше уг олимпийской рдт алматытелеком ф ао казахтелеком, ул олимпийская, д 1 гкп на пхв акимата города алматы алматы кала жарык, ул кожабергенова, д 5 9, ул олимпийская, д 1 кгу общ я школа № 47; ул оспанова, д 83 89; ул жамакаева, д 221; ул пк горный гигант, д 2476; ул с/т турксиб, д 3; филиал умг ао интергаз центральная азия ( мкр каменское плато, ул оспанова), тоо emi ( ул оспанова, д 85/52), пк alatau hills ( ул оспанова, д 85/52), пк alatau hills ( ул оспанова, д 85/52)",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "9ba43cb271b1",
+      "res": 6,
+      "date": "2026-11-19",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-6397 РУ-6кВ",
+      "substations": [
+        "ТП-6397"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "м-он Музтау, ул.Райымбека, д.60-67, АРЕНДА; м-он Музтау, ул.Асета Бейсеуова, д.28-67; м-он Музтау, ул.Бейсеуова, д.62; м-он Музтау, ул.ПК Горный Гигант, д.УЧ14/4; ул.Радлова, д.92/1; ПК \" Горный Гигант\" уч. 2669/10",
+      "placeNormalized": "мкр музтау, ул райымбека, д 60 67, аренда; мкр музтау, ул асета бейсеуова, д 28 67; мкр музтау, ул бейсеуова, д 62; мкр музтау, ул пк горный гигант, д уч14/4; ул радлова, д 92/1; пк горный гигант уч 2669/10",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "dd558cf5f9f3",
+      "res": 6,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-6249",
+      "substations": [
+        "ТП-6249"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Таттимбета, д.1-30; ул.Луганского, д.80-150; пер.Кошек батыра, д.ВОАД №1",
+      "placeNormalized": "ул таттимбета, д 1 30; ул луганского, д 80 150; пер кошек батыра, д воад №1",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "57126e2de6fa",
+      "res": 6,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-6011",
+      "substations": [
+        "ТП-6011"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Орманова, д.17-115, 119, д.25 оф.1; АО \"Тартып\"; м-он Кок-Тобе, ул.Розы Баглановой, д.136; ул.Джабаева, д.136; ул.Есенберлина, д.189А-219; ул.Апорт, д.55-61; м-он Кок-Тобе, ул.Сагадат Нурмагамбетов, д.119",
+      "placeNormalized": "ул орманова, д 17 115, 119, д 25 оф 1; ао тартып; мкр кок тобе, ул розы баглановой, д 136; ул джабаева, д 136; ул есенберлина, д 189а 219; ул апорт, д 55 61; мкр кок тобе, ул сагадат нурмагамбетов, д 119",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "d60fd85858ac",
+      "res": 6,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-6042",
+      "substations": [
+        "ТП-6042"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Татыбекова, д.89-152А; ул.Текемет, д.9Б-49; ул.Биембетова, д.25А-71/40; ул.Экибастузская, д.2-29; ул.Блока, д.14-41; ул.Гурилева, д.100-107; ул.Кабилова, д.86-125; ул.Погодина, д.75-106; АО \"Фонд недвижимости\"",
+      "placeNormalized": "ул татыбекова, д 89 152а; ул текемет, д 9б 49; ул биембетова, д 25а 71/40; ул экибастузская, д 2 29; ул блока, д 14 41; ул гурилева, д 100 107; ул кабилова, д 86 125; ул погодина, д 75 106; ао фонд недвижимости",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "3eda6fd015e3",
       "res": 7,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "13:00",
-      "dispatchName": "ТП-7471",
+      "dispatchName": "ТП-7407",
       "substations": [
-        "ТП-7471"
+        "ТП-7407"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Таугуль-3,ул.Саттарханова ,д.1-30,ул.Мырзагулулы Бекет-Ата,д.14-23,ул.Кыстауова ,д.15-22",
-      "placeNormalized": "мкр таугуль 3, ул саттарханова,д 1 30, ул мырзагулулы бекет ата,д 14 23, ул кыстауова,д 15 22",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Достык ,ул.Яссауи д.16,53,55",
+      "placeNormalized": "мкр достык, ул яссауи д 16,53,55",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "26a7864874c4",
+      "id": "3723b3c7304b",
       "res": 7,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
       "timeFrom": "13:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-7473",
+      "dispatchName": "ТП-7467",
       "substations": [
-        "ТП-7473"
+        "ТП-7467"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Таугуль-3,ул.Канахина,д.1-12,ул.Беремжанова д.30-11",
-      "placeNormalized": "мкр таугуль 3, ул канахина,д 1 12, ул беремжанова д 30 11",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Таугуль-3,ул.Нурмаханова д.6-22,ул.Шайкенова д.26-52,ул.Жантурина д.26-5,ул.Мухамеджанова 19-41",
+      "placeNormalized": "мкр таугуль 3, ул нурмаханова д 6 22, ул шайкенова д 26 52, ул жантурина д 26 5, ул мухамеджанова 19 41",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "334811b2359f",
+      "id": "60954f965ceb",
       "res": 7,
-      "date": "2026-11-09",
+      "date": "2026-11-16",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-7426",
+      "substations": [
+        "ТП-7426"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр. Атамекен, д.50-226/1",
+      "placeNormalized": "мкр атамекен, д 50 226/1",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "42d002ebe03c",
+      "res": 7,
+      "date": "2026-11-16",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-7401",
+      "substations": [
+        "ТП-7401"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Баршынкент,д.21-43,ул.Улагат д.23-54",
+      "placeNormalized": "ул баршынкент,д 21 43, ул улагат д 23 54",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "8db01f3a7f1a",
+      "res": 7,
+      "date": "2026-11-16",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-7572",
@@ -2301,52 +2127,34 @@
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Юбилейная,д.10-25,ул.Запотоцкого,д.4-28",
-      "placeNormalized": "ул юбилейная,д 10 25, ул запотоцкого,д 4 28",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Юбилейная д.2-34",
+      "placeNormalized": "ул юбилейная д 2 34",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "f53beed40416",
+      "id": "29a375277e7b",
       "res": 7,
-      "date": "2026-11-10",
+      "date": "2026-11-16",
       "timeFrom": "08:00",
-      "timeTo": "13:00",
-      "dispatchName": "ТП-7479",
-      "substations": [
-        "ТП-7479"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Таугуль-3,ул.Мырзагулулы Бекет -Ата,ул.Бутина ,д.11-26,ул.Джазылбекова ,д.12-26,ул.Сауранбаева,д.14-19,ул.Ахметова,д.11-21",
-      "placeNormalized": "мкр таугуль 3, ул мырзагулулы бекет ата, ул бутина,д 11 26, ул джазылбекова,д 12 26, ул сауранбаева,д 14 19, ул ахметова,д 11 21",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "bf20105d6408",
-      "res": 7,
-      "date": "2026-11-10",
-      "timeFrom": "13:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-7480",
+      "dispatchName": "ТП-7316",
       "substations": [
-        "ТП-7480"
+        "ТП-7316"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Таугуль-3,ул.Бутина,д.40-92,ул.Дауылбаева,д.23-50,ул.Сауранбаева,д.19-47,ул.Ахметова ,д.13-27",
-      "placeNormalized": "мкр таугуль 3, ул бутина,д 40 92, ул дауылбаева,д 23 50, ул сауранбаева,д 19 47, ул ахметова,д 13 27",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Аксай-2,д.34-40",
+      "placeNormalized": "мкр аксай 2,д 34 40",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "0136a2c2ee4a",
+      "id": "b936c1568a89",
       "res": 7,
-      "date": "2026-11-10",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-7572",
@@ -2355,70 +2163,88 @@
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Юбилейная,д.10-25,ул.Запотоцкого,д.4-28",
-      "placeNormalized": "ул юбилейная,д 10 25, ул запотоцкого,д 4 28",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Юбилейная д.2-34",
+      "placeNormalized": "ул юбилейная д 2 34",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "cba288b4a1ae",
+      "id": "4ba19a74cbaf",
       "res": 7,
-      "date": "2026-11-10",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-7527",
-      "substations": [
-        "ТП-7527"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Таугуль-1,д.85-92",
-      "placeNormalized": "мкр таугуль 1,д 85 92",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "95d6e0f51122",
-      "res": 7,
-      "date": "2026-11-11",
+      "date": "2026-11-18",
       "timeFrom": "08:00",
       "timeTo": "13:00",
-      "dispatchName": "ТП-7468",
+      "dispatchName": "ТП-7274",
       "substations": [
-        "ТП-7468"
+        "ТП-7274"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "МПМК,д.1-12",
-      "placeNormalized": "мпмк,д 1 12",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Кабдолова уг.Алтынсарина ,д.-14",
+      "placeNormalized": "ул кабдолова уг алтынсарина,д 14",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "bca8f0fc9538",
+      "id": "efcbe7c4460d",
       "res": 7,
-      "date": "2026-11-11",
+      "date": "2026-11-18",
       "timeFrom": "13:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-7459",
+      "dispatchName": "ТП-7678",
       "substations": [
-        "ТП-7459"
+        "ТП-7678"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "МПМК,д.1-12",
-      "placeNormalized": "мпмк,д 1 12",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Жазылбекова ,д.2-16,ул.Центральная ,д.13,ул.Малиновая д.156-170,ул.Виноградная д.180-211",
+      "placeNormalized": "ул жазылбекова,д 2 16, ул центральная,д 13, ул малиновая д 156 170, ул виноградная д 180 211",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "51c8ab09e77a",
+      "id": "29b0e5d21f85",
       "res": 7,
-      "date": "2026-11-11",
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-7452",
+      "substations": [
+        "ТП-7452"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр. Достык",
+      "placeNormalized": "мкр достык",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "f5cf561ec91c",
+      "res": 7,
+      "date": "2026-11-18",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-7295",
+      "substations": [
+        "ТП-7295"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр.Сайран д.92,92а,92б,92в,92г,92ж,92е",
+      "placeNormalized": "мкр сайран д 92,92а,92б,92в,92г,92ж,92е",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "690b50a271bc",
+      "res": 7,
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "17:00",
       "dispatchName": "ВЛ-0,4кВ ТП-7572",
@@ -2427,155 +2253,173 @@
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Юбилейная,д.10-25,ул.Запотоцкого,д.4-28",
-      "placeNormalized": "ул юбилейная,д 10 25, ул запотоцкого,д 4 28",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул.Юбилейная д.2-34",
+      "placeNormalized": "ул юбилейная д 2 34",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "1b76d190d2b3",
+      "id": "962bec0a9346",
       "res": 7,
-      "date": "2026-11-11",
-      "timeFrom": "08:00",
-      "timeTo": "17:00",
-      "dispatchName": "ТП-7539",
-      "substations": [
-        "ТП-7539"
-      ],
-      "repairType": "defect_elimination",
-      "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.10,д.1-10",
-      "placeNormalized": "мкр 10,д 1 10",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
-    },
-    {
-      "id": "288aaa07533c",
-      "res": 7,
-      "date": "2026-11-12",
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "13:00",
-      "dispatchName": "ТП-7409",
+      "dispatchName": "ТП-7477",
       "substations": [
-        "ТП-7409"
+        "ТП-7477"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Достык,ул.Фрунзе,д.21-40,ул.Толстого,д.27-44,ул.Уйгурская д.29-51,ул.Алматинская,д.39-54",
-      "placeNormalized": "мкр достык, ул фрунзе,д 21 40, ул толстого,д 27 44, ул уйгурская д 29 51, ул алматинская,д 39 54",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Таугуль-3,ул.Шайкенова д.26-100,ул.Мухамеджанова д.16-297,ул.Нурмаханова д.27-60",
+      "placeNormalized": "мкр таугуль 3, ул шайкенова д 26 100, ул мухамеджанова д 16 297, ул нурмаханова д 27 60",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "b2f5a9250b1d",
+      "id": "1719b2aa2e3c",
       "res": 7,
-      "date": "2026-11-12",
+      "date": "2026-11-19",
       "timeFrom": "13:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-7417",
+      "dispatchName": "ТП-7513",
       "substations": [
-        "ТП-7417"
+        "ТП-7513"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Достык,ул.Тагзым,д.1-74,ул.Науметова ,д.1-63",
-      "placeNormalized": "мкр достык, ул тагзым,д 1 74, ул науметова,д 1 63",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Таугуль-3,ул.Альма-Матер,ул.Новая д.3-65,ул.Дауленова д.64-88,ул.Сулейменова",
+      "placeNormalized": "мкр таугуль 3, ул альма матер, ул новая д 3 65, ул дауленова д 64 88, ул сулейменова",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "4eca50c236e9",
+      "id": "6fc5f9a95b13",
       "res": 7,
-      "date": "2026-11-12",
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-7572",
+      "dispatchName": "ТП-7465",
       "substations": [
-        "ТП-7572"
+        "ТП-7465"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Юбилейная,д.10-25,ул.Запотоцкого,д.4-28",
-      "placeNormalized": "ул юбилейная,д 10 25, ул запотоцкого,д 4 28",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр. Тепличный, д.57-71",
+      "placeNormalized": "мкр тепличный, д 57 71",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "14c8026f9e6c",
+      "id": "2406fdbb2ae5",
       "res": 7,
-      "date": "2026-11-12",
+      "date": "2026-11-19",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-7528",
+      "dispatchName": "ТП-7537",
       "substations": [
-        "ТП-7528"
+        "ТП-7537"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.6,д.37-45",
-      "placeNormalized": "мкр 6,д 37 45",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.8,д.14-23",
+      "placeNormalized": "мкр 8,д 14 23",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "68a436e85407",
+      "id": "8d8862fff2dd",
       "res": 7,
-      "date": "2026-11-13",
+      "date": "2026-11-20",
       "timeFrom": "08:00",
       "timeTo": "13:00",
-      "dispatchName": "ТП-7418",
+      "dispatchName": "ТП-7533",
       "substations": [
-        "ТП-7418"
+        "ТП-7533"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Ташкентская ,д.1-33,ул.Трудовая,д.1-56,ул.Серегина,д.16-35",
-      "placeNormalized": "ул ташкентская,д 1 33, ул трудовая,д 1 56, ул серегина,д 16 35",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.Таугуль-3,с/оДархан ул.Тополевая д.40-86,ул.Мырзагалиева д.60-88,ул.Исаева д.1-13,ул.Мухамеджанова д.13-42",
+      "placeNormalized": "мкр таугуль 3,с/одархан ул тополевая д 40 86, ул мырзагалиева д 60 88, ул исаева д 1 13, ул мухамеджанова д 13 42",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "4e096f5b48ca",
+      "id": "07d14f7fc0c3",
       "res": 7,
-      "date": "2026-11-13",
+      "date": "2026-11-20",
       "timeFrom": "13:00",
       "timeTo": "17:00",
-      "dispatchName": "ТП-7419",
+      "dispatchName": "ТП-7564",
       "substations": [
-        "ТП-7419"
+        "ТП-7564"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "мкр.Достык,ул.Айвазовского,д.20-34,ул.Карагандинская,д.24-44,ул.Жамбыла,д.10-40",
-      "placeNormalized": "мкр достык, ул айвазовского,д 20 34, ул карагандинская,д 24 44, ул жамбыла,д 10 40",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "мкр.8,д.2-8, школа №119",
+      "placeNormalized": "мкр 8,д 2 8, школа №119",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     },
     {
-      "id": "115ab8b4e98d",
+      "id": "1068be7ad147",
       "res": 7,
-      "date": "2026-11-13",
+      "date": "2026-11-20",
       "timeFrom": "08:00",
       "timeTo": "17:00",
-      "dispatchName": "ВЛ-0,4кВ ТП-7720 ф-восток",
+      "dispatchName": "ТП-7365",
       "substations": [
-        "ТП-7720"
+        "ТП-7365"
       ],
       "repairType": "defect_elimination",
       "repairTypeRaw": "устранение дефектов",
-      "place": "ул.Сарытогай ,д.39-53,ул.Сулейменова ,д.65-79",
-      "placeNormalized": "ул сарытогай,д 39 53, ул сулейменова,д 65 79",
-      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5339-gorod-almaty-s-09-11-2026-goda-po-13-11-2026-goda",
-      "weekStart": "2026-11-09",
-      "weekEnd": "2026-11-13"
+      "place": "ул. Кисловодская, д.1-30, ул. 2-я Кисловодская, д.1-30, ул. Отрарская, д.1-56",
+      "placeNormalized": "ул кисловодская, д 1 30, ул 2 я кисловодская, д 1 30, ул отрарская, д 1 56",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "f98bc47f7463",
+      "res": 7,
+      "date": "2026-11-20",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ВЛ-0,4кВ ТП-7482",
+      "substations": [
+        "ТП-7482"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "ул.Ауэзова ,д.1-19,ул.Центральная ,д.3-24",
+      "placeNormalized": "ул ауэзова,д 1 19, ул центральная,д 3 24",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
+    },
+    {
+      "id": "d34499756c3c",
+      "res": 7,
+      "date": "2026-11-21",
+      "timeFrom": "08:00",
+      "timeTo": "17:00",
+      "dispatchName": "ТП-7575",
+      "substations": [
+        "ТП-7575"
+      ],
+      "repairType": "defect_elimination",
+      "repairTypeRaw": "устранение дефектов",
+      "place": "мкр.12,д.5а-5в,15,16,школа №9",
+      "placeNormalized": "мкр 12,д 5а 5в,15,16,школа №9",
+      "sourceUrl": "https://www.azhk.kz/ru/spetsialnye-razdely/all-graphics/105-grafik-otklyuchenij/2020-god-2/5345-gorod-almaty-s-16-11-2026-goda-po-20-11-2026-goda",
+      "weekStart": "2026-11-16",
+      "weekEnd": "2026-11-20"
     }
   ]
 }
